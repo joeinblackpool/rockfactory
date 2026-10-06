@@ -17,21 +17,21 @@ UNITS = [
      "suits": "It suits personal storage, business stock, tools and equipment, or a small workshop (business use needs prior approval).",
      "features": [("150 sq ft ground floor", "A single ground-floor space. The unit is windowless."),
                   ("Roller-shutter access", "Load and unload easily through the roller shutter.")],
-     "photos": []},
+     "photos": [], "examples": [("unit-roller-shutter", 1400, 1050, "Example Rock Factory unit with grey floor, white walls, a personnel door and the roller shutter raised"), ("unit-interconnecting-doors", 1400, 1050, "Example Rock Factory unit interior with doors on both sides")]},
     {"slug": "160-sq-ft-unit-blackpool", "size": 160, "price": 69, "title_h1": "ground-floor unit",
      "access": "Security-door access", "storeys": "Ground floor", "short": "Ground floor · security door",
      "about": "A ground-floor unit with a secure security door for access. The unit is windowless.",
      "suits": "It suits personal storage, archive boxes, business stock or a quiet studio or work space (business use needs prior approval).",
      "features": [("160 sq ft ground floor", "A single ground-floor space. The unit is windowless."),
                   ("Security-door access", "Access through a secure security door.")],
-     "photos": []},
+     "photos": [], "examples": [("unit-personnel-door", 750, 1000, "Example Rock Factory unit with a grey security door, painted concrete floor and overhead light"), ("unit-interconnecting-doors", 1400, 1050, "Example Rock Factory unit interior with doors on both sides")]},
     {"slug": "180-sq-ft-unit-blackpool", "size": 180, "price": 78, "title_h1": "ground-floor unit",
      "access": "Roller-shutter access", "storeys": "Ground floor", "short": "Ground floor · roller shutter",
      "about": "A larger ground-floor unit with roller-shutter access, so loading and unloading is easy. The unit is windowless.",
      "suits": "It suits bulkier storage, business stock, trades and equipment, or a workshop (business use needs prior approval).",
      "features": [("180 sq ft ground floor", "A single ground-floor space. The unit is windowless."),
                   ("Roller-shutter access", "Load and unload easily through the roller shutter.")],
-     "photos": []},
+     "photos": [], "examples": [("unit-roller-shutter", 1400, 1050, "Example Rock Factory unit with grey floor, white walls, a personnel door and the roller shutter raised"), ("unit-interconnecting-doors", 1400, 1050, "Example Rock Factory unit interior with doors on both sides")]},
     {"slug": "two-storey-unit-blackpool", "size": 300, "price": 130, "title_h1": "two-storey unit",
      "access": "Roller-shutter access", "storeys": "Two storeys", "short": "Two storeys · roller shutter · upstairs office with window",
      "about": "Our largest unit: a ground floor with roller-shutter access, plus an upstairs office or storage area with a window. The ground floor is windowless.",
@@ -48,6 +48,8 @@ COMMON = [("Connected and secure", "Lighting, electricity and Wi-Fi already conn
 
 def img(p, extra):
     name, w, h, alt = p
+    if w <= 800:
+        return f'<img src="/assets/{name}.webp" width="{w}" height="{h}" alt="{alt}" {extra} decoding="async">'
     return (f'<img srcset="/assets/{name}-800.webp 800w, /assets/{name}.webp {w}w" sizes="(max-width: 800px) 100vw, 50vw" '
             f'src="/assets/{name}.webp" width="{w}" height="{h}" alt="{alt}" {extra} decoding="async">')
 
@@ -68,6 +70,8 @@ def build(u, template):
     s = re.sub(r'(<meta property="og:url" content=")[^"]*', lambda m: m.group(1) + url, s, count=1)
     m = re.search(r'<script type="application/ld\+json">(.*?)</script>', s, re.S)
     biz = next(x for x in json.loads(m.group(1))["@graph"] if x["@type"] == "LocalBusiness")
+    photos = u["photos"] or u.get("examples", [])
+    example = not u["photos"]
     images = [f"{SITE}/assets/{p[0]}.webp" for p in u["photos"]]
     graph = [biz,
              {"@type": "WebPage", "@id": url + "#page", "url": url, "name": title, "description": desc, "inLanguage": "en-GB",
@@ -81,17 +85,18 @@ def build(u, template):
                  {"@type": "ListItem", "position": 2, "name": "Storage units", "item": f"{SITE}/storage-units-blackpool.html"},
                  {"@type": "ListItem", "position": 3, "name": name, "item": url}]}]
     if u["photos"]:
-        p0 = u["photos"][0]
+        p0 = photos[0]
         graph[1]["primaryImageOfPage"] = {"@type": "ImageObject", "url": f"{SITE}/assets/{p0[0]}.webp", "width": p0[1], "height": p0[2]}
     s = s[:m.start(1)] + json.dumps({"@context": "https://schema.org", "@graph": graph}, ensure_ascii=False) + s[m.end(1):]
     wa = re.search(r'href="(https://wa\.me/[^"]+)"', s).group(1)
 
-    hero_photo = (f'<figure class="page-photo"><a href="/assets/{u["photos"][0][0]}.webp" target="_blank" rel="noopener noreferrer" '
-                  f'aria-label="View the full photograph">{img(u["photos"][0], "fetchpriority=\"high\"")}</a></figure>')
+    hero_photo = (f'<figure class="page-photo"><a href="/assets/{photos[0][0]}.webp" target="_blank" rel="noopener noreferrer" '
+                  f'aria-label="View the full photograph">{img(photos[0], "fetchpriority=\"high\"")}</a>'
+                  + ('<figcaption class="example-tag">Example unit · photos of this unit coming soon</figcaption>' if example else '') + '</figure>')
     gallery = "".join(f'<figure><a href="/assets/{p[0]}.webp" target="_blank" rel="noopener noreferrer" aria-label="View full photograph">'
-                      f'{img(p, "loading=\"lazy\"")}</a></figure>' for p in u["photos"])
+                      f'{img(p, "loading=\"lazy\"")}</a></figure>' for p in photos)
     feats = "".join(f'<div class="office-feature"><h3>{h}</h3><p>{t}</p></div>' for h, t in u["features"] + COMMON)
-    others = [x for x in UNITS if x is not u and x["photos"]]
+    others = [x for x in UNITS if x is not u and (x["photos"] or x.get("examples"))]
     other_links = " · ".join(f'<a class="text-link" href="/{x["slug"]}.html">{x["size"]} sq ft, £{x["price"]} a week</a>' for x in others)
     main = f'''<main id="main">
 <nav class="crumbs wrap" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">/</span> <a href="/storage-units-blackpool.html">Storage units</a> <span aria-hidden="true">/</span> <span aria-current="page">{name}</span></nav>
@@ -100,7 +105,7 @@ def build(u, template):
 <div class="compact-notice"><div class="wrap"><p><strong>Available from 1 November.</strong> Pre-book now and your first week is free. Message us on WhatsApp on 07366 991012.</p></div></div>
 <section class="section wrap"><div class="office-details"><div><p class="eyebrow">About this unit</p><h2>{u["size"]} sq ft<br><em>at £{u["price"]} a week</em></h2><p>{u["about"]}</p><p>{u["suits"]}</p><p class="fine-print">Prices are based on the floor area of each unit, per sq ft per week, and are subject to availability. Minimum rental term: one month. Electricity usage is charged separately at the supplier rate, with no markup. Business use needs prior approval. Car storage is not permitted.</p></div>
 <div class="office-feature-list">{feats}</div></div></section>
-<section class="section wrap" id="photos"><div class="section-head"><h2>Unit<br><em>photographs</em></h2><p>The {name} at The Old Rock Factory, Keswick Road, Blackpool.</p></div><div class="photo-gallery natural">{gallery}</div></section>
+<section class="section wrap" id="photos"><div class="section-head"><h2>{"Example" if example else "Unit"}<br><em>photographs</em></h2><p>{("Photos of this unit are coming soon. These show an example unit at The Old Rock Factory, so layout and access may differ." if example else f"The {name} at The Old Rock Factory, Keswick Road, Blackpool.")}</p></div><div class="photo-gallery natural">{gallery}</div></section>
 <section class="section rental-section"><div class="wrap split"><div id="opening" class="opening-card"><p class="eyebrow">Pre-booking offer</p><h3>Available from<br>1 November</h3><p>Pre-book the {name} before it opens and your <strong>first week is free</strong>.</p><a class="button" href="{wa}" target="_blank" rel="noopener noreferrer">Pre-book on WhatsApp</a></div>
 <div id="moving-in"><p class="eyebrow">Three simple steps</p><h2>How pre-booking<br><em>works</em></h2><ol class="steps"><li><strong>Message us on WhatsApp</strong><span>Tell us you would like the {name} and what you will use it for. Business activities need prior approval.</span></li><li><strong>Reserve your space</strong><span>We confirm availability. Before you move in you will need one month’s rent in advance, a security deposit equal to one month’s rent, valid government-issued photo ID and a signed Direct Debit mandate.</span></li><li><strong>Move in from 1 November</strong><span>Your first week is free. Minimum term: one month.</span></li></ol></div></div></section>
 <section class="section wrap"><div class="section-head"><h2>Other units</h2><p>All units have lighting, electricity and Wi-Fi connected.</p></div><p>{other_links}{" · " if other_links else ""}<a class="text-link" href="/storage-units-blackpool.html">Compare all units</a> · <a class="text-link" href="/offices-to-let-blackpool.html">Offices from £70 a week</a></p></section>
@@ -110,7 +115,7 @@ def build(u, template):
 
 def link_pages():
     """Homepage prices table and storage-page cards link to every unit page that exists."""
-    built = {u["size"]: u for u in UNITS if u["photos"]}
+    built = {u["size"]: u for u in UNITS if u["photos"] or u.get("examples")}
     idx = PUB / "index.html"; s = idx.read_text()
     for u in UNITS:
         row = re.search(rf'<tr><th scope="row">(?:<a [^>]*>)?{u["size"]} sq ft(?:</a>)?</th><td>.*?</td>', s)
@@ -118,7 +123,7 @@ def link_pages():
         if u["size"] in built:
             href = f'/{u["slug"]}.html'
             new = (f'<tr><th scope="row"><a href="{href}">{u["size"]} sq ft</a></th>'
-                   f'<td><a class="row-link" href="{href}">{u["short"]} <span class="row-more">Photos &amp; details →</span></a></td>')
+                   f'<td><a class="row-link" href="{href}">{u["short"]} <span class="row-more">{"Photos &amp; details" if u["photos"] else "Details"} →</span></a></td>')
         else:
             new = f'<tr><th scope="row">{u["size"]} sq ft</th><td>{u["short"]}</td>'
         s = s[:row.start()] + new + s[row.end():]
@@ -139,7 +144,7 @@ if __name__ == "__main__":
     template = (PUB / "storage-units-blackpool.html").read_text()
     for u in UNITS:
         if not u["photos"]:
-            print("waiting for photos:", u["size"], "sq ft"); continue
+            print("using example photos until the owner sends this unit's own:", u["size"], "sq ft")
         (PUB / f"{u['slug']}.html").write_text(build(u, template))
         print("built", u["slug"])
     link_pages()

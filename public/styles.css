@@ -495,3 +495,5 @@ summary::after { top: 17px; }
 .row-link { text-decoration: none; display: inline-flex; flex-wrap: wrap; gap: 4px 10px; }
 .row-link:hover { color: var(--blue); }
 .row-more { color: var(--blue); font-weight: 600; text-decoration: underline; text-underline-offset: 4px; }
+.page-photo { position: relative; }
+.example-tag { position: absolute; left: 12px; top: 12px; padding: 5px 12px; border-radius: 999px; background: rgba(32,37,43,.82); color: #fff; font-size: .8125rem; font-weight: 600; }
