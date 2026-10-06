@@ -11,5 +11,11 @@
   "kv_namespaces": [{ "binding": "STATE", "id": "6e1ce10de2d24d22b821064882c0c702" }],
   "version_metadata": { "binding": "CF_VERSION_METADATA" },
   "triggers": { "crons": ["17 * * * *"] },
-  "observability": { "enabled": true }
+  "observability": { "enabled": true },
+  // Settings for preview builds of branches and pull requests (wrangler preview).
+  // Previews use their own KV namespace so they never touch the live site's state.
+  "previews": {
+    "kv_namespaces": [{ "binding": "STATE", "id": "c94161e0615b453ea99b40cba3b23d87" }],
+    "version_metadata": { "binding": "CF_VERSION_METADATA" }
+  }
 }
