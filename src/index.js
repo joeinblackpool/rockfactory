@@ -19,12 +19,16 @@ const withHeaders = (res, status = res.status) => {
   return new Response(res.body, { status, headers: h });
 };
 
+// Old page addresses that moved: 301 so links and search results keep working.
+const REDIRECTS = { "/storage-units-blackpool-spring-2027.html": "/storage-pods-blackpool.html" };
+
 async function rockFactory(request, env) {
   const url = new URL(request.url);
   if (url.hostname !== RF_DOMAIN || url.protocol === "http:") {
     return Response.redirect(`https://${RF_DOMAIN}${url.pathname}${url.search}`, 301);
   }
   if (request.method !== "GET" && request.method !== "HEAD") return new Response("Method not allowed", { status: 405, headers: { allow: "GET, HEAD" } });
+  if (REDIRECTS[url.pathname]) return Response.redirect(`https://${RF_DOMAIN}${REDIRECTS[url.pathname]}`, 301);
   if (url.pathname === "/index.html" || url.pathname === "/index") return Response.redirect(`https://${RF_DOMAIN}/`, 301);
   if (!env || !env.ASSETS) return new Response("Site files unavailable", { status: 503 });
   const path = url.pathname === "/" ? "/index.html" : url.pathname;

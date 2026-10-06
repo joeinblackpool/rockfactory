@@ -41,6 +41,7 @@ await expect(`${site}/index.html`, 301, `${site}/`);
 await expect(`${site}/nope`, 404);
 await expect(`${site}/a/b/c`, 404);
 await expect(`${site}/robots.txt`, 200);
+await expect(`${site}/storage-units-blackpool-spring-2027.html`, 301, `${site}/storage-pods-blackpool.html`);
 const home = await get(`${site}/`);
 if (!home.headers.get("strict-transport-security")) fail("no HSTS");
 console.log(`\n${locs.length} pages, ${refs.size} links and images checked, ${bad} problems`);
