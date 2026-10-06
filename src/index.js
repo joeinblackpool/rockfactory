@@ -34,4 +34,25 @@ async function rockFactory(request, env) {
   return withHeaders(nf, 404);
 }
 
-export default { fetch: (request, env) => rockFactory(request, env) };
+// IndexNow: tell Bing (and other IndexNow engines) about every sitemap URL once per deployed
+// version. The hourly cron compares this version's id with the last one submitted (KV STATE).
+const INDEXNOW_KEY = "ab2e9527cde882f3c42f6dacb1fe418b";
+async function submitIndexNow(env) {
+  const version = env.CF_VERSION_METADATA && env.CF_VERSION_METADATA.id;
+  if (!version || !env.STATE || !env.ASSETS) return;
+  if ((await env.STATE.get("indexnow-version")) === version) return;
+  const sm = await (await env.ASSETS.fetch(new Request(`https://${RF_DOMAIN}/sitemap.xml`))).text();
+  const urlList = [...sm.matchAll(/<loc>(.*?)<\/loc>/g)].map((m) => m[1]);
+  const res = await fetch("https://api.indexnow.org/indexnow", {
+    method: "POST",
+    headers: { "content-type": "application/json; charset=utf-8" },
+    body: JSON.stringify({ host: RF_DOMAIN, key: INDEXNOW_KEY, keyLocation: `https://${RF_DOMAIN}/${INDEXNOW_KEY}.txt`, urlList }),
+  });
+  console.log("IndexNow", res.status, urlList.length);
+  if (res.ok) await env.STATE.put("indexnow-version", version);
+}
+
+export default {
+  fetch: (request, env) => rockFactory(request, env),
+  scheduled: (event, env, ctx) => ctx.waitUntil(submitIndexNow(env)),
+};
