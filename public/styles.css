@@ -643,3 +643,61 @@ summary::after { top: 17px; }
 .community-note { margin-top: 24px; font-weight: 600; color: var(--ink); }
 .hero-proof { margin-top: 10px; font-weight: 700; }
 .hero-proof a { color: var(--blue); text-decoration: none; border-bottom: 2px solid currentColor; }
+
+/* ===== Seaside rock theme: pink and white ===== */
+:root {
+  --blue: #c2185b;        /* deep rock pink: buttons, links, headline accents (5.9:1 on white) */
+  --red: #9c0f45;         /* cherry: small labels (8.2:1) */
+  --rock: #f06292;        /* candy pink, decoration only */
+  --rock-soft: #ffe4ee;
+  --paper: #fff9fb;
+  --sky: #fff0f5;
+  --line: #f1dde5;
+  --stripes: repeating-linear-gradient(-45deg, var(--rock) 0 12px, #fff 12px 24px);
+}
+body { background: var(--paper); }
+/* candy-stripe edges top and bottom of every page */
+body::before { content: ""; display: block; height: 10px; background: var(--stripes); }
+.site-footer { position: relative; }
+body::after { content: ""; display: block; height: 10px; background: var(--stripes); }
+/* offer banner and red band become rock pink */
+.offer-banner { background: #c2185b; }
+.offer-date { color: #c2185b; }
+.cta-band { background: radial-gradient(120% 140% at 0% 0%, #e0457b 0%, #c2185b 50%, #9c0f45 100%); position: relative; }
+.cta-band::before, .location::before, .contrast-section::before, .community-section::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 10px; background: var(--stripes); }
+.location, .contrast-section, .community-section { position: relative; }
+.location { background: radial-gradient(120% 140% at 0% 0%, #e0457b 0%, #c2185b 45%, #8e0e3f 100%); }
+.location .button:hover { color: #c2185b; }
+.contrast-section h2 em { color: #ff9cc2; }
+.contrast-head span:last-child, .contrast .new { background: #8e0e3f; }
+.contrast li:hover .new { background: #c2185b; }
+.contrast-foot { border-top-color: var(--rock); }
+.contrast-foot span:first-child { color: #ff9cc2; }
+.contrast-foot span:last-child { background: #c2185b; }
+.community-section { background: linear-gradient(180deg, var(--rock-soft) 0%, var(--paper) 100%); }
+/* buttons */
+.button { box-shadow: 0 1px 2px rgba(194,24,91,.3); }
+.button:hover { box-shadow: 0 6px 16px rgba(194,24,91,.3); }
+/* cards: stick-of-rock stripe tops */
+.space-card, .idea-card, .who-card, .biz-card, .unit-card.highlight { border-top: 0; position: relative; overflow: hidden; }
+.space-card::before, .idea-card::before, .who-card::before, .biz-card::before, .unit-card.highlight::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 6px; background: var(--stripes); }
+.space-card { padding-top: 34px; }
+.opening-card::before { background: var(--stripes); height: 8px; }
+.page-visual { box-shadow: 0 2px 4px rgba(156,15,69,.08), 0 16px 40px rgba(156,15,69,.14); }
+.price-ticket { background: #3a0f22; }
+.compare-table tr.ours { background: var(--rock-soft); }
+.price-table thead th { background: var(--sky); }
+.tick-list.cross li::before { color: #9c0f45; }
+.offer-list { background: rgba(255,255,255,.14); }
+/* headings: a little stick of rock under section titles */
+.section-head h2::after, .guide-content > h2::after { content: ""; display: block; width: 72px; height: 10px; margin-top: 16px; border-radius: 999px; background: var(--stripes); }
+.cta-band h2::after, .location h2::after { display: none; }
+/* skip-link, focus */
+a:focus-visible, summary:focus-visible { outline-color: #c2185b; }
+.heritage-section { background: linear-gradient(180deg, #fff 0%, var(--rock-soft) 100%); }
+.contrast-section { background: #2b1020; }
+.contrast { border-color: #4a2236; }
+.contrast li { border-top-color: #4a2236; }
+.contrast-head span:first-child, .contrast .old, .contrast-foot span:first-child { background: #3a1a2a; color: #d9b8c6; }
+.contrast .old { text-decoration-color: rgba(255,156,194,.7); }
+.section-head h2::after, .guide-content > h2::after { width: 96px; height: 12px; box-shadow: inset 0 -2px 0 rgba(0,0,0,.06), 0 1px 2px rgba(156,15,69,.2); }
