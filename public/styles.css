@@ -712,3 +712,34 @@ h1 em, h2 em, .eyebrow, .text-link, .row-more, .card-bottom a, .price-table .pri
 .contrast-foot span:first-child { color: #ff8080; }
 .cta-band .eyebrow, .location .eyebrow { color: #fff; }
 .location .button:hover { color: var(--sign); }
+
+/* 2027 layer: smooth page-to-page transitions, mega footer, related reading. */
+@view-transition { navigation: auto; }
+@media (prefers-reduced-motion: reduce) { @view-transition { navigation: none; } }
+.site-header { view-transition-name: site-header; }
+.site-footer-mega { display: grid; grid-template-columns: minmax(220px, 1.1fr) 3fr; gap: 48px; align-items: start; padding-block: 56px 40px; }
+.site-footer-mega .footer-note { text-align: left; margin-top: 18px; }
+.footer-cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 28px 32px; }
+.footer-head { font-size: .8125rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; margin-bottom: 10px; }
+.footer-cols ul { list-style: none; margin: 0; padding: 0; }
+.footer-cols li a { display: inline-block; padding-block: 6px; font-size: .875rem; color: var(--muted); text-decoration: none; }
+.footer-cols li a:hover { color: var(--sign); text-decoration: underline; }
+.related { padding-top: 0; }
+.guide-content h3 { font-size: 1.35rem; margin-top: 30px; margin-bottom: 10px; letter-spacing: -.02em; }
+.guide-content .table-wrap { margin-bottom: 26px; overflow-x: auto; }
+.guide-content .callout { margin-block: 32px; }
+.guide-content .callout h3 { margin-top: 0; }
+.guide-content .idea-cards { margin-bottom: 12px; }
+@media (max-width: 800px) {
+  .site-footer-mega { grid-template-columns: 1fr; gap: 28px; padding-block: 40px 96px; }
+  .footer-cols { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .footer-cols li a { padding-block: 11px; }
+}
+@media (max-width: 900px) { .guide-grid { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 560px) {
+  .guide-content .price-table { font-size: .875rem; min-width: 100%; width: max-content; max-width: 640px; }
+  .guide-content .price-table thead { display: table-header-group; }
+  .guide-content .price-table tr { display: table-row; padding: 0; }
+  .guide-content .price-table th, .guide-content .price-table td { display: table-cell; padding: 10px 12px; border-bottom: 1px solid var(--line); color: inherit; white-space: normal; min-width: 96px; }
+  .guide-content .price-table tbody th { font-size: .9375rem; }
+}

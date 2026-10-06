@@ -27,11 +27,20 @@ for (const loc of locs) {
   const title = html.match(/<title>(.*?)<\/title>/)[1];
   if (titles.has(title)) fail(`duplicate title ${title}`); titles.add(title);
   if ((html.match(/<h1/g) || []).length !== 1) fail(`${loc} h1 count`);
+  if (title.replace(/&amp;/g, "&").length > 62) fail(`${loc} title too long (${title.length})`);
+  const desc = html.match(/<meta name="description" content="([^"]*)"/)?.[1] || "";
+  if (desc.length < 70 || desc.replace(/&amp;/g, "&").length > 165) fail(`${loc} description length ${desc.length}`);
+  if (/\u2014/.test(html.slice(html.indexOf("<main")))) fail(`${loc} em dash in copy`);
   const canon = html.match(/rel="canonical" href="(.*?)"/)?.[1];
   if (canon !== loc) fail(`${loc} canonical ${canon}`);
   for (const m of html.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/gs)) { try { JSON.parse(m[1]); } catch { fail(`${loc} JSON-LD`); } }
   for (const m of html.matchAll(/(?:href|src)="([^"#:]+?)(?:\?[^"]*)?"/g)) refs.add(new URL(m[1], loc).href);
   console.log(`${r.status} ${new URL(loc).pathname.padEnd(36)} ${title}`);
+}
+for (const f of (await import("node:fs")).readdirSync("public").filter((f) => f.endsWith(".html") && f !== "404.html")) {
+  const html = await readFile(join("public", f), "utf8");
+  const loc = f === "index.html" ? `${site}/` : `${site}/${f}`;
+  if (!/noindex/.test(html.match(/<meta name="robots"[^>]*>/)?.[0] || "") && !locs.includes(loc)) fail(`${f} missing from sitemap`);
 }
 for (const u of refs) { const r = await get(u); if (r.status !== 200) fail(`link ${u} -> ${r.status}`); }
 const expect = async (u, status, loc) => { const r = await get(u); if (r.status !== status || (loc && r.headers.get("location") !== loc)) fail(`${u} -> ${r.status} ${r.headers.get("location")}`); };

@@ -225,6 +225,12 @@ INDUSTRIES = [
   ]},
 ]
 
+# More industries written later live in content/industries.json (same shape as an entry above).
+_more = Path(__file__).resolve().parent / "content" / "industries.json"
+if _more.exists():
+    INDUSTRIES += [{**x, "h1": tuple(x["h1"]), "uses": [tuple(u) for u in x["uses"]], "faqs": [tuple(f) for f in x["faqs"]]}
+                   for x in json.loads(_more.read_text())]
+
 NOT_SUITABLE = [
  ("Melting or heating combustibles", "Candle making, soap making, wax melts, resin casting, plastic moulding and 3D print farms, or anything that melts waxes, plastics, resins or oils."),
  ("Flammable liquids and gases", "Fuel, solvent-based paints or chemicals in bulk, and gas cylinders, unless we have agreed otherwise in writing."),
