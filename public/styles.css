@@ -604,3 +604,10 @@ summary::after { top: 17px; }
   .contrast li span, .contrast-foot span { padding: 10px 16px; }
 }
 @media (prefers-reduced-motion: reduce) { .who-card { transition: none; } .who-card:hover { transform: none; } }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+.biz-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+.biz-card { padding: 26px; background: var(--white); border: 1px solid var(--line); border-top: 4px solid var(--blue); border-radius: var(--r); box-shadow: var(--shadow); }
+.biz-card h3 { font-size: 1.4rem; margin-bottom: 8px; }
+.biz-card p { font-size: .9375rem; color: var(--muted); margin-bottom: 10px; }
+.biz-card .eyebrow { margin-bottom: 10px; }
+.biz-extra { font-weight: 600; color: var(--ink) !important; }

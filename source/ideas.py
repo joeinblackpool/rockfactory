@@ -235,6 +235,7 @@ NOT_SUITABLE = [
 GENERAL_FAQS = [
  ("Can I run a business from a 150 sq ft unit?", "Yes. 150 sq ft is roughly the floor area of a single garage: enough for an online shop's stock and packing table, a sewing or repair bench, a small studio or a tradesperson's tools and materials. All business use needs our approval first, so tell us what you plan to do when you enquire."),
  ("What is included in the rent?", "Lighting, electricity and Wi-Fi are already connected in every unit. Electricity usage is charged separately at the supplier rate, with no markup. Tenants get 24-hour access, free CCTV app access covering the entrance and the area outside the units, and shared facilities: a tea and coffee room, toilets and water."),
+ ("Can I use the address on my Google Business Profile?", "Yes. Tenants can use The Old Rock Factory, Keswick Road, Blackpool FY1 5PB as their business address on Google, so customers can find you without you putting your home address online."),
  ("Is there three-phase power?", "No. Every unit has standard single-phase electricity, the same as a normal plug socket. Choose machines and tools that run on single-phase power."),
  ("What can't I do in a unit?", "We do not allow anything that melts or heats combustible materials such as waxes, plastics, resins or oils, flammable liquids or gases in bulk, or car storage. Low-risk materials such as wood, paper, card, fabric and dry goods are fine. Every business use needs our approval."),
  ("How much does a unit cost?", "Units are £65 a week for 150 sq ft, £69 for 160 sq ft, £78 for 180 sq ft and £130 for the 300 sq ft two-storey unit. Two offices are £70 a week each, available from January 2027. Prices are based on floor area and subject to availability."),
@@ -327,7 +328,7 @@ def industry_page(t, ind):
 <h2 id="why">Why our units suit {ind["short"].lower()}</h2><ul class="tick-list">{"".join(f"<li>{w}</li>" for w in ind["why"])}<li>Lighting, standard single-phase electricity and Wi-Fi are already connected in every unit (there is no three-phase power), with 24-hour access, free CCTV app access covering the entrance and the area outside the units, and shared facilities.</li></ul>
 <div class="callout"><h3>Not allowed in our units</h3><p>Nothing that melts or heats combustible materials such as waxes, plastics, resins or oils, no flammable liquids or gases in bulk, and no car storage. Low-risk materials such as wood, paper, card, fabric and dry goods are fine. Every business use needs our approval first.</p></div>
 <h2 id="checklist">Start-up checklist</h2><ol class="steps">{"".join(f"<li><span>{c}</span></li>" for c in CHECKLIST)}</ol>
-<h2 id="faq">Questions</h2><div class="faq-list">{faq_html(ind["faqs"] + GENERAL_FAQS[1:4])}</div>
+<h2 id="faq">Questions</h2><div class="faq-list">{faq_html(ind["faqs"] + GENERAL_FAQS[1:5])}</div>
 <p class="fine-print">Prices are subject to availability. Minimum rental term: one month, then one month’s notice to leave. Swap to a bigger or smaller unit any time, subject to availability. Electricity usage is charged separately at the supplier rate, with no markup. This guide is general information, not legal, insurance or tax advice.</p>
 <h2>More business ideas</h2><p><a class="text-link" href="/{HUB}.html">All business ideas</a> · {others}</p></div></div></section>
 </main>'''
