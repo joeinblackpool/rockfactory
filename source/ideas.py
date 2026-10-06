@@ -83,7 +83,7 @@ INDUSTRIES = [
    ("Embroidery and personalisation", [150, 180],
     "Commercial embroidery machines for logos on workwear, hats, team kit and gifts, plus stock of blank garments. Heat-press transfers can also work here; ask us about your machine.",
     "Machines on sturdy benches, blank stock on shelving by size, finished orders bagged and labelled by the door.",
-    "Tell us the power rating of any large machine when you enquire so we can check it suits the unit."),
+    "The units have standard single-phase electricity, not three-phase, so choose machines that run from a normal plug socket."),
    ("Leather goods workshop", [150, 160],
     "Cutting, hand-stitching and finishing wallets, belts, bags and dog collars from dry leather hides, with a cutting mat and hand tools.",
     "Large cutting surface, hides stored flat or rolled on a rack, a stitching bench with good lighting, a finishing and packing area.",
@@ -98,7 +98,7 @@ INDUSTRIES = [
     "Clients can visit the unit for fittings and collections."),
   ],
   "faqs": [
-   ("Can I run industrial sewing machines in a unit?", "Electricity is connected in every unit. Tell us what machines you plan to use and their power rating when you enquire, so we can confirm they suit the unit."),
+   ("Can I run industrial sewing machines in a unit?", "Most industrial sewing machines run on standard single-phase electricity, which is connected in every unit. There is no three-phase power, so check your machines run from a normal plug socket."),
    ("Can customers come to the unit for fittings?", "Yes. Tenants can receive clients at the unit, and there are shared toilets and a shared tea and coffee room on site."),
    ("Is a 150 sq ft unit big enough for a sewing business?", f"For one or two people, usually yes: room for machines, a cutting table and rails. For curtains or bulky work, look at the {unit_links([180, 300])}."),
   ]},
@@ -235,6 +235,7 @@ NOT_SUITABLE = [
 GENERAL_FAQS = [
  ("Can I run a business from a 150 sq ft unit?", "Yes. 150 sq ft is roughly the floor area of a single garage: enough for an online shop's stock and packing table, a sewing or repair bench, a small studio or a tradesperson's tools and materials. All business use needs our approval first, so tell us what you plan to do when you enquire."),
  ("What is included in the rent?", "Lighting, electricity and Wi-Fi are already connected in every unit. Electricity usage is charged separately at the supplier rate, with no markup. Tenants get 24-hour access, free CCTV app access covering the entrance and the area outside the units, and shared facilities: a tea and coffee room, toilets and water."),
+ ("Is there three-phase power?", "No. Every unit has standard single-phase electricity, the same as a normal plug socket. Choose machines and tools that run on single-phase power."),
  ("What can't I do in a unit?", "We do not allow anything that melts or heats combustible materials such as waxes, plastics, resins or oils, flammable liquids or gases in bulk, or car storage. Low-risk materials such as wood, paper, card, fabric and dry goods are fine. Every business use needs our approval."),
  ("How much does a unit cost?", "Units are £65 a week for 150 sq ft, £69 for 160 sq ft, £78 for 180 sq ft and £130 for the 300 sq ft two-storey unit. Two offices are £70 a week each, available from January 2027. Prices are based on floor area and subject to availability."),
  ("What do I need to move in?", "One month's rent in advance, a security deposit equal to one month's rent, valid government-issued photo ID and a signed Direct Debit mandate. The minimum term is one month."),
@@ -322,10 +323,10 @@ def industry_page(t, ind):
 <section class="wrap guide-hero"><p class="eyebrow">Business ideas · {ind["short"]}</p><h1>{ind["h1"][0]}<br><em>{ind["h1"][1]}</em></h1><p class="intro">{ind["lead"]}</p><p class="guide-meta">By The Rock Factory, Blackpool · Updated {UPDATED}</p><div class="actions"><a class="button" href="{WA_H}" target="_blank" rel="noopener noreferrer">Ask if your business suits a unit</a><a class="button secondary" href="/#prices">Units and prices</a></div></section>
 <section class="section wrap guide-body"><div class="guide-grid"><aside class="guide-toc" aria-label="On this page"><p class="eyebrow">On this page</p><ol>{toc}<li><a href="#why">Why our units suit</a></li><li><a href="#checklist">Start-up checklist</a></li><li><a href="#faq">Questions</a></li></ol></aside>
 <div class="guide-content"><h2>Ideas and how to set them up</h2>{uses}
-<h2 id="why">Why our units suit {ind["short"].lower()}</h2><ul class="tick-list">{"".join(f"<li>{w}</li>" for w in ind["why"])}<li>Lighting, electricity and Wi-Fi are already connected in every unit, with 24-hour access, free CCTV app access covering the entrance and the area outside the units, and shared facilities.</li></ul>
+<h2 id="why">Why our units suit {ind["short"].lower()}</h2><ul class="tick-list">{"".join(f"<li>{w}</li>" for w in ind["why"])}<li>Lighting, standard single-phase electricity and Wi-Fi are already connected in every unit (there is no three-phase power), with 24-hour access, free CCTV app access covering the entrance and the area outside the units, and shared facilities.</li></ul>
 <div class="callout"><h3>Not allowed in our units</h3><p>Nothing that melts or heats combustible materials such as waxes, plastics, resins or oils, no flammable liquids or gases in bulk, and no car storage. Low-risk materials such as wood, paper, card, fabric and dry goods are fine. Every business use needs our approval first.</p></div>
 <h2 id="checklist">Start-up checklist</h2><ol class="steps">{"".join(f"<li><span>{c}</span></li>" for c in CHECKLIST)}</ol>
-<h2 id="faq">Questions</h2><div class="faq-list">{faq_html(ind["faqs"] + GENERAL_FAQS[1:3])}</div>
+<h2 id="faq">Questions</h2><div class="faq-list">{faq_html(ind["faqs"] + GENERAL_FAQS[1:4])}</div>
 <p class="fine-print">Prices are subject to availability. Minimum rental term: one month. Electricity usage is charged separately at the supplier rate, with no markup. This guide is general information, not legal, insurance or tax advice.</p>
 <h2>More business ideas</h2><p><a class="text-link" href="/{HUB}.html">All business ideas</a> · {others}</p></div></div></section>
 </main>'''
