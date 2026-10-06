@@ -240,7 +240,8 @@ GENERAL_FAQS = [
  ("How much does a unit cost?", "Units are £65 a week for 150 sq ft, £69 for 160 sq ft, £78 for 180 sq ft and £130 for the 300 sq ft two-storey unit. Two offices are £70 a week each, available from January 2027. Prices are based on floor area and subject to availability."),
  ("What do I need to move in?", "One month's rent in advance, a security deposit equal to one month's rent, valid government-issued photo ID and a signed Direct Debit mandate. The minimum term is one month."),
  ("When can I move in?", "The units are available from 1 November, and pre-bookings get their first week free. More storage units open in spring 2027."),
- ("Can I rent more than one unit as I grow?", "Yes, subject to availability. Some units have interconnecting doors, so you can rent two or three adjoining units and move between them without going outside."),
+ ("Can I change unit if my business changes?", "Yes. You can swap to a bigger or smaller unit at any time, subject to availability. As you grow you can rent two or three adjoining units, and some have interconnecting doors so you can move between them without going outside."),
+ ("How much notice do I give to leave?", "One month. You rent month by month with a minimum term of one month, and there are no utility deposits."),
  ("Do I need business insurance?", "We recommend speaking to an insurance broker. Most small businesses consider public liability insurance and cover for their contents and stock. If you employ staff, employers' liability insurance is a legal requirement in the UK."),
  ("Do I have to pay business rates?", "Business rates can apply to commercial units. Ask us about the unit you are interested in, and check whether you qualify for Small Business Rate Relief on GOV.UK."),
 ]
@@ -327,7 +328,7 @@ def industry_page(t, ind):
 <div class="callout"><h3>Not allowed in our units</h3><p>Nothing that melts or heats combustible materials such as waxes, plastics, resins or oils, no flammable liquids or gases in bulk, and no car storage. Low-risk materials such as wood, paper, card, fabric and dry goods are fine. Every business use needs our approval first.</p></div>
 <h2 id="checklist">Start-up checklist</h2><ol class="steps">{"".join(f"<li><span>{c}</span></li>" for c in CHECKLIST)}</ol>
 <h2 id="faq">Questions</h2><div class="faq-list">{faq_html(ind["faqs"] + GENERAL_FAQS[1:4])}</div>
-<p class="fine-print">Prices are subject to availability. Minimum rental term: one month. Electricity usage is charged separately at the supplier rate, with no markup. This guide is general information, not legal, insurance or tax advice.</p>
+<p class="fine-print">Prices are subject to availability. Minimum rental term: one month, then one month’s notice to leave. Swap to a bigger or smaller unit any time, subject to availability. Electricity usage is charged separately at the supplier rate, with no markup. This guide is general information, not legal, insurance or tax advice.</p>
 <h2>More business ideas</h2><p><a class="text-link" href="/{HUB}.html">All business ideas</a> · {others}</p></div></div></section>
 </main>'''
     return page(t, slug, ind["title"], ind["desc"], crumb, main, [])
