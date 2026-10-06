@@ -1,0 +1,99 @@
+THE ROCK FACTORY — WEBSITE BUILDER HANDOVER
+Prepared 6 October 2026
+Intended domain: rockfactory.uk
+
+START HERE
+
+This package contains the latest complete static website, including its editable
+HTML and CSS, logo, photographs, WhatsApp icon and search-engine metadata.
+The current design uses cream, dark text and selective red and blue accents,
+with unframed property photos and an asymmetric historical photo gallery.
+
+1. Unzip this package.
+2. Open dist/index.html in a browser to view the homepage locally.
+3. Edit the HTML files and dist/styles.css directly.
+4. To publish on a conventional static host, upload the CONTENTS of dist to
+   the public web root. index.html should be at the domain root, with the
+   assets folder beside it. No framework, installation, database, JavaScript
+   runtime or build command is required.
+5. Configure the host to use 404.html as its error page where supported.
+
+The separate README.md contains content, design and maintenance notes.
+All files needed by the website are in dist. Keep their relative paths intact.
+
+PAGES INCLUDED
+
+- dist/index.html — homepage
+- dist/storage-units-blackpool.html — storage units
+- dist/offices-to-let-blackpool.html — offices
+- dist/workshops-studios-blackpool.html — workshops and artist studios
+- dist/404.html — page not found
+- dist/styles.css — shared responsive styling
+- dist/assets/ — supplied logo, web-ready photographs and WhatsApp SVG
+- dist/robots.txt and dist/sitemap.xml — search-engine support
+
+CONTACT AND KEY CONTENT
+
+Business: The Rock Factory, Keswick Road, off Park Road, Blackpool.
+WhatsApp messaging for viewings and rentals: 07366 991012.
+Link: https://wa.me/447366991012
+
+Every page has an OPENING SOON banner. Opening is currently described in the
+copy as expected in November; confirm the date with the owner before launch.
+
+Current advertised prices:
+- 150 sq ft ground-floor unit, roller shutter: £65 per week.
+- 160 sq ft ground-floor unit, secure personnel door: £69 per week.
+- 180 sq ft ground-floor unit, roller shutter: £78 per week.
+- 300 sq ft two-storey unit, roller shutter: £130 per week. Includes an
+  upstairs office or storage area with a window.
+- Two separate offices: £70 per week each.
+
+Prices are subject to availability. Minimum rental term: one month.
+Lighting, electricity and Wi-Fi are described as already connected in every
+unit. Electricity usage is charged separately at the supplier rate, with no
+markup. Tenants have free app access to CCTV covering the entrance and the
+area outside the units, plus 24-hour access and shared facilities.
+Business activities require prior approval. Car storage is not permitted.
+The full rental and move-in terms are included on the website.
+
+PHOTOGRAPHS AND DESIGN
+
+The homepage uses the supplied unit photograph with roller-shutter access.
+All four historical images appear in the homepage gallery. The storage and
+workshop pages use the supplied grey unit photos. The offices page retains
+"Offices being refurbished" and "Photos coming soon" until real office
+photographs are supplied. Do not present unit photographs as office photos.
+The spare staircase unit photograph is included in assets for future use.
+
+The latest approved direction replaces the earlier diagonal stripes and
+rotated panels with a cleaner editorial layout. Preserve the supplied logo,
+brand colours, readable text, actual property photos and enquiry banner.
+The WhatsApp SVG licence is included in assets/bootstrap-icons-LICENSE.txt.
+
+DOMAIN, SEO AND FINAL DETAILS
+
+Canonical URLs, social metadata, structured data, robots.txt and sitemap.xml
+are configured for https://rockfactory.uk/. Keep these consistent if any URLs
+or page filenames change. Set up HTTPS and the chosen host's domain/DNS
+configuration with the owner. Keep existing email DNS settings when making
+website DNS changes.
+
+The full postal address and postcode have not been supplied. Confirm these
+with the owner and update the visible address and LocalBusiness structured
+data together. An email address can be added if the owner wants one.
+The map link currently searches for Keswick Road, Blackpool.
+
+There is no connected enquiry form; enquiries use the working WhatsApp link.
+The package is independent of the original review hosting. No hosting account
+credentials or account-specific deployment configuration are included.
+
+Before launch, check the layout on mobile and desktop, page navigation,
+WhatsApp and map links, and confirm prices, availability and the opening date
+with the owner. Once public, the owner can submit the sitemap through their
+Google Search Console account.
+
+VERSION
+
+This package matches the latest published website source:
+95cafc4a9fdf7ed755afabb135eb30c2dcde9971
