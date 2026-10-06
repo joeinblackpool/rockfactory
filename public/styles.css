@@ -627,3 +627,7 @@ summary::after { top: 17px; }
 .compare-table th small { font-weight: 400; color: var(--muted); }
 @media (max-width: 560px) { .compare-table tr { display: table-row; } .compare-table thead { display: table-header-group; } .compare-table td, .compare-table th { padding: 10px 8px; font-size: .875rem; } }
 .compare-table { min-width: 640px; }
+.heritage-head { align-items: flex-end; }
+.heritage-copy { max-width: 460px; }
+.heritage-copy p { color: var(--ink); }
+@media (max-width: 800px) { .heritage-head { flex-direction: column; align-items: flex-start; gap: 18px; } }
