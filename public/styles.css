@@ -611,3 +611,11 @@ summary::after { top: 17px; }
 .biz-card p { font-size: .9375rem; color: var(--muted); margin-bottom: 10px; }
 .biz-card .eyebrow { margin-bottom: 10px; }
 .biz-extra { font-weight: 600; color: var(--ink) !important; }
+.tenant-offer { border-radius: var(--r); padding: 44px; }
+.tenant-offer .cta-inner { width: auto; }
+.offer-list { background: rgba(255,255,255,.12); border-radius: var(--r-sm); padding: 8px 20px; margin: 0; }
+.offer-list li { border-color: rgba(255,255,255,.25); color: #fff; font-weight: 600; }
+.offer-list li::before { color: #fff; }
+.guide-content .features { margin-bottom: 8px; }
+.feature .text-link { display: inline-block; margin-top: 6px; font-weight: 600; }
+@media (max-width: 640px) { .tenant-offer { padding: 28px 22px; } }
