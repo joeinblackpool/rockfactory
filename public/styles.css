@@ -701,3 +701,14 @@ a:focus-visible, summary:focus-visible { outline-color: #c2185b; }
 .contrast-head span:first-child, .contrast .old, .contrast-foot span:first-child { background: #3a1a2a; color: #d9b8c6; }
 .contrast .old { text-decoration-color: rgba(255,156,194,.7); }
 .section-head h2::after, .guide-content > h2::after { width: 96px; height: 12px; box-shadow: inset 0 -2px 0 rgba(0,0,0,.06), 0 1px 2px rgba(156,15,69,.2); }
+
+/* Text accents use the red of the ROCK FACTORY sign lettering (#d40000, 5.5:1 on white). Pink stays for stripes, buttons and bands. */
+:root { --sign: #d40000; }
+h1 em, h2 em, .eyebrow, .text-link, .row-more, .card-bottom a, .price-table .price, .unit-rate, .compare-table tr.ours td,
+.facility .stat, .hero-proof a, .offer-date, .idea-facts dt, .card-number, .requirements span, .office-placeholder p,
+.guide-toc a:hover, .steps strong a:hover, .unit-top h3 a:hover, .price-table th a:hover, .biz-card h3 a:hover, .row-link:hover { color: var(--sign); }
+.tick-list li::before, summary::after { color: var(--sign); }
+.contrast-section h2 em { color: var(--sign); filter: brightness(1.25); }
+.contrast-foot span:first-child { color: #ff8080; }
+.cta-band .eyebrow, .location .eyebrow { color: #fff; }
+.location .button:hover { color: var(--sign); }
