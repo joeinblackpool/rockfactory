@@ -32,7 +32,7 @@ UNITS = [
      "suits": "It suits bulkier storage, business stock, trades and equipment, or a workshop (business use needs prior approval).",
      "features": [("180 sq ft ground floor", "A single ground-floor space. The unit is windowless."),
                   ("Roller-shutter access", "Load and unload easily through the roller shutter.")],
-     "photos": [("unit-180-interior", 1400, 1050, "Inside the 180 sq ft unit: grey painted floor, white walls, overhead light and dark grey doors on both sides"),
+     "photos": [("unit-roller-shutter", 1400, 1050, "Inside the 180 sq ft unit: grey floor, white walls, a grey door and the roller shutter raised onto the lane outside"),
                 ("unit-180-exterior-shutter", 1357, 1159, "Outside the 180 sq ft unit: galvanised roller shutter in a white rendered wall")], "examples": [("unit-roller-shutter", 1400, 1050, "Example Rock Factory unit with grey floor, white walls, a personnel door and the roller shutter raised"), ("unit-interconnecting-doors", 1400, 1050, "Example Rock Factory unit interior with doors on both sides")]},
     {"slug": "two-storey-unit-blackpool", "size": 300, "price": 130, "title_h1": "two-storey unit",
      "access": "Roller-shutter access", "storeys": "Two storeys", "short": "Two storeys · roller shutter · upstairs office with window",
