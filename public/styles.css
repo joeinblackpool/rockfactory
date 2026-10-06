@@ -619,3 +619,11 @@ summary::after { top: 17px; }
 .guide-content .features { margin-bottom: 8px; }
 .feature .text-link { display: inline-block; margin-top: 6px; font-weight: 600; }
 @media (max-width: 640px) { .tenant-offer { padding: 28px 22px; } }
+.compare-table td { text-align: right; font-weight: 600; white-space: nowrap; }
+.compare-table thead th:not(:first-child) { text-align: right; }
+.compare-table tr.ours { background: #eef5ff; }
+.compare-table tr.ours td { color: var(--blue); font-size: 1.15rem; font-weight: 800; }
+.compare-table td.na { color: var(--muted); font-weight: 400; }
+.compare-table th small { font-weight: 400; color: var(--muted); }
+@media (max-width: 560px) { .compare-table tr { display: table-row; } .compare-table thead { display: table-header-group; } .compare-table td, .compare-table th { padding: 10px 8px; font-size: .875rem; } }
+.compare-table { min-width: 640px; }

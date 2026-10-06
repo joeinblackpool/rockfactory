@@ -26,6 +26,20 @@ SIZES = [
     ("Room", 100, 34, "Roughly the contents of a two to three-bedroom home."),
 ]
 
+# Named price comparison. Monthly prices as published by each provider; CHECKED is the date the owner confirmed
+# them on the providers' own websites (keep dated screenshots). Like-for-like note per provider.
+SHOW_COMPARISON = False
+CHECKED = "6 October 2026"
+COMPETITORS = [
+    # name, url, floor/notes, {sq ft: monthly £}
+    ("21st Century Self Store", "https://www.21stcenturyselfstore.co.uk/", "First floor (prices from 1 May 2026)",
+     {35: 54.63, 50: 64.40, 75: 79.35, 100: 99.48}),
+    ("Greens Self Storage", "https://www.greensselfstorage.co.uk/availability-pricing-for-greens-self-storage/", "Indoor units",
+     {25: 81.12, 50: 118.56, 75: 156.00, 100: 205.92}),
+    ("U Store Blackpool", "https://www.comparethestorage.com/self-storage-finder.php?store=U+Store+-+Blackpool", "Listed price",
+     {75: 121.33}),
+]
+
 USES = [
     ("Household storage", "Furniture, boxes and belongings while you move house, renovate or declutter."),
     ("Students and seasonal items", "Belongings over the summer, or bikes, garden furniture, decorations and sports kit out of season."),
@@ -75,6 +89,19 @@ def build():
              '<div class="table-wrap"><table class="price-table"><thead><tr><th scope="col">Size</th><th scope="col">What fits</th><th scope="col">Guide price</th></tr></thead>'
              f'<tbody>{rows}</tbody></table></div>'
              '<p class="fine-print">Guide prices for spring 2027, to be confirmed before opening. Sizes and what fits are approximate; how much fits depends on how you pack. First floor, reached by stairs.</p></section>')
+    comparison = ""
+    if SHOW_COMPARISON:
+        sizes = [25, 35, 50, 75, 100]
+        ours = {sz: round(w * 52 / 12) for _, sz, w, _ in SIZES}
+        head = "".join(f"<th scope=\"col\">{sz} sq ft</th>" for sz in sizes)
+        body = '<tr class="ours"><th scope="row">The Rock Factory<br><small>First floor, by stairs · guide prices</small></th>' + "".join(f"<td>£{ours[sz]}</td>" for sz in sizes) + "</tr>"
+        for name, link, note, prices in COMPETITORS:
+            body += (f'<tr><th scope="row"><a href="{link}" target="_blank" rel="noopener nofollow">{name}</a><br><small>{note}</small></th>'
+                     + "".join(f"<td>£{prices[sz]:.0f}</td>" if sz in prices else '<td class="na">–</td>' for sz in sizes) + "</tr>")
+        comparison = (f'<section class="section wrap" id="compare" aria-labelledby="compare-title"><div class="section-head"><h2 id="compare-title">How we compare<br><em>in Blackpool</em></h2>'
+                      '<p>Monthly prices for similar-sized storage in Blackpool, so you can see where we sit.</p></div>'
+                      f'<div class="table-wrap"><table class="price-table compare-table"><thead><tr><th scope="col">Monthly price</th>{head}</tr></thead><tbody>{body}</tbody></table></div>'
+                      f'<p class="fine-print">Competitor prices are as published on each provider’s website, checked on {CHECKED}, rounded to the nearest pound. They can change at any time and may not include extras such as insurance, padlocks or offers, so check with the provider. Ours are guide prices for spring 2027, about 4.33 weeks to a month, to be confirmed before opening. Our pods and rooms are on the first floor, reached by stairs. – means no comparable size listed.</p></section>')
     uses = "".join(f'<div class="feature"><h3>{h}</h3><p>{p}</p></div>' for h, p in USES)
     faqs = "".join(f"<details><summary>{q}</summary><p>{a}</p></details>" for q, a in FAQS)
     main = f'''<main id="main">
@@ -82,7 +109,7 @@ def build():
 <section class="page-hero wrap"><div class="page-hero-copy"><p class="eyebrow">First floor · From £10 a week · Opening spring 2027</p><h1>Storage pods<br><em>and rooms</em></h1><p class="intro">Small to medium storage pods and rooms are coming to the first floor of The Old Rock Factory, Keswick Road, Blackpool. Ideal when you need somewhere safe for boxes, furniture or stock, but not a whole unit.</p><div class="actions"><a class="button" href="{WA_H}" target="_blank" rel="noopener noreferrer">Register interest on WhatsApp</a><a class="button secondary" href="#prices">Sizes and prices</a></div></div>
 <div class="page-visual"><figure class="page-photo"><img srcset="/assets/unit-300-exterior-shutter-800.webp 800w, /assets/unit-300-exterior-shutter.webp 1030w" sizes="(max-width: 800px) 100vw, 50vw" src="/assets/unit-300-exterior-shutter.webp" width="1030" height="1526" alt="The Rock Factory sign on the building at The Old Rock Factory, Keswick Road, Blackpool" fetchpriority="high" decoding="async"><figcaption class="example-tag">The Old Rock Factory, Keswick Road</figcaption></figure><aside class="price-ticket"><span class="panel-label">First-floor storage pods and rooms</span><strong>Spring 2027</strong><span>pods from £10 a week, rooms from £22</span><small>Register your interest on WhatsApp: 07366 991012</small></aside></div></section>
 <div class="compact-notice"><div class="wrap"><p><strong>Opening spring 2027.</strong> Pods from £10 a week and rooms from £22 a week on the first floor, reached by stairs. Register your interest to hear first when bookings open.</p></div></div>
-{chart}<section class="section wrap"><div class="section-head"><h2>What people<br><em>store in a pod</em></h2><p>A storage pod or room is a simple, secure space for things you want to keep but do not want at home or in your shop.</p></div><div class="features">{uses}</div></section>
+{chart}{comparison}<section class="section wrap"><div class="section-head"><h2>What people<br><em>store in a pod</em></h2><p>A storage pod or room is a simple, secure space for things you want to keep but do not want at home or in your shop.</p></div><div class="features">{uses}</div></section>
 <section class="section wrap"><div class="office-details"><div><p class="eyebrow">Pod, room or unit?</p><h2>Choose the right<br><em>size of space</em></h2><p><strong>Storage pods</strong> suit boxes, a few pieces of furniture and smaller items.</p><p><strong>Storage rooms</strong> give you more room for the contents of a flat, larger furniture or business stock.</p><p><strong>Ground-floor units</strong> from 150 sq ft suit bulky or heavy items, trades and small businesses, with roller-shutter or security-door access. They are available from 1 November.</p></div>
 <div class="office-feature-list"><div class="office-feature"><h3>First floor, by stairs</h3><p>The pods and rooms are on the first floor of The Old Rock Factory, reached by stairs. If you need to move heavy or bulky items, a ground-floor unit may suit you better.</p></div><div class="office-feature"><h3>Central Blackpool</h3><p>Keswick Road, off Park Road, Blackpool FY1 5PB.</p></div><div class="office-feature"><h3>Hear first</h3><p>Tell us roughly how much you need to store and we will message you when sizes and prices are confirmed.</p></div></div></div></section>
 <section class="section rental-section" id="sooner"><div class="wrap split"><div class="opening-card"><p class="eyebrow">Need space sooner?</p><h3>Ground-floor units<br>from 1 November</h3><p>From £65 a week for 150 sq ft. Monthly rent with one month’s notice, swap units any time, no utility deposits, and your <strong>first week free</strong> if you pre-book.</p><a class="button" href="/storage-units-blackpool.html">See units and prices</a></div>
