@@ -62,7 +62,7 @@ def build():
             {"@type": "ListItem", "position": i + 1, "item": {"@type": "LocalBusiness", "name": b[0], "description": b[1],
              **({"url": b[3]} if b[3] else {}), "address": biz["address"]}} for i, b in enumerate(BUSINESSES)]})
     s = s[:m.start(1)] + json.dumps({"@context": "https://schema.org", "@graph": graph}, ensure_ascii=False) + s[m.end(1):]
-    s = re.sub(r'<nav class="nav".*?</nav>', lambda n: n.group(0).replace(' aria-current="page"', ''), s, count=1, flags=re.S)
+    s = re.sub(r'<nav class="nav".*?</nav>', lambda n: n.group(0).replace(' aria-current="page"', '').replace('<a href="/our-businesses.html">', '<a href="/our-businesses.html" aria-current="page">'), s, count=1, flags=re.S)
     wa_join = WA_JOIN.replace("&", "&amp;"); wa_hire = WA_HIRE.replace("&", "&amp;")
     listings = (f'<div class="biz-grid">{"".join(card(b) for b in BUSINESSES)}</div>' if BUSINESSES else
                 '<div class="callout"><h3>Our first businesses are moving in</h3><p>The Rock Factory opens on 1 November. As tenants move in, their businesses will appear here so you can find and support them.</p></div>')
@@ -118,7 +118,7 @@ def icework_page():
                  {"@type": "ListItem", "position": 2, "name": "Our businesses", "item": f"{SITE}/{SLUG}.html"},
                  {"@type": "ListItem", "position": 3, "name": "IceWork", "item": url}]}]
     s = s[:m.start(1)] + json.dumps({"@context": "https://schema.org", "@graph": graph}, ensure_ascii=False) + s[m.end(1):]
-    s = re.sub(r'<nav class="nav".*?</nav>', lambda n: n.group(0).replace(' aria-current="page"', ''), s, count=1, flags=re.S)
+    s = re.sub(r'<nav class="nav".*?</nav>', lambda n: n.group(0).replace(' aria-current="page"', '').replace('<a href="/our-businesses.html">', '<a href="/our-businesses.html" aria-current="page">'), s, count=1, flags=re.S)
     mail = "mailto:iceworks@f1rst.co.uk?subject=" + urllib.parse.quote("Rock Factory tenant website (£200)")
     L = lambda path, text: f'<a class="text-link" href="https://icework.co.uk{path}" target="_blank" rel="noopener">{text}</a>'
     main = f'''<main id="main">
