@@ -143,7 +143,7 @@ def icework_page():
 <details><summary>Can IceWork set up my Google Business Profile?</summary><p>Yes. It is part of the Get on Google package, which is free in 2026. Tenants can use the Rock Factory address on their profile.</p></details>
 <details><summary>How do I contact IceWork?</summary><p>By email at iceworks@f1rst.co.uk. IceWork prefers email so it can focus on building websites, and aims to reply within 24 hours.</p></details></div>
 <p class="fine-print">IceWork is an independent business based at The Rock Factory. Prices and the free Get on Google package are IceWork’s; the £200 tenant price applies to Rock Factory tenants. See {L("/pricing", "icework.co.uk/pricing")} for full details.</p>
-<h2>More from The Rock Factory</h2><p><a class="text-link" href="/{SLUG}.html">All our businesses</a> · <a class="text-link" href="/#prices">Units and prices</a> · <a class="text-link" href="/small-business-unit-ideas-blackpool.html">30 business ideas for a small unit</a></p>
+<h2>More from The Rock Factory</h2><p><a class="text-link" href="/{SLUG}.html">All our businesses</a> · <a class="text-link" href="/#prices">Units and prices</a> · <a class="text-link" href="/small-business-unit-ideas-blackpool.html">66 business ideas for a small unit</a></p>
 </div></section>
 </main>'''
     s = s[:s.find("<main")] + main + s[s.find("</main>") + 7:]

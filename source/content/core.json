@@ -1,0 +1,724 @@
+{
+ "hub": null,
+ "pages": [
+  {
+   "slug": "about",
+   "type": "AboutPage",
+   "title": "About Us: Business Units in Blackpool | The Rock Factory",
+   "desc": "About The Rock Factory, Blackpool: ground-floor units, small offices and storage pods for local businesses. Move in, plug in and start trading.",
+   "crumb": "About us",
+   "eyebrow": "About The Rock Factory",
+   "h1": [
+    "About The Rock Factory,",
+    "a home for Blackpool small businesses"
+   ],
+   "lead": "The Rock Factory is a building on Keswick Road, just off Park Road in Blackpool, split into small units, offices and storage spaces that you can rent month by month. It is built for people who need a proper place to work or store things without signing their life away.",
+   "sections": [
+    {
+     "id": "what-it-is",
+     "h2": "What The Rock Factory is",
+     "html": "<p>We let ground-floor units, small offices and, from spring 2027, first-floor storage pods and rooms. Everything is in one building at The Old Rock Factory, Keswick Road (off Park Road), Blackpool FY1 5PB.</p><p>The ground-floor units range from 150 sq ft to a 300 sq ft two-storey unit. Some open with a roller shutter, one has a security door you walk through, and the biggest has an upstairs office or storage area with a window. Rent is based on floor area, so you pay for the space you actually use.</p><p>You can see every unit side by side on our <a class=\"text-link\" href=\"/compare-units.html\">unit comparison page</a>, or start with the <a class=\"text-link\" href=\"/storage-units-blackpool.html\">storage and business units overview</a>.</p>"
+    },
+    {
+     "id": "the-idea",
+     "h2": "Move in. Plug in. Start trading.",
+     "html": "<p>That line sums up the whole idea. A lot of small businesses lose weeks before they can work: waiting for an electrician, arguing about a broadband install, finding a deposit for the utilities. We have tried to take all of that away.</p><ul class=\"tick-list\"><li>Lighting, electricity and Wi-Fi are already connected in every unit.</li><li>No utility deposits. You pay for the electricity you use at the supplier rate, with no markup.</li><li>Rolling monthly terms. The minimum is one month, then one month's notice when you want to leave.</li><li>Need more room, or less? Swap units any time, subject to availability.</li></ul><p>The power is standard single-phase, the same type you have at home. That suits most small businesses, from laptops and sewing machines to hand tools and repair benches. If your work needs three-phase power, our units are not the right fit, and we would rather tell you now.</p>"
+    },
+    {
+     "id": "who-its-for",
+     "h2": "Who it's for",
+     "html": "<p>We had a few kinds of people in mind when we set the building up, and we expect to be surprised by the rest.</p><ul class=\"tick-list\"><li>Online sellers who have outgrown the spare room. See our <a class=\"text-link\" href=\"/unit-ideas-online-sellers.html\">ideas for online sellers</a>.</li><li>Makers, artists and people who repair things. Our <a class=\"text-link\" href=\"/workshops-studios-blackpool.html\">workshops and studios page</a> explains what works well.</li><li>Tradespeople who need somewhere dry and secure for tools and materials. Try the <a class=\"text-link\" href=\"/unit-ideas-trades-storage.html\">guide for trades storage</a>.</li><li>Freelancers and small teams who want a door they can close, in one of our <a class=\"text-link\" href=\"/offices-to-let-blackpool.html\">small offices to let</a>.</li><li>Households who need space while moving or decluttering, in the <a class=\"text-link\" href=\"/storage-pods-blackpool.html\">first-floor storage pods</a> opening in spring 2027.</li></ul><p>Every business use needs our approval first. We keep the building low-risk, so a few things are not allowed: car storage, cooking or hot food, melting or heating combustible materials (candle or soap making, resin casting, 3D print farms), and storing flammable liquids or gases in bulk unless we have agreed it in writing. Work with wood, paper, card, fabric and dry goods is fine.</p>"
+    },
+    {
+     "id": "community",
+     "h2": "The people in the building",
+     "html": "<p>A building full of small businesses is better than a row of locked doors. You get neighbours who understand what it is like to run something on your own, and sometimes they can help.</p><p>Two businesses are already here. IceWork does web design and SEO, and offers tenants a website for £200 instead of its usual £350: see <a class=\"text-link\" href=\"/icework-web-design-blackpool.html\">IceWork web design in Blackpool</a>. Blackpool Building Services is also based in the building. You can read more about both on <a class=\"text-link\" href=\"/our-businesses.html\">our businesses page</a>.</p><p>Shared facilities help the place feel like a workplace rather than a storage yard. There is a tea and coffee room, toilets and water. You can receive post and meet clients at your unit, and you can use the Rock Factory address on your Google Business Profile, so customers can find you on the map.</p>"
+    },
+    {
+     "id": "ready-and-coming",
+     "h2": "What's ready and what's coming",
+     "html": "<p>We are opening in stages so that each part is properly finished before anyone moves in.</p><div class=\"table-wrap\"><table class=\"price-table\"><thead><tr><th scope=\"col\">Space</th><th scope=\"col\">Available from</th><th scope=\"col\">Price</th></tr></thead><tbody><tr><th scope=\"row\">Ground-floor units (150, 160, 180 and 300 sq ft)</th><td>1 November 2026</td><td>£65 to £130 a week</td></tr><tr><th scope=\"row\">Two small offices</th><td>January 2027 (being refurbished)</td><td>£70 a week each</td></tr><tr><th scope=\"row\">First-floor storage pods and rooms</th><td>Spring 2027</td><td>Guide prices from £10 a week</td></tr></tbody></table></div><p>If you pre-book a unit, your first week is free. Pod and room prices are guide prices for now and will be confirmed before they open.</p>"
+    },
+    {
+     "id": "how-renting-works",
+     "h2": "How renting from us works",
+     "html": "<p>We have kept the process short, because most of our tenants would rather be working than filling in forms.</p><ol class=\"steps\"><li><strong>Have a look</strong><span>Book a viewing, see the unit and ask whatever you like.</span></li><li><strong>Tell us your plans</strong><span>If you are running a business from the unit, explain what you do so we can approve it.</span></li><li><strong>Sign up</strong><span>Pay one month's rent in advance and a deposit equal to one month's rent, show valid photo ID and sign a Direct Debit mandate.</span></li><li><strong>Move in</strong><span>The lights, power and Wi-Fi are already on. Bring your stock, your tools or your desk and get going.</span></li></ol><p>The full detail is in our <a class=\"text-link\" href=\"/rental-terms.html\">rental terms, written in plain English</a>.</p>"
+    },
+    {
+     "id": "security-and-access",
+     "h2": "Access and peace of mind",
+     "html": "<p>You can get to your unit 24 hours a day. That matters if you sell online and ship early, work shifts, or just have your best ideas at midnight.</p><p>CCTV covers the entrance and the area outside the units, and tenants get free access to it through an app, so you can check on things from your phone. We recommend you also arrange your own insurance for what you keep in the unit, because it is your stock and your kit.</p>"
+    },
+    {
+     "id": "honest",
+     "h2": "What we will and won't tell you",
+     "html": "<p>We would rather lose an enquiry than win one on a false promise. So if you ask about something we have not got, such as three-phase power, we will say so. If we do not know the answer to a question, we will find out rather than guess.</p><p>The same goes for prices. The rent you see for the ground-floor units is the rent you pay, subject to availability, with electricity on top at the supplier rate. The pod and room prices are clearly marked as guide prices until they are confirmed.</p>"
+    },
+    {
+     "id": "the-name",
+     "h2": "Why the name?",
+     "html": "<p>The building is called The Old Rock Factory, and we kept the name. The rock-making has gone. Today the building is home to makers and small businesses instead. If you are curious about the sweet itself, we wrote a short <a class=\"text-link\" href=\"/blackpool-rock-history.html\">history of Blackpool rock</a>.</p><p>If you would like to see a unit, <a class=\"text-link\" href=\"{{WA}}\" target=\"_blank\" rel=\"noopener noreferrer\">message us on WhatsApp</a> and we will arrange a time. Directions and what to bring are on our <a class=\"text-link\" href=\"/find-us.html\">find us page</a>.</p>"
+    }
+   ],
+   "faqs": [
+    [
+     "Is The Rock Factory a self storage company?",
+     "Partly. We let ground-floor units that work for storage or as small workshops and business bases, plus small offices. Household-sized storage pods and rooms open on the first floor in spring 2027."
+    ],
+    [
+     "Do I need to be a business to rent a unit?",
+     "No. Units can be used for storage. If you plan to run a business from one, tell us what you do, because every business use needs our approval first."
+    ],
+    [
+     "When can I move in?",
+     "Ground-floor units are available from 1 November 2026. The offices follow in January 2027 and the storage pods in spring 2027. Pre-bookings for units get the first week free."
+    ],
+    [
+     "Are there other businesses in the building?",
+     "Yes. IceWork (web design and SEO) and Blackpool Building Services are both tenants. See <a class=\"text-link\" href=\"/our-businesses.html\">our businesses</a>."
+    ]
+   ],
+   "sources": [],
+   "related": [
+    "compare-units",
+    "find-us",
+    "rental-terms",
+    "our-businesses",
+    "faqs"
+   ]
+  },
+  {
+   "slug": "find-us",
+   "type": "ContactPage",
+   "title": "Find Us and Book a Viewing in Blackpool | The Rock Factory",
+   "desc": "Find The Rock Factory on Keswick Road, off Park Road, Blackpool FY1 5PB. Book a unit viewing on WhatsApp and see what to bring with you.",
+   "crumb": "Find us",
+   "eyebrow": "Contact and viewings",
+   "h1": [
+    "Find us and",
+    "book a viewing"
+   ],
+   "lead": "We are at The Old Rock Factory on Keswick Road, just off Park Road in Blackpool. The easiest way to reach us is WhatsApp, and that is also how you book a viewing.",
+   "sections": [
+    {
+     "id": "address",
+     "h2": "Our address",
+     "html": "<p><strong>The Rock Factory</strong><br>The Old Rock Factory<br>Keswick Road (off Park Road)<br>Blackpool<br>FY1 5PB</p><p>Open the address in <a class=\"text-link\" href=\"https://www.google.com/maps/search/?api=1&amp;query=The+Old+Rock+Factory,+Keswick+Road,+Blackpool+FY1+5PB\" target=\"_blank\" rel=\"noopener noreferrer\">Google Maps</a> to plan your route. Put the full address or the postcode into your sat nav or phone, and look for Keswick Road off Park Road.</p><p>This is also the address you can use for post once you are a tenant, and the address you can add to your Google Business Profile.</p><p>When you arrive for a viewing, message us to say you are here and we will come and meet you.</p>"
+    },
+    {
+     "id": "contact",
+     "h2": "How to contact us",
+     "html": "<p>We deal with enquiries and viewings on WhatsApp: <strong>07366 991012</strong>. It suits a small business like ours, because we can send you photos, answer quickly between jobs and keep a record of what we agreed.</p><ul class=\"tick-list\"><li>Tell us which unit or size you are interested in.</li><li>Say roughly what you want to use it for, especially if it is for a business.</li><li>Let us know when you would like to move in.</li><li>Ask anything. If we do not know the answer straight away, we will find out.</li></ul><p>We do not have an enquiry form, a public email address or a phone line for calls, so WhatsApp really is the best route.</p><p>If you are comparing a few options, say so. We would rather help you pick the right unit, even if that means a smaller one, than have you move twice. A quick photo or list of what you plan to bring helps us suggest a size before you even visit.</p>"
+    },
+    {
+     "id": "viewings",
+     "h2": "How viewings work",
+     "html": "<ol class=\"steps\"><li><strong>Message us</strong><span><a class=\"text-link\" href=\"{{WA}}\" target=\"_blank\" rel=\"noopener noreferrer\">Send a WhatsApp message</a> with the unit you would like to see and a few times that suit you.</span></li><li><strong>Agree a time</strong><span>We will confirm a time and let you know where to meet us when you arrive.</span></li><li><strong>Look around</strong><span>We show you the unit, the shared tea and coffee room and toilets, and how access works. Bring a tape measure if you like.</span></li><li><strong>Ask your questions</strong><span>Talk us through what you plan to do in the unit so we can confirm it is allowed before you commit.</span></li><li><strong>Decide in your own time</strong><span>There is no pressure on the day. If you want to go ahead, we will explain the paperwork and send you the agreement to read.</span></li></ol><p>Viewings are by appointment, so please do not turn up unannounced: we may not be on site.</p>"
+    },
+    {
+     "id": "what-to-bring",
+     "h2": "What to bring",
+     "html": "<p>For a viewing you only need yourself. If you think you may want to sign up soon after, it helps to have these ready:</p><ul class=\"tick-list\"><li>Valid government-issued photo ID, such as a passport or photocard driving licence.</li><li>Your bank details, so you can sign a Direct Debit mandate.</li><li>Enough for one month's rent in advance plus a security deposit equal to one month's rent.</li><li>A short description of your business, if you plan to work from the unit.</li><li>Rough measurements of anything large you want to bring in, such as furniture, benches or racking.</li></ul><p>Our <a class=\"text-link\" href=\"/storage-prices-explained.html\">storage prices explained guide</a> works out the move-in cost for each unit, so you know the figure before you arrive.</p>"
+    },
+    {
+     "id": "after-viewing",
+     "h2": "After the viewing: getting started",
+     "html": "<p>If you like what you see, the next steps are simple. We send you the agreement to read. Once you are happy, you pay one month's rent in advance and a security deposit equal to one month's rent, show your photo ID and sign the Direct Debit mandate.</p><p>Because lighting, electricity and Wi-Fi are already connected, there is nothing to arrange with utility companies. You can bring your things in and start working on day one. Units are available from 1 November 2026, and pre-bookings get the first week free.</p>"
+    },
+    {
+     "id": "questions-to-ask",
+     "h2": "Good questions to ask on a viewing",
+     "html": "<p>A viewing is your chance to check the unit really fits. People often forget to ask about:</p><ul class=\"tick-list\"><li>Which units have interconnecting doors, in case you need more space later.</li><li>Whether business rates may apply to the unit you are looking at.</li><li>How electricity usage is measured and billed.</li><li>Whether your planned activity is allowed, if you work with anything that heats, melts or burns.</li><li>How the free CCTV app works and what it covers.</li></ul><p>Write your questions down before you come. It is easy to forget them once you are standing in an empty unit picturing your shelves.</p>"
+    },
+    {
+     "id": "before-you-visit",
+     "h2": "Before you visit",
+     "html": "<p>It is worth having a look at the <a class=\"text-link\" href=\"/compare-units.html\">side-by-side unit comparison</a> first. Our units are all on the ground floor and none of them has a window, except the upstairs area of the two-storey unit. Two open with a roller shutter and one with a security door, so think about how you will get things in and out.</p><p>Read the <a class=\"text-link\" href=\"/rental-terms.html\">plain-English rental terms</a> too. They cover notice, deposits and what you can and cannot do in a unit, so there are no surprises on the day.</p>"
+    },
+    {
+     "id": "business-address",
+     "h2": "Using our address for your business",
+     "html": "<p>Once you are a tenant, you can receive post and clients at your unit, and you may use the Rock Factory address on your Google Business Profile. That gives customers a real place to find you, without putting your home address online.</p><p>Our <a class=\"text-link\" href=\"/google-business-profile-address.html\">guide to using a business address on Google</a> explains how to set that up, and our <a class=\"text-link\" href=\"/move-business-out-of-home.html\">guide to moving your business out of home</a> covers the bigger picture.</p>"
+    },
+    {
+     "id": "opening",
+     "h2": "When you can visit and when you can move in",
+     "html": "<p>Ground-floor units are available from 1 November 2026, and we are showing them now by appointment. Pre-bookings get the first week free.</p><p>The two offices are being refurbished and will be ready from January 2027. The first-floor storage pods and rooms open in spring 2027. If you are interested in either, message us and we will tell you when they can be viewed.</p><p>Once you are a tenant, you have access to your unit 24 hours a day.</p>"
+    }
+   ],
+   "faqs": [
+    [
+     "Can I just turn up and look around?",
+     "Please message us first. Viewings are by appointment so that someone is there to show you round."
+    ],
+    [
+     "Is there parking?",
+     "Ask us on WhatsApp before your visit and we will tell you what is available on the day."
+    ],
+    [
+     "Can I phone instead of messaging?",
+     "We handle enquiries on WhatsApp at 07366 991012. You can send a voice note if that is easier than typing."
+    ],
+    [
+     "Can customers visit me at my unit?",
+     "Yes. Tenants can receive clients and post at their unit."
+    ],
+    [
+     "Do you reply at weekends?",
+     "Send your message whenever suits you. We reply as soon as we can, and we will always confirm a viewing time before you travel."
+    ],
+    [
+     "Can I bring someone with me to the viewing?",
+     "Of course. Bring a business partner, a friend or whoever helps you decide. It is often useful to have a second pair of eyes on the space."
+    ]
+   ],
+   "sources": [],
+   "related": [
+    "about",
+    "compare-units",
+    "rental-terms",
+    "faqs"
+   ]
+  },
+  {
+   "slug": "rental-terms",
+   "type": "WebPage",
+   "title": "Rental Terms in Plain English | The Rock Factory",
+   "desc": "Our rental terms in plain English: rolling monthly rent, one month's notice, deposit, ID and Direct Debit, and what you can do in a unit in Blackpool.",
+   "crumb": "Rental terms",
+   "eyebrow": "Plain-English summary",
+   "h1": [
+    "Our rental terms,",
+    "in plain English"
+   ],
+   "lead": "This page sums up how renting from The Rock Factory works, without the legal language. It is a summary only: the tenancy or licence agreement you sign is what applies, so please read that carefully before you commit.",
+   "sections": [
+    {
+     "id": "term-and-notice",
+     "h2": "How long you rent for",
+     "html": "<ul class=\"tick-list\"><li><strong>Rolling monthly.</strong> There is no long lease. Your agreement carries on month to month.</li><li><strong>Minimum term of one month.</strong> You commit to at least one month.</li><li><strong>One month's notice to leave.</strong> After the first month, give us a month's notice and you can go.</li></ul><p>This makes the units useful for short projects, like storing furniture during a house move, as well as for businesses who want to stay for years without being tied in.</p><p>Notice runs for a full month from when you give it, so if you know your plans, tell us early. You can give notice by messaging us, and we will confirm the leaving date back to you.</p>"
+    },
+    {
+     "id": "rent",
+     "h2": "Rent and how it is set",
+     "html": "<p>Rent is based on floor area, and we quote it per week. Prices are subject to availability.</p><div class=\"table-wrap\"><table class=\"price-table\"><thead><tr><th scope=\"col\">Space</th><th scope=\"col\">Rent</th><th scope=\"col\">Notes</th></tr></thead><tbody><tr><th scope=\"row\">150 sq ft unit</th><td>£65 a week</td><td>Roller shutter</td></tr><tr><th scope=\"row\">160 sq ft unit</th><td>£69 a week</td><td>Security (personnel) door</td></tr><tr><th scope=\"row\">180 sq ft unit</th><td>£78 a week</td><td>Roller shutter</td></tr><tr><th scope=\"row\">300 sq ft two-storey unit</th><td>£130 a week</td><td>Roller shutter, upstairs area with a window</td></tr><tr><th scope=\"row\">Each office</th><td>£70 a week</td><td>From January 2027</td></tr><tr><th scope=\"row\">Storage pods and rooms</th><td>Guide prices from £10 a week</td><td>From spring 2027, to be confirmed</td></tr></tbody></table></div><p>Rent is collected by Direct Debit. Our <a class=\"text-link\" href=\"/storage-prices-explained.html\">guide to how our prices work</a> shows weekly and monthly figures side by side.</p><p>A weekly price is easy to compare, but your Direct Debit is set up as a regular collection. To turn a weekly figure into a monthly one, multiply by 52 and divide by 12. For example, £69 a week is about £299 a month.</p>"
+    },
+    {
+     "id": "moving-in",
+     "h2": "What you need to move in",
+     "html": "<ol class=\"steps\"><li><strong>One month's rent in advance</strong><span>Paid before you move in.</span></li><li><strong>A security deposit</strong><span>Equal to one month's rent. The agreement sets out how it is held and when it is returned.</span></li><li><strong>Photo ID</strong><span>Valid government-issued photo ID, such as a passport or photocard driving licence.</span></li><li><strong>A signed Direct Debit mandate</strong><span>This lets us collect your rent from your bank account. You are protected by the Direct Debit Guarantee.</span></li></ol><p>Pre-book a unit before it opens on 1 November 2026 and your first week is free.</p>"
+    },
+    {
+     "id": "whats-included",
+     "h2": "What's included and what costs extra",
+     "html": "<ul class=\"tick-list\"><li>Lighting, electricity and Wi-Fi are already connected in every unit.</li><li>Use of the shared tea and coffee room, toilets and water.</li><li>24-hour access to your unit.</li><li>Free app access to CCTV covering the entrance and the area outside the units.</li><li>Post and clients can come to you at the unit.</li><li>You may use the Rock Factory address on your Google Business Profile.</li></ul><p>Electricity usage is charged separately, at the supplier rate with no markup. There are no utility deposits. Supply is standard single-phase only, with no three-phase.</p><p>Business rates may apply to commercial units. They are a matter between the occupier and the council, so ask us about the specific unit and check whether you qualify for Small Business Rate Relief.</p>"
+    },
+    {
+     "id": "using-your-unit",
+     "h2": "Using your unit",
+     "html": "<p>All business use needs our approval before you start. Tell us what you plan to do and we will confirm whether it suits the building.</p><ul class=\"tick-list\"><li>Storage of household goods, stock, tools and equipment.</li><li>Low-risk work with wood, paper, card, fabric and dry goods.</li><li>Desk work, small repairs, studio work and similar approved activities.</li></ul><p>These are not allowed:</p><ul class=\"tick-list cross\"><li>Storing cars. Our buildings insurance does not permit it.</li><li>Melting or heating combustible materials such as waxes, plastics, resins or oils. That rules out candle and soap making, resin casting and 3D print farms.</li><li>Keeping flammable liquids or gases in bulk, such as fuel, solvent-based paints or chemicals and gas cylinders, unless we have agreed it in writing.</li><li>Cooking or preparing hot food.</li></ul>"
+    },
+    {
+     "id": "changing-units",
+     "h2": "Changing or adding units",
+     "html": "<p>You can swap to a bigger or smaller unit at any time, subject to availability. Some units have interconnecting doors, so you can rent two or three neighbouring units as one space. Renting side-by-side units can also give you both a roller shutter and a personnel door.</p><p>Ask us which units connect before you decide. The <a class=\"text-link\" href=\"/compare-units.html\">unit comparison</a> is a good starting point.</p><p>If you swap units, we will explain what changes in your paperwork, such as the new rent and any change to your deposit, before you move anything.</p>"
+    },
+    {
+     "id": "leaving",
+     "h2": "When you want to leave",
+     "html": "<p>Give us one month's notice once your minimum month is up. Before you go, take out everything you brought in and leave the unit as your agreement asks.</p><p>Your security deposit is held against things like unpaid rent or damage, and the agreement explains how and when it comes back to you. Your final electricity usage is charged at the supplier rate, as during your tenancy.</p><p>If you are leaving because you need a different size rather than because you are finished, ask about swapping first. Moving to another unit in the building can be much simpler than starting again elsewhere.</p>"
+    },
+    {
+     "id": "your-side",
+     "h2": "Your side of the deal",
+     "html": "<p>Like any agreement, ours sets out what you agree to as well as what we provide. In everyday terms, that means:</p><ul class=\"tick-list\"><li>Paying rent and electricity on time, by Direct Debit.</li><li>Only using the unit for the purpose we have approved.</li><li>Keeping to the list of things not allowed in the building.</li><li>Arranging your own insurance for your goods and, if you trade, your business.</li><li>Dealing with your own business admin, such as business rates where they apply.</li><li>Respecting the shared tea and coffee room and toilets, and the other tenants.</li></ul>"
+    },
+    {
+     "id": "small-print",
+     "h2": "The bit that matters most",
+     "html": "<div class=\"callout\"><h3>Your signed agreement is what counts</h3><p>This summary is here to help you understand our terms quickly. It is not the contract. If anything here seems different from your tenancy or licence agreement, the agreement applies. If something is unclear, ask us before you sign.</p></div><p>Have a question these terms do not answer? Check the <a class=\"text-link\" href=\"/faqs.html\">frequently asked questions</a> or the <a class=\"text-link\" href=\"/glossary.html\">glossary of property and storage terms</a>.</p>"
+    }
+   ],
+   "faqs": [
+    [
+     "Is there a long lease?",
+     "No. Rent is rolling monthly with a one-month minimum and one month's notice to leave."
+    ],
+    [
+     "Do I get my deposit back?",
+     "The security deposit equals one month's rent. Your agreement explains how and when it is returned at the end."
+    ],
+    [
+     "Is insurance included?",
+     "No insurance for your belongings is included. We recommend arranging cover for your goods, stock and equipment."
+    ],
+    [
+     "Can I sublet my unit?",
+     "Please ask us. Your agreement sets out what is allowed, and every business use in the building needs our approval."
+    ],
+    [
+     "Can the rent change?",
+     "Prices are subject to availability. Your agreement sets out how and when rent can be reviewed, so check that section before you sign."
+    ],
+    [
+     "Can I pay weekly in cash?",
+     "Rent is collected by Direct Debit, so you will need to sign a Direct Debit mandate when you move in."
+    ]
+   ],
+   "sources": [
+    [
+     "Small Business Rate Relief (GOV.UK)",
+     "https://www.gov.uk/apply-for-business-rate-relief/small-business-rate-relief"
+    ],
+    [
+     "Introduction to business rates (GOV.UK)",
+     "https://www.gov.uk/introduction-to-business-rates"
+    ]
+   ],
+   "related": [
+    "storage-prices-explained",
+    "faqs",
+    "compare-units",
+    "glossary",
+    "find-us"
+   ]
+  },
+  {
+   "slug": "faqs",
+   "type": "WebPage",
+   "title": "Storage and Unit FAQs, Blackpool | The Rock Factory",
+   "desc": "Answers to common questions about renting a storage or business unit in Blackpool: prices, access, business use, moving in, offices and pods.",
+   "crumb": "FAQs",
+   "eyebrow": "Frequently asked questions",
+   "h1": [
+    "Your questions",
+    "about our Blackpool units, answered"
+   ],
+   "lead": "Short answers to the questions people ask us most, grouped by topic. If yours is not here, ask us on WhatsApp.",
+   "sections": [
+    {
+     "id": "prices",
+     "h2": "Prices and payment",
+     "html": "<p>Straight answers about what you pay and when. Every price below is subject to availability.</p><h3>How much are the units?</h3><p>The 150 sq ft unit is £65 a week, the 160 sq ft unit £69, the 180 sq ft unit £78 and the 300 sq ft two-storey unit £130. Prices are subject to availability. See <a class=\"text-link\" href=\"/compare-units.html\">every unit compared</a>.</p><h3>How do you work out the rent?</h3><p>Rent is based on floor area. That is why the price per square foot is very similar across the ground-floor units.</p><h3>Is it cheaper if I pay monthly?</h3><p>The rate is the same. A weekly price works out at the weekly figure times 52, divided by 12, for a calendar month. £65 a week is about £281.67 a month.</p><h3>How do I pay?</h3><p>Rent is collected by Direct Debit, so you sign a Direct Debit mandate when you move in.</p><h3>Are there any hidden extras?</h3><p>The only running cost on top of rent is the electricity you use, charged at the supplier rate with no markup. Business rates may apply to commercial units, so ask us about the specific unit.</p><h3>Is there an offer for booking early?</h3><p>Yes. If you pre-book a unit, your first week is free.</p><h3>Do the prices include VAT?</h3><p>Please ask us on WhatsApp for confirmation for your situation, and check any quote you compare from other providers for the same thing.</p>"
+    },
+    {
+     "id": "access-security",
+     "h2": "Access and security",
+     "html": "<p>How you get in, and what keeps your things safe.</p><h3>When can I get to my unit?</h3><p>Any time. Tenants have 24-hour access.</p><h3>Is there CCTV?</h3><p>Yes. CCTV covers the entrance and the area outside the units, and tenants get free access to it through an app.</p><h3>Do the units have windows?</h3><p>No, the ground-floor units are windowless, which many people prefer for security. The only window is in the upstairs area of the two-storey unit. All units have lighting already connected.</p><h3>What is the difference between shutter and door access?</h3><p>A roller shutter opens the full front of the unit, which makes loading bulky items easier. The 160 sq ft unit has a security (personnel) door, which you walk through like a normal door.</p><h3>Is my stuff insured?</h3><p>Insurance for your belongings is not included. We recommend arranging your own contents, stock or business cover.</p><h3>Can I check on my unit from home?</h3><p>Yes. The free CCTV app lets you see the entrance and the area outside the units from your phone.</p>"
+    },
+    {
+     "id": "business-use",
+     "h2": "Using a unit for business",
+     "html": "<p>Most of our tenants run a business from their unit. Here is what you need to know.</p><h3>Can I run my business from a unit?</h3><p>Yes, with our approval first. Tell us what you do and we will confirm whether it suits the building.</p><h3>What is not allowed?</h3><p>Car storage, cooking or hot food, melting or heating combustibles (candle or soap making, resin casting, 3D print farms), and bulk flammable liquids or gases unless agreed in writing.</p><h3>Can I use the address on Google?</h3><p>Yes. Tenants may use the Rock Factory address on their Google Business Profile. Our <a class=\"text-link\" href=\"/google-business-profile-address.html\">Google Business Profile address guide</a> explains how.</p><h3>Can I have customers visit and receive post?</h3><p>Yes. Tenants can receive mail and clients at the unit.</p><h3>What power is available?</h3><p>Standard single-phase electricity, the same as a house. There is no three-phase supply, so heavy industrial machines that need it will not run.</p><h3>Is there Wi-Fi?</h3><p>Yes. Wi-Fi is already connected in every unit, along with lighting and electricity.</p><h3>Will I have to pay business rates?</h3><p>Business rates may apply to commercial units. Ask us about the unit, and check whether Small Business Rate Relief applies to you. Our <a class=\"text-link\" href=\"/business-rates-small-units.html\">business rates guide for small units</a> has more.</p><h3>Can I do woodwork or sewing?</h3><p>Usually yes. Low-risk materials such as wood, paper, card, fabric and dry goods are fine, subject to our approval of your business use. See our <a class=\"text-link\" href=\"/unit-ideas-makers-studios.html\">ideas for makers and studios</a>.</p>"
+    },
+    {
+     "id": "moving-in",
+     "h2": "Moving in",
+     "html": "<p>What happens between saying yes and getting the keys. It is a short list, and there are no utility companies to call.</p><h3>When are units available?</h3><p>From 1 November 2026.</p><h3>What do I need to move in?</h3><p>One month's rent in advance, a security deposit equal to one month's rent, valid government-issued photo ID and a signed Direct Debit mandate.</p><h3>Are there utility deposits or connection fees?</h3><p>No utility deposits. Lighting, electricity and Wi-Fi are already connected, so you can start straight away.</p><h3>How do I book a viewing?</h3><p>Message us on WhatsApp at 07366 991012. Our <a class=\"text-link\" href=\"/find-us.html\">find us page</a> explains how viewings work.</p><h3>Are there shared facilities?</h3><p>Yes: a tea and coffee room, toilets and water.</p><h3>Can I see the unit before I commit?</h3><p>Yes. We show every unit by appointment, and there is no pressure to decide on the day.</p>"
+    },
+    {
+     "id": "leaving-changing",
+     "h2": "Leaving and changing units",
+     "html": "<p>We keep commitments short so you can change your mind.</p><h3>How long do I have to stay?</h3><p>The minimum term is one month. After that it rolls monthly.</p><h3>How much notice do I give?</h3><p>One month's notice.</p><h3>Can I move to a bigger or smaller unit?</h3><p>Yes, any time, subject to availability.</p><h3>Can I rent more than one unit?</h3><p>Yes. Some units have interconnecting doors, so you can rent two or three adjoining units as one space, and side-by-side units can give you both roller-shutter and personnel-door access.</p><h3>What happens to my deposit when I leave?</h3><p>Your security deposit equals one month's rent. Your tenancy or licence agreement sets out how and when it is returned, so check that section before you sign.</p>"
+    },
+    {
+     "id": "offices",
+     "h2": "Offices",
+     "html": "<p>Two small offices are being refurbished now. They suit desk-based work and meeting clients.</p><h3>Do you have offices?</h3><p>Yes, two separate offices at £70 a week each. See <a class=\"text-link\" href=\"/offices-to-let-blackpool.html\">offices to let in Blackpool</a>.</p><h3>When are the offices ready?</h3><p>They are being refurbished and will be available from January 2027.</p><h3>Are the offices on the same terms as the units?</h3><p>Rent across the building is rolling monthly, with a one-month minimum and one month's notice. Your agreement confirms the details for your office.</p>"
+    },
+    {
+     "id": "pods",
+     "h2": "Storage pods and rooms",
+     "html": "<p>Household-sized storage opening on the first floor.</p><h3>What are the storage pods?</h3><p>Smaller first-floor spaces for storage: pods of 15, 25 and 35 sq ft and rooms of 50, 75 and 100 sq ft.</p><h3>How much will they cost?</h3><p>Guide prices, to be confirmed, are £10, £14 and £17 a week for the pods and £22, £28 and £34 a week for the rooms.</p><h3>When do they open?</h3><p>Spring 2027.</p><h3>How do I get to them?</h3><p>They are on the first floor, reached by stairs. If you have heavy items, a ground-floor unit may suit you better.</p><h3>Can I reserve a pod now?</h3><p>Yes, you can ask to be added to the list. Prices are guide prices until confirmed, so you are not committing to a figure yet.</p><p>Still have a question? <a class=\"text-link\" href=\"{{WA}}\" target=\"_blank\" rel=\"noopener noreferrer\">message us on WhatsApp</a> and we will answer it.</p>"
+    }
+   ],
+   "faqs": [],
+   "sources": [
+    [
+     "Small Business Rate Relief (GOV.UK)",
+     "https://www.gov.uk/apply-for-business-rate-relief/small-business-rate-relief"
+    ]
+   ],
+   "related": [
+    "rental-terms",
+    "compare-units",
+    "storage-prices-explained",
+    "glossary",
+    "find-us"
+   ]
+  },
+  {
+   "slug": "glossary",
+   "type": "WebPage",
+   "title": "Storage and Business Unit Glossary | The Rock Factory",
+   "desc": "Storage and small business property terms explained in plain English: roller shutters, sq ft, single-phase power, licences, rates and more. Blackpool.",
+   "crumb": "Glossary",
+   "eyebrow": "Plain-English glossary",
+   "h1": [
+    "Storage and business unit terms,",
+    "explained simply"
+   ],
+   "lead": "From roller shutters to rateable value, here are the words that come up when you rent a storage or business unit, explained in a sentence or two.",
+   "sections": [
+    {
+     "id": "how-to-use",
+     "h2": "How to use this glossary",
+     "html": "<p>Renting a unit throws up words you may not use every day. This glossary explains the ones you are most likely to meet, in plain English, grouped by topic. Where a term relates to our own units, we say how.</p><p>It is general information, not legal or tax advice. For anything that affects your money or obligations, check the official guidance or speak to an adviser.</p>"
+    },
+    {
+     "id": "units-access",
+     "h2": "Units and access",
+     "html": "<h3>Roller shutter</h3><p>A metal door made of horizontal slats that rolls up into a drum above the opening. It opens the full width of the unit, so pallets, furniture and bulky kit go in easily. Our 150, 180 and 300 sq ft units have one.</p><h3>Personnel door</h3><p>An ordinary-sized door for people rather than goods, sometimes called a pedestrian door. A security personnel door is a strengthened version. Our 160 sq ft unit opens this way.</p><h3>Interconnecting door</h3><p>An internal door between two neighbouring units. It lets you rent adjoining units and use them as one space. Some of our units have them.</p><h3>Ground-floor unit</h3><p>A unit at street level. No stairs or lifts to deal with, which matters if you move heavy or awkward items.</p><h3>Mezzanine</h3><p>An extra floor level built partway up inside a unit. Our two-storey unit has a full upstairs area with a staircase, rather than a mezzanine platform.</p><h3>Windowless unit</h3><p>A unit with no windows. It gives more wall space and privacy, and lighting is provided. See <a class=\"text-link\" href=\"/working-in-a-windowless-unit.html\">working in a windowless unit</a>.</p><h3>Storage pod</h3><p>A small enclosed storage space, usually for boxes and household items. Ours will be 15 to 35 sq ft, on the first floor.</p><h3>24-hour access</h3><p>You can get to your space at any time of day or night.</p><h3>Fit-out</h3><p>The shelving, benches, racking and furniture you add to make an empty unit work for you. In our units, the fit-out is up to you.</p><h3>Racking</h3><p>Strong shelving designed for heavy loads or pallets. Freestanding racking is common in storage units because it can be taken away when you leave.</p>"
+    },
+    {
+     "id": "measuring",
+     "h2": "Measuring space",
+     "html": "<h3>sq ft (square feet)</h3><p>A measure of floor area. A space 10 feet by 15 feet is 150 sq ft. UK commercial property is usually quoted in square feet.</p><h3>m² (square metres)</h3><p>The metric measure of floor area. One square metre is about 10.76 sq ft, so 150 sq ft is roughly 13.9 m².</p><h3>Price per sq ft per year</h3><p>Yearly rent divided by floor area. It is the fairest way to compare spaces of different sizes. £65 a week for 150 sq ft is about £22.53 per sq ft per year.</p><h3>Floor area based pricing</h3><p>Setting rent according to how much floor space you get, so larger units cost more in proportion.</p>"
+    },
+    {
+     "id": "power",
+     "h2": "Power and services",
+     "html": "<h3>Single-phase electricity</h3><p>The standard supply in UK homes and small premises. It runs lights, computers, most power tools and domestic-style appliances. All our units have single-phase power.</p><h3>Three-phase electricity</h3><p>A heavier supply used for large industrial machinery, such as big compressors, welders and production equipment. We do not have three-phase.</p><h3>Supplier rate</h3><p>The price the energy supplier charges per unit of electricity. We pass on your usage at that rate, with no markup.</p><h3>Utility deposit</h3><p>A sum some suppliers or landlords ask for before connecting services. We do not charge one.</p>"
+    },
+    {
+     "id": "agreements",
+     "h2": "Agreements and money",
+     "html": "<h3>Licence</h3><p>Permission to occupy a space on agreed terms. Licences are often used for flexible, short-term arrangements. The paperwork you sign tells you which type of agreement you have.</p><h3>Lease</h3><p>A tenancy that gives the tenant a legal interest in the property for a period, often several years for commercial premises. Commercial leases can involve more formal steps to end early.</p><h3>Licence vs lease</h3><p>In short, a lease usually gives more security but less flexibility, while a licence is lighter and easier to end. Which one applies depends on the agreement and the facts, so read what you sign and take advice if unsure.</p><h3>Rolling monthly</h3><p>An agreement with no fixed end date that continues month to month until someone gives notice.</p><h3>Minimum term</h3><p>The shortest time you commit to. Ours is one month.</p><h3>Notice period</h3><p>How much warning you must give before leaving. Ours is one month.</p><h3>Security deposit</h3><p>Money held at the start of an agreement against unpaid rent or damage, returned on the terms your agreement sets out. Ours equals one month's rent.</p><h3>Rent in advance</h3><p>Paying for a period before it starts. We ask for one month in advance when you move in.</p><h3>Direct Debit mandate</h3><p>Your written permission for an organisation to collect payments from your bank account. Payments are covered by the Direct Debit Guarantee.</p><h3>Pro rata</h3><p>In proportion. A part month charged pro rata costs a matching share of a full month.</p><h3>Break clause</h3><p>A term in a fixed-length lease that lets one side end it early at set points. Rolling monthly agreements like ours do not need one, because you can leave on one month's notice.</p><h3>Service charge</h3><p>A separate charge some landlords make for shared areas and services. Check any quote for one. Our running cost on top of rent is your electricity usage.</p><h3>Dilapidations</h3><p>The cost of putting a property back into the condition the agreement requires at the end of a tenancy. Mostly an issue with longer commercial leases.</p>"
+    },
+    {
+     "id": "rates-tax",
+     "h2": "Rates, tax and admin",
+     "html": "<h3>Rateable value</h3><p>The figure the Valuation Office Agency sets for a non-domestic property, broadly its yearly rental value at a set date. Business rates are worked out from it. You can <a class=\"text-link\" href=\"https://www.gov.uk/find-business-rates\" target=\"_blank\" rel=\"noopener noreferrer\">look up a rateable value on GOV.UK</a>.</p><h3>Business rates</h3><p>A tax on most non-domestic property, collected by the local council. In Blackpool that is Blackpool Council. Whether a particular unit is rated, and for how much, depends on its assessment.</p><h3>Small Business Rate Relief</h3><p>A government scheme that reduces or removes business rates for occupiers of smaller properties. Eligibility depends on rateable value and how many properties you use, so check the official guidance.</p><h3>VAT</h3><p>Value Added Tax. When comparing quotes from any provider, check whether prices include it.</p><h3>Sole trader</h3><p>Someone who runs a business as an individual. Compare the options in <a class=\"text-link\" href=\"/sole-trader-or-limited-company.html\">sole trader or limited company</a>.</p>"
+    },
+    {
+     "id": "marketing-insurance",
+     "h2": "Marketing and insurance",
+     "html": "<h3>Google Business Profile</h3><p>The free listing that shows your business on Google Search and Maps. Tenants may use the Rock Factory address on theirs.</p><h3>Trading address</h3><p>The address where customers, suppliers and post reach your business. Many people want one that is not their home.</p><h3>Public liability insurance</h3><p>Cover for claims if a member of the public is injured or their property is damaged because of your business. Not a legal requirement for most businesses, but often expected by customers and venues.</p><h3>Employers' liability insurance</h3><p>Cover for claims from employees who are injured or made ill at work. If you employ people, you will usually be legally required to have it.</p><h3>Contents or stock insurance</h3><p>Cover for the things you keep in a unit, such as goods, tools and equipment. Not included in our rent, so arrange your own.</p><h3>Business use approval</h3><p>Our written-in-advance check that what you plan to do in a unit is safe and suitable for the building. Every business use needs it.</p><p>Want to see how these terms apply to us? Read our <a class=\"text-link\" href=\"/rental-terms.html\">rental terms summary</a>.</p>"
+    }
+   ],
+   "faqs": [],
+   "sources": [
+    [
+     "Small Business Rate Relief (GOV.UK)",
+     "https://www.gov.uk/apply-for-business-rate-relief/small-business-rate-relief"
+    ],
+    [
+     "Introduction to business rates (GOV.UK)",
+     "https://www.gov.uk/introduction-to-business-rates"
+    ],
+    [
+     "Find a business rates valuation (GOV.UK)",
+     "https://www.gov.uk/find-business-rates"
+    ],
+    [
+     "Employers' liability insurance (GOV.UK)",
+     "https://www.gov.uk/employers-liability-insurance"
+    ]
+   ],
+   "related": [
+    "rental-terms",
+    "faqs",
+    "business-rates-small-units",
+    "small-business-insurance-guide",
+    "compare-units"
+   ]
+  },
+  {
+   "slug": "compare-units",
+   "type": "WebPage",
+   "title": "Compare Our Units and Prices, Blackpool | The Rock Factory",
+   "desc": "Compare every Rock Factory unit in Blackpool side by side: size, weekly and monthly price, price per sq ft, access, windows and what each suits best.",
+   "crumb": "Compare units",
+   "eyebrow": "Side-by-side comparison",
+   "h1": [
+    "Compare our units",
+    "side by side"
+   ],
+   "lead": "Four ground-floor units, two offices and a range of first-floor pods and rooms. These tables put the facts next to each other so you can narrow it down quickly.",
+   "sections": [
+    {
+     "id": "prices",
+     "h2": "Prices compared",
+     "html": "<p>Monthly figures are the weekly rent times 52, divided by 12. Price per sq ft per year is the weekly rent times 52, divided by floor area. Prices are subject to availability.</p><div class=\"table-wrap\"><table class=\"price-table\"><thead><tr><th scope=\"col\">Space</th><th scope=\"col\">Per week</th><th scope=\"col\">Per month (about)</th><th scope=\"col\">Per sq ft per year</th></tr></thead><tbody><tr><th scope=\"row\"><a class=\"text-link\" href=\"/150-sq-ft-unit-blackpool.html\">150 sq ft unit</a></th><td>£65</td><td>£281.67</td><td>£22.53</td></tr><tr><th scope=\"row\"><a class=\"text-link\" href=\"/160-sq-ft-unit-blackpool.html\">160 sq ft unit</a></th><td>£69</td><td>£299.00</td><td>£22.43</td></tr><tr><th scope=\"row\"><a class=\"text-link\" href=\"/180-sq-ft-unit-blackpool.html\">180 sq ft unit</a></th><td>£78</td><td>£338.00</td><td>£22.53</td></tr><tr><th scope=\"row\"><a class=\"text-link\" href=\"/two-storey-unit-blackpool.html\">300 sq ft two-storey unit</a></th><td>£130</td><td>£563.33</td><td>£22.53</td></tr><tr><th scope=\"row\"><a class=\"text-link\" href=\"/offices-to-let-blackpool.html\">Office (each, from Jan 2027)</a></th><td>£70</td><td>£303.33</td><td>Ask us</td></tr></tbody></table></div><p>Because rent is based on floor area, the ground-floor units all come out at about £22.40 to £22.55 per sq ft per year. You are not paying a premium for picking the bigger or smaller one.</p>"
+    },
+    {
+     "id": "features",
+     "h2": "Access, windows and layout",
+     "html": "<div class=\"table-wrap\"><table class=\"price-table\"><thead><tr><th scope=\"col\">Space</th><th scope=\"col\">Size</th><th scope=\"col\">Access</th><th scope=\"col\">Window</th><th scope=\"col\">Layout</th></tr></thead><tbody><tr><th scope=\"row\"><a class=\"text-link\" href=\"/150-sq-ft-unit-blackpool.html\">150 sq ft unit</a></th><td>150 sq ft</td><td>Roller shutter</td><td>No</td><td>Single floor, ground level</td></tr><tr><th scope=\"row\"><a class=\"text-link\" href=\"/160-sq-ft-unit-blackpool.html\">160 sq ft unit</a></th><td>160 sq ft</td><td>Security (personnel) door</td><td>No</td><td>Single floor, ground level</td></tr><tr><th scope=\"row\"><a class=\"text-link\" href=\"/180-sq-ft-unit-blackpool.html\">180 sq ft unit</a></th><td>180 sq ft</td><td>Roller shutter</td><td>No</td><td>Single floor, ground level</td></tr><tr><th scope=\"row\"><a class=\"text-link\" href=\"/two-storey-unit-blackpool.html\">Two-storey unit</a></th><td>300 sq ft</td><td>Roller shutter</td><td>Upstairs area only</td><td>Ground floor plus upstairs office or storage, internal staircase</td></tr><tr><th scope=\"row\"><a class=\"text-link\" href=\"/offices-to-let-blackpool.html\">Offices</a></th><td>Ask us</td><td>Ask us</td><td>Ask us</td><td>Two separate offices</td></tr><tr><th scope=\"row\"><a class=\"text-link\" href=\"/storage-pods-blackpool.html\">Pods and rooms</a></th><td>15 to 100 sq ft</td><td>Stairs to first floor</td><td>Ask us</td><td>First floor</td></tr></tbody></table></div><p>Every ground-floor unit has lighting, single-phase electricity and Wi-Fi connected, plus 24-hour access and use of the shared tea and coffee room, toilets and water.</p>"
+    },
+    {
+     "id": "pods",
+     "h2": "Storage pods and rooms (guide prices)",
+     "html": "<p>The first-floor pods and rooms open in spring 2027. These are guide prices, to be confirmed before opening.</p><div class=\"table-wrap\"><table class=\"price-table\"><thead><tr><th scope=\"col\">Space</th><th scope=\"col\">Per week (guide)</th><th scope=\"col\">Per month (about)</th><th scope=\"col\">Per sq ft per year</th></tr></thead><tbody><tr><th scope=\"row\">Pod, 15 sq ft</th><td>£10</td><td>£43.33</td><td>£34.67</td></tr><tr><th scope=\"row\">Pod, 25 sq ft</th><td>£14</td><td>£60.67</td><td>£29.12</td></tr><tr><th scope=\"row\">Pod, 35 sq ft</th><td>£17</td><td>£73.67</td><td>£25.26</td></tr><tr><th scope=\"row\">Room, 50 sq ft</th><td>£22</td><td>£95.33</td><td>£22.88</td></tr><tr><th scope=\"row\">Room, 75 sq ft</th><td>£28</td><td>£121.33</td><td>£19.41</td></tr><tr><th scope=\"row\">Room, 100 sq ft</th><td>£34</td><td>£147.33</td><td>£17.68</td></tr></tbody></table></div><p>Smaller spaces cost more per square foot, which is normal across storage. If you are torn between two sizes, the larger room is often better value for each foot you get.</p>"
+    },
+    {
+     "id": "over-time",
+     "h2": "What each unit costs over time",
+     "html": "<p>Short-term or long-term, it helps to see the total. These figures use the weekly rent and exclude electricity, which you pay at the supplier rate for what you use.</p><div class=\"table-wrap\"><table class=\"price-table\"><thead><tr><th scope=\"col\">Unit</th><th scope=\"col\">Per year (52 weeks)</th><th scope=\"col\">3 months (13 weeks)</th><th scope=\"col\">6 months (26 weeks)</th></tr></thead><tbody><tr><th scope=\"row\"><a class=\"text-link\" href=\"/150-sq-ft-unit-blackpool.html\">150 sq ft unit</a></th><td>£3,380</td><td>£845</td><td>£1,690</td></tr><tr><th scope=\"row\"><a class=\"text-link\" href=\"/160-sq-ft-unit-blackpool.html\">160 sq ft unit</a></th><td>£3,588</td><td>£897</td><td>£1,794</td></tr><tr><th scope=\"row\"><a class=\"text-link\" href=\"/180-sq-ft-unit-blackpool.html\">180 sq ft unit</a></th><td>£4,056</td><td>£1,014</td><td>£2,028</td></tr><tr><th scope=\"row\"><a class=\"text-link\" href=\"/two-storey-unit-blackpool.html\">300 sq ft two-storey unit</a></th><td>£6,760</td><td>£1,690</td><td>£3,380</td></tr></tbody></table></div><p>Because the minimum term is only one month, you are never locked into those totals. You can leave on one month's notice or switch size if your needs change.</p>"
+    },
+    {
+     "id": "best-for",
+     "h2": "What each space suits best",
+     "html": "<h3>150 sq ft unit</h3><p>A compact base for stock, trade tools or a small studio. The roller shutter makes loading boxes and kit straightforward. A good first step out of the garage or spare room.</p><h3>160 sq ft unit</h3><p>Suits people who come and go on foot and want a lockable door rather than a shutter: makers, repairers, quiet storage, or a small studio where you mostly carry things in by hand.</p><h3>180 sq ft unit</h3><p>The biggest single-floor unit, with a roller shutter. Good for bulkier stock, event hire kit, furniture or a small workshop with room for a bench and shelving.</p><h3>Two-storey unit</h3><p>Work or store downstairs, with an upstairs office or storage area that has a window. Useful if you want admin and making in separate spaces, or need the most room.</p><h3>Offices</h3><p>Desk-based work, seeing clients and a door you can close, from January 2027.</p><h3>Pods and rooms</h3><p>Boxes, household items and small amounts of stock that you can carry up stairs, from spring 2027.</p><p>These are starting points, not rules. Plenty of people use a shutter unit as a studio or a door unit for storage. What matters is how you will move things in and out, and how much floor you need.</p>"
+    },
+    {
+     "id": "combining",
+     "h2": "Combining units",
+     "html": "<p>Some units have interconnecting doors, so you can rent two or three adjoining units and use them as one space. That opens up options the tables above do not show.</p><ul class=\"tick-list\"><li>A roller-shutter unit next to a personnel-door unit gives you loading access and a normal front door for everyday use.</li><li>Two units side by side can separate a clean area, such as packing or a studio, from a dusty one, such as cutting or sanding.</li><li>Starting with one unit and adding the neighbour later lets you grow without moving out, subject to availability.</li></ul><p>Ask us which units connect, as not all of them do.</p>"
+    },
+    {
+     "id": "choose",
+     "h2": "Which should I choose?",
+     "html": "<ol class=\"steps\"><li><strong>Start with how things get in</strong><span>Bulky items, trolleys or regular deliveries point to a roller-shutter unit (150, 180 or 300 sq ft). If you mostly walk in carrying things, the 160 sq ft unit with its personnel door works well.</span></li><li><strong>Then think about stairs</strong><span>Heavy items belong on the ground floor. The pods and rooms are upstairs, reached by stairs.</span></li><li><strong>Decide if you need a window</strong><span>Only the upstairs area of the two-storey unit has one. If daylight for desk work matters, consider that unit or ask about the offices.</span></li><li><strong>Estimate your space</strong><span>List what you will keep and use. Our <a class=\"text-link\" href=\"/what-size-storage-unit.html\">what size storage unit guide</a> helps you work it out.</span></li><li><strong>Leave room to grow</strong><span>You can swap to a bigger or smaller unit any time, subject to availability, and some units interconnect if you need two or three together.</span></li></ol>"
+    },
+    {
+     "id": "quick-guide",
+     "h2": "Quick decision guide",
+     "html": "<div class=\"table-wrap\"><table class=\"price-table\"><thead><tr><th scope=\"col\">If you...</th><th scope=\"col\">Look at</th></tr></thead><tbody><tr><th scope=\"row\">Need to wheel in pallets, furniture or big kit</th><td>150, 180 or 300 sq ft (roller shutter)</td></tr><tr><th scope=\"row\">Want a workshop you walk into through a normal door</th><td>160 sq ft unit</td></tr><tr><th scope=\"row\">Want a workspace plus an office with daylight</th><td>Two-storey unit</td></tr><tr><th scope=\"row\">Mainly work at a desk and meet clients</th><td>Offices (from January 2027)</td></tr><tr><th scope=\"row\">Just have boxes and household items</th><td>Pods and rooms (spring 2027, guide prices)</td></tr><tr><th scope=\"row\">Need shutter and door access together</th><td>Two side-by-side units, ask us which</td></tr></tbody></table></div><p>Not sure? <a class=\"text-link\" href=\"{{WA}}\" target=\"_blank\" rel=\"noopener noreferrer\">message us on WhatsApp</a> with what you plan to keep or do, and we will suggest a size.</p>"
+    }
+   ],
+   "faqs": [
+    [
+     "Which unit is best value?",
+     "The ground-floor units are all priced on floor area, so each comes out at about £22.40 to £22.55 per sq ft per year. Pick the size you need."
+    ],
+    [
+     "Do any units have windows?",
+     "Only the upstairs area of the 300 sq ft two-storey unit. The ground-floor spaces are windowless, with lighting connected."
+    ],
+    [
+     "Can I combine units?",
+     "Some units have interconnecting doors, so you can rent two or three adjoining units. Ask us which ones connect."
+    ],
+    [
+     "Are the pod prices final?",
+     "Not yet. They are guide prices for spring 2027 and will be confirmed before opening."
+    ],
+    [
+     "Is the 160 sq ft unit less secure without a shutter?",
+     "Not necessarily. It has a security (personnel) door, and CCTV covers the entrance and the area outside the units for every tenant."
+    ],
+    [
+     "How do I know what size I need?",
+     "List what you will keep or do in the unit, then use our size guide. You can also swap units later, subject to availability."
+    ]
+   ],
+   "sources": [],
+   "related": [
+    "storage-prices-explained",
+    "what-size-storage-unit",
+    "storage-units-blackpool",
+    "two-storey-unit-blackpool",
+    "storage-pods-blackpool"
+   ]
+  },
+  {
+   "slug": "storage-prices-explained",
+   "type": "Article",
+   "title": "Storage Prices Explained, Blackpool | The Rock Factory",
+   "desc": "How our Blackpool storage and unit prices work: floor area pricing, weekly vs monthly maths, what's included, move-in costs and how to compare quotes.",
+   "crumb": "Prices explained",
+   "eyebrow": "Pricing guide",
+   "h1": [
+    "Storage prices explained:",
+    "what you pay and why"
+   ],
+   "lead": "Storage prices can be hard to compare. This guide explains how we set ours, turns weekly prices into monthly and yearly figures, and shows what you need on day one. It also gives you a checklist for comparing any storage quote.",
+   "sections": [
+    {
+     "id": "floor-area",
+     "h2": "How our pricing works",
+     "html": "<p>We price on floor area. The more square feet you rent, the more you pay, in close proportion. That is why our ground-floor units work out at almost exactly the same rate per square foot.</p><p>There is no separate charge for the roller shutter or the security door, and no premium for the size people ask for most. Prices are subject to availability.</p><p>The first-floor pods and rooms opening in spring 2027 have guide prices that cost a little more per square foot at the smallest sizes.</p><p>Floor-area pricing also makes it easy to work out what a move between units would cost. Going from the 150 sq ft unit to the 180 sq ft unit adds £13 a week for 30 more square feet.</p>"
+    },
+    {
+     "id": "weekly-monthly",
+     "h2": "Weekly vs monthly: the maths",
+     "html": "<p>We quote prices per week. To turn a weekly price into a calendar month, multiply by 52 weeks and divide by 12 months. Do not just multiply by four: that misses about four weeks a year.</p><div class=\"table-wrap\"><table class=\"price-table\"><thead><tr><th scope=\"col\">Unit</th><th scope=\"col\">Per week</th><th scope=\"col\">× 4 (wrong)</th><th scope=\"col\">× 52 ÷ 12 (right)</th><th scope=\"col\">Per year</th></tr></thead><tbody><tr><th scope=\"row\"><a class=\"text-link\" href=\"/150-sq-ft-unit-blackpool.html\">150 sq ft unit</a></th><td>£65</td><td>£260</td><td>£281.67</td><td>£3,380</td></tr><tr><th scope=\"row\"><a class=\"text-link\" href=\"/160-sq-ft-unit-blackpool.html\">160 sq ft unit</a></th><td>£69</td><td>£276</td><td>£299.00</td><td>£3,588</td></tr><tr><th scope=\"row\"><a class=\"text-link\" href=\"/180-sq-ft-unit-blackpool.html\">180 sq ft unit</a></th><td>£78</td><td>£312</td><td>£338.00</td><td>£4,056</td></tr><tr><th scope=\"row\"><a class=\"text-link\" href=\"/two-storey-unit-blackpool.html\">300 sq ft two-storey unit</a></th><td>£130</td><td>£520</td><td>£563.33</td><td>£6,760</td></tr></tbody></table></div><p>To compare different sizes, work out the price per square foot per year: weekly rent × 52 ÷ floor area. The 150, 180 and 300 sq ft units all come to about £22.53, and the 160 sq ft unit to about £22.43.</p>"
+    },
+    {
+     "id": "included",
+     "h2": "What's included in the rent",
+     "html": "<ul class=\"tick-list\"><li>Your unit, with lighting, single-phase electricity and Wi-Fi already connected.</li><li>24-hour access.</li><li>Free app access to CCTV covering the entrance and the area outside the units.</li><li>Shared tea and coffee room, toilets and water.</li><li>Receiving post and clients at your unit.</li><li>Using the Rock Factory address on your Google Business Profile.</li><li>No utility deposits and no connection charges to get started.</li></ul>"
+    },
+    {
+     "id": "extras",
+     "h2": "What costs extra",
+     "html": "<p><strong>Electricity.</strong> You pay for what you use at the supplier rate, with no markup. Your bill depends on what you plug in. A laptop and lights cost little. Heaters and power tools cost more.</p><p><strong>Business rates.</strong> These may apply to commercial units and are a separate tax collected by the council, not rent. Ask us about the particular unit. If they do apply, you may qualify for Small Business Rate Relief, so check the official guidance.</p><p><strong>Insurance.</strong> Cover for your own goods, stock and equipment is not included. Arrange it yourself, through a home policy extension if it is household storage, or a business policy if you trade from the unit.</p><p><strong>Your own fit-out.</strong> Shelving, workbenches and racking are up to you. Our <a class=\"text-link\" href=\"/set-up-a-small-workshop.html\">guide to setting up a small workshop</a> has ideas.</p>"
+    },
+    {
+     "id": "electricity",
+     "h2": "Electricity: what affects your bill",
+     "html": "<p>Because you pay for the electricity you use at the supplier rate, your bill is in your hands. Lighting, a laptop, a phone charger and the Wi-Fi router barely register. The things that push a bill up are anything that makes heat: portable heaters, kettles, heat guns and some power tools used for long periods.</p><p>A storage-only unit that you visit a few times a week will usually use very little. A workshop with a heater on all winter will use much more. If you are budgeting, think about what you will plug in and for how long, and ask us how usage is measured.</p><p>All supply is standard single-phase. Equipment that needs three-phase power will not run here.</p>"
+    },
+    {
+     "id": "move-in-costs",
+     "h2": "Move-in costs: worked examples",
+     "html": "<p>To move in you pay one month's rent in advance and a security deposit equal to one month's rent. You also need valid government-issued photo ID and a signed Direct Debit mandate. The figures below use the weekly rent × 52 ÷ 12. Your agreement will confirm the exact amounts.</p><div class=\"table-wrap\"><table class=\"price-table\"><thead><tr><th scope=\"col\">Space</th><th scope=\"col\">Month in advance</th><th scope=\"col\">Deposit</th><th scope=\"col\">Total at move-in</th></tr></thead><tbody><tr><th scope=\"row\"><a class=\"text-link\" href=\"/150-sq-ft-unit-blackpool.html\">150 sq ft unit</a></th><td>£281.67</td><td>£281.67</td><td>£563.33</td></tr><tr><th scope=\"row\"><a class=\"text-link\" href=\"/160-sq-ft-unit-blackpool.html\">160 sq ft unit</a></th><td>£299.00</td><td>£299.00</td><td>£598.00</td></tr><tr><th scope=\"row\"><a class=\"text-link\" href=\"/180-sq-ft-unit-blackpool.html\">180 sq ft unit</a></th><td>£338.00</td><td>£338.00</td><td>£676.00</td></tr><tr><th scope=\"row\"><a class=\"text-link\" href=\"/two-storey-unit-blackpool.html\">300 sq ft two-storey unit</a></th><td>£563.33</td><td>£563.33</td><td>£1,126.67</td></tr><tr><th scope=\"row\"><a class=\"text-link\" href=\"/offices-to-let-blackpool.html\">Office (each)</a></th><td>£303.33</td><td>£303.33</td><td>£606.67</td></tr></tbody></table></div><p>Pre-book a unit and the first week is free. Ask us how that shows on your first payment.</p>"
+    },
+    {
+     "id": "compare-quotes",
+     "h2": "How to compare any storage quote",
+     "html": "<p>Headline prices rarely tell the whole story, wherever you look. Put every quote, including ours, through the same checks:</p><ul class=\"tick-list\"><li><strong>Size.</strong> Convert to price per sq ft per year so different sizes compare fairly.</li><li><strong>Weekly or monthly.</strong> Use × 52 ÷ 12, not × 4, to convert weekly prices.</li><li><strong>Introductory discounts.</strong> Check what the price becomes after the offer ends, and budget on that.</li><li><strong>Insurance.</strong> Is it compulsory? Is it charged per week? What value does it cover?</li><li><strong>Admin and set-up fees.</strong> Some quotes add a one-off charge at the start or end.</li><li><strong>Padlocks.</strong> Do you have to buy a specific lock?</li><li><strong>VAT.</strong> Check whether prices include it.</li><li><strong>Deposit and notice.</strong> How much is held, and how long must you stay?</li><li><strong>Access.</strong> Are there opening hours, or can you get in at any time?</li><li><strong>Power and Wi-Fi.</strong> For working units, are they available, and how is electricity charged?</li></ul>"
+    },
+    {
+     "id": "changing-size",
+     "h2": "Changing size without losing money",
+     "html": "<p>Paying for space you do not use is the most common way storage gets expensive. Because our rent is based on floor area and you can swap units any time, subject to availability, you can start small and move up when you need to, or step down after a busy season.</p><p>A quick way to check you are on the right size: if you cannot reach the back of the unit without moving things, you may need more room. If a third of the floor is still empty after a few months, a smaller unit could save you money.</p>"
+    },
+    {
+     "id": "example",
+     "h2": "Putting it together",
+     "html": "<p>Say you need roughly 150 sq ft for stock and want to be able to load from a van. The 150 sq ft unit costs £65 a week, about £281.67 a month, or £3,380 a year. On day one you would need about £563.33 for the first month and the deposit, then the electricity you use on top.</p><p>If you are unsure about size, our <a class=\"text-link\" href=\"/what-size-storage-unit.html\">storage size guide</a> and the <a class=\"text-link\" href=\"/compare-units.html\">unit comparison tables</a> will help. For a full breakdown of the paperwork, read the <a class=\"text-link\" href=\"/rental-terms.html\">rental terms summary</a>. If you would like a figure for your situation, <a class=\"text-link\" href=\"{{WA}}\" target=\"_blank\" rel=\"noopener noreferrer\">message us on WhatsApp</a>.</p>"
+    }
+   ],
+   "faqs": [
+    [
+     "Why are prices quoted weekly?",
+     "Weekly prices are easy to compare across sizes. Multiply by 52 and divide by 12 for the monthly equivalent."
+    ],
+    [
+     "Is electricity included?",
+     "It is connected and ready, but usage is charged separately at the supplier rate with no markup."
+    ],
+    [
+     "How much do I need to move into the 180 sq ft unit?",
+     "About £676: one month's rent in advance (about £338) and a deposit of the same amount."
+    ],
+    [
+     "Do you charge admin fees?",
+     "Our move-in costs are one month's rent in advance and a deposit equal to one month's rent. Your agreement sets out every charge, so read it before you sign."
+    ],
+    [
+     "Will the pod prices change?",
+     "They might. Pod and room prices are guide prices for spring 2027, to be confirmed before opening."
+    ],
+    [
+     "Is the price per sq ft the same for every unit?",
+     "Very close. The ground-floor units work out at about £22.43 to £22.53 per sq ft per year, because rent is based on floor area."
+    ]
+   ],
+   "sources": [
+    [
+     "Small Business Rate Relief (GOV.UK)",
+     "https://www.gov.uk/apply-for-business-rate-relief/small-business-rate-relief"
+    ],
+    [
+     "Introduction to business rates (GOV.UK)",
+     "https://www.gov.uk/introduction-to-business-rates"
+    ]
+   ],
+   "related": [
+    "compare-units",
+    "rental-terms",
+    "storage-insurance-guide",
+    "business-rates-small-units",
+    "what-size-storage-unit"
+   ]
+  },
+  {
+   "slug": "blackpool-rock-history",
+   "type": "Article",
+   "title": "A Short History of Blackpool Rock | The Rock Factory",
+   "desc": "The story of Blackpool rock: from a Dewsbury sweet stall in the 1880s to the lettered sticks sold along the prom, and why our building carries the name.",
+   "crumb": "Blackpool rock history",
+   "eyebrow": "Local history",
+   "h1": [
+    "A short history of",
+    "Blackpool rock"
+   ],
+   "lead": "A stick of rock with the town's name running all the way through it is one of the most familiar seaside souvenirs in Britain. Here is how it came about, based on what the sources can actually confirm.",
+   "sections": [
+    {
+     "id": "what-is-rock",
+     "h2": "What seaside rock is",
+     "html": "<p>Rock is a hard stick of boiled sugar, usually with a coloured outer casing, a white centre and words that run right through it. Bite or snap it anywhere and the lettering is still there, reading backwards at one end.</p><p>The traditional recipe is mostly sugar and glucose syrup, boiled to a very high temperature, around the hard crack stage of 150°C. The <a class=\"text-link\" href=\"https://en.wikipedia.org/wiki/Rock_(confectionery)\" target=\"_blank\" rel=\"noopener noreferrer\">Wikipedia entry on rock confectionery</a> gives a good overview of the recipe and process.</p>"
+    },
+    {
+     "id": "how-letters",
+     "h2": "How the letters get inside",
+     "html": "<p>The lettering is the clever part, and it is all done by hand. The boiled sugar is split into batches. Most is pulled, which works air into it and turns it white and opaque. Smaller batches are coloured.</p><ol class=\"steps\"><li><strong>Build each letter</strong><span>Strips of coloured and white sugar are shaped into large letters, each one a long bar. An O, for example, is a white cylinder wrapped in colour.</span></li><li><strong>Assemble the boiling</strong><span>The letters are laid side by side around a white centre, with white sugar filling the gaps, then the whole lot is wrapped in a coloured casing. The result is a large, warm bar called a boiling.</span></li><li><strong>Spin it out</strong><span>The boiling is stretched and rolled into a long, thin rope. Because everything stretches together, the big letters shrink down to fit inside a stick you can hold.</span></li><li><strong>Cut and wrap</strong><span>Once it has cooled and set hard, the rope is cut into sticks and wrapped.</span></li></ol><p>Because the letters are built in at the start, a mistake cannot be fixed later. That is why making rock is a skilled trade.</p>"
+    },
+    {
+     "id": "ben-bullock",
+     "h2": "Ben Bullock and the first Blackpool rock",
+     "html": "<p>The story most often told, and the one set out by <a class=\"text-link\" href=\"https://showtownblackpool.co.uk/things-to-discover/my-little-stick-of-blackpool-rock\" target=\"_blank\" rel=\"noopener noreferrer\">Showtown, the Blackpool museum</a>, starts not in Blackpool but in Yorkshire. Ben Bullock, a former miner from Burnley, ran a sweet stall on Dewsbury market and experimented with sweets that had lettering running right through them.</p><p>According to Showtown, his first lettered batch spelled out 'Whoa Emma', the title of a popular song of the day. The success led to his business, Bullocks Excelsior Toffee Works, founded in 1870.</p><p>In 1887 Bullock came to Blackpool on holiday and spotted an opportunity. Back home, he made the first batch of rock with Blackpool's name through it and sent it to the resort to sell to its fast-growing crowds of visitors.</p><p>Other accounts name different pioneers, and nobody has an airtight paper trail for the very first lettered sweet. The Bullock story is the version Blackpool's own museum tells.</p>"
+    },
+    {
+     "id": "made-in-blackpool",
+     "h2": "Rock made in Blackpool itself",
+     "html": "<p>For its first years, Blackpool rock was made elsewhere and shipped in. Showtown says the first person to make it in the town was probably George Seniors, a former employee of Bullocks, in 1902. He founded the Star Confectionery Company, where the public could watch rock being made on Bank Hey Street.</p><p>Watching rock being made became part of the entertainment. According to Showtown, more confectioners set up in Blackpool through the 1920s, including the Coronation Rock Company in 1927, and some demonstrated rock-making to visitors on the Pleasure Beach.</p><p>Making rock in front of an audience made sense. It is hot, quick, skilful work, and watching a huge glowing bar stretched into a rope of finished sticks is a show in itself.</p>"
+    },
+    {
+     "id": "other-claims",
+     "h2": "Other claims to the first stick",
+     "html": "<p>Like a lot of popular inventions, lettered rock has more than one origin story. Some accounts credit a Victorian sweet-maker known as 'Dynamite Dick', said to come from Morecambe or Blackpool. The food history site <a class=\"text-link\" href=\"https://foodsofengland.info/seasiderock.html\" target=\"_blank\" rel=\"noopener noreferrer\">Foods of England</a> notes that it has not been able to trace either Dynamite Dick or Ben Bullock definitively.</p><p>Earlier still, sticks of pulled and boiled sugar were sold at fairs. Putting the name of a resort through the middle seems to be what turned a fairground sweet into a seaside souvenir.</p><p>We cannot settle the argument here, and we would rather not pretend to. What is clear is that by the early 1900s Blackpool rock was being made and sold in the town itself.</p>"
+    },
+    {
+     "id": "culture",
+     "h2": "Rock in song and story",
+     "html": "<p>Rock was famous enough by the 1930s to be a joke everyone understood. George Formby recorded the comic song 'With My Little Stick of Blackpool Rock' in 1937, and it became one of his best-known numbers (<a class=\"text-link\" href=\"https://en.wikipedia.org/wiki/With_My_Little_Stick_of_Blackpool_Rock\" target=\"_blank\" rel=\"noopener noreferrer\">Wikipedia on the song</a>).</p><p>A year later, Graham Greene used the sweet as the title and central image of his 1938 novel <em>Brighton Rock</em>. The idea is that, like the lettering in a stick of rock, a person's nature runs all the way through them (<a class=\"text-link\" href=\"https://en.wikipedia.org/wiki/Brighton_Rock_(novel)\" target=\"_blank\" rel=\"noopener noreferrer\">Wikipedia on the novel</a>).</p><p>Rock spread to resorts all around the British coast, each with its own name in the middle, and it is still sold along Blackpool's seafront today.</p><p>The comparison works because everyone knew how rock looked inside. Snap a stick at any point and the message is the same, which is exactly what a souvenir should do: carry the name of the place home with you.</p>"
+    },
+    {
+     "id": "still-made",
+     "h2": "A skill that is still around",
+     "html": "<p>Making lettered rock is still done largely by hand, because building letters out of hot sugar is hard to automate. Shops along the seafront sell sticks in every colour and flavour, and you will still find rock with personal messages, company names and dates running through it, made to order.</p><p>The basic method has barely changed: boil the sugar, pull and colour it, build the letters, wrap the casing, then stretch the whole thing out until a block you could not lift becomes dozens of sticks small enough for a pocket.</p>"
+    },
+    {
+     "id": "the-building",
+     "h2": "The Rock Factory today",
+     "html": "<p>Our building is called The Old Rock Factory, and we have kept the name. We are not going to claim a history for these particular walls that we cannot back up. What we can say honestly is that the rock-making has gone, and the name has stayed.</p><p>Today the building is home to makers and small businesses instead: people who build, fix, store, sell and design things in a town that has always been good at making something out of very little. A stick of rock was a simple idea, done with skill. We like to think the people working here now are in the same spirit.</p><p>Find out more <a class=\"text-link\" href=\"/about.html\">about The Rock Factory</a>, or see the <a class=\"text-link\" href=\"/our-businesses.html\">businesses based in the building</a>.</p>"
+    }
+   ],
+   "faqs": [
+    [
+     "Who invented Blackpool rock?",
+     "Showtown, Blackpool's museum, credits Ben Bullock, who made the first Blackpool rock at his Yorkshire works in 1887 after a holiday in the town. Other accounts name different pioneers."
+    ],
+    [
+     "When was rock first made in Blackpool?",
+     "Showtown says it was probably 1902, by George Seniors at the Star Confectionery Company on Bank Hey Street."
+    ],
+    [
+     "How do the letters get into rock?",
+     "Each letter is built by hand from strips of sugar at a large size, assembled into a thick bar, then stretched until it is thin enough to cut into sticks."
+    ],
+    [
+     "Is rock still made at The Rock Factory?",
+     "No. The building carries the name, but the rock-making has gone. It is now home to makers and small businesses."
+    ],
+    [
+     "What was the first lettered rock said to spell?",
+     "According to Showtown, Ben Bullock's first batch of lettered sweets spelled out 'Whoa Emma', a popular song title of the time."
+    ]
+   ],
+   "sources": [
+    [
+     "My little stick of Blackpool rock (Showtown Blackpool)",
+     "https://showtownblackpool.co.uk/things-to-discover/my-little-stick-of-blackpool-rock"
+    ],
+    [
+     "Rock (confectionery) (Wikipedia)",
+     "https://en.wikipedia.org/wiki/Rock_(confectionery)"
+    ],
+    [
+     "Seaside rock (Foods of England)",
+     "https://foodsofengland.info/seasiderock.html"
+    ],
+    [
+     "With My Little Stick of Blackpool Rock (Wikipedia)",
+     "https://en.wikipedia.org/wiki/With_My_Little_Stick_of_Blackpool_Rock"
+    ],
+    [
+     "Brighton Rock (novel) (Wikipedia)",
+     "https://en.wikipedia.org/wiki/Brighton_Rock_(novel)"
+    ]
+   ],
+   "related": [
+    "about",
+    "our-businesses",
+    "unit-ideas-makers-studios",
+    "workshops-studios-blackpool"
+   ]
+  }
+ ]
+}
