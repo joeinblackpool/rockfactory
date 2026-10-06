@@ -1,6 +1,6 @@
 # The Rock Factory Blackpool – rockfactory.uk
 
-Storage units, offices, workshops and artist studios on Keswick Road, off Park Road, Blackpool.
+Storage units, offices, workshops and artist studios at The Old Rock Factory, Keswick Road, Blackpool FY1 5PB.
 
 - `public/` – the website (plain HTML, CSS and images). Edit these files directly.
 - `src/index.js` – small Cloudflare Worker: https and www → apex redirects, security headers, caching, 404 page.
