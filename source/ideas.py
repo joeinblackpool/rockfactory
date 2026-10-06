@@ -231,11 +231,20 @@ if _more.exists():
     INDUSTRIES += [{**x, "h1": tuple(x["h1"]), "uses": [tuple(u) for u in x["uses"]], "faqs": [tuple(f) for f in x["faqs"]]}
                    for x in json.loads(_more.read_text())]
 
+# Deep profiles (equipment, power, safety, floor plan, launch checklist) and hub comparison ratings.
+PROFILES = json.loads((Path(__file__).resolve().parent / "content" / "profiles.json").read_text())
+RANK = {"Low": 1, "Medium": 2, "Higher": 3, "High": 3, "Simple": 1, "Moderate": 2, "Complex": 3}
+RATING_HELP = [
+ ("Power need", "Low: lights, a laptop and chargers. Medium: a few machines running on standard sockets. Higher: motors or several machines at once, so plan which sockets each one uses. Every unit has standard single-phase electricity; there is no three-phase power."),
+ ("Layout", "Simple: shelving and one bench. Moderate: separate zones for making and packing. Complex: long tables or machines that need clear space around them."),
+ ("Set-up cost", "Compared with each other, not a quote. Low: shelving, a bench and basic tools. Medium: one or two specialist machines. High: specialist machines that are the biggest part of the start-up budget. Stock is not included."),
+]
+
 NOT_SUITABLE = [
  ("Melting or heating combustibles", "Candle making, soap making, wax melts, resin casting, plastic moulding and 3D print farms, or anything that melts waxes, plastics, resins or oils."),
  ("Flammable liquids and gases", "Fuel, solvent-based paints or chemicals in bulk, and gas cylinders, unless we have agreed otherwise in writing."),
  ("Cars and vehicles", "Car storage is not permitted."),
- ("Cooking", "Cooking or hot food preparation. Dry food packing may be possible; ask us first."),
+ ("Cooking", "Cooking, roasting or hot food preparation. Dry food packing may be possible; see our <a class=\"text-link\" href=\"/unit-ideas-dry-goods-botanicals.html\">dry goods guide</a> and ask us first."),
 ]
 
 GENERAL_FAQS = [
@@ -303,6 +312,16 @@ def lc(name):
     return name if len(name) > 1 and name[1].isupper() else name[0].lower() + name[1:]
 
 
+def chips(items):
+    """Bold metric chips: (label, value) or (label, value, note)."""
+    out = ""
+    for it in items:
+        label, value, note = (list(it) + [None])[:3]
+        lvl = f' data-level="{RANK[value]}"' if value in RANK else ""
+        out += f'<li class="chip"{lvl}><span>{label}</span><strong>{value}</strong>{f"<small>{note}</small>" if note else ""}</li>'
+    return f'<ul class="chips">{out}</ul>'
+
+
 def faq_html(faqs):
     return "".join(f"<details><summary>{q}</summary><p>{a}</p></details>" for q, a in faqs)
 
@@ -318,23 +337,60 @@ def crumbs_html(items):
 def industry_page(t, ind):
     slug = ind["slug"]; url = f"{SITE}/{slug}.html"
     crumb = [("Business ideas", f"{SITE}/{HUB}.html"), (ind["short"], url)]
+    prof = PROFILES.get(slug, {}); deep = prof.get("uses", {})
     toc = "".join(f'<li><a href="#{re.sub(r"[^a-z0-9]+", "-", u[0].lower()).strip("-")}">{u[0]}</a></li>' for u in ind["uses"])
     uses = ""
     for name, sizes, what, layout, tip in ind["uses"]:
         aid = re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
-        uses += (f'<article class="idea" id="{aid}"><h3>{name}</h3><p>{what}</p>'
-                 f'<dl class="idea-facts"><div><dt>Best unit</dt><dd>{unit_links(sizes)}</dd></div>'
-                 f'<div><dt>Layout</dt><dd>{layout}</dd></div><div><dt>Good to know</dt><dd>{tip}</dd></div></dl></article>')
+        d = deep.get(name)
+        if not d:
+            uses += (f'<article class="idea" id="{aid}"><h3>{name}</h3><p>{what}</p>'
+                     f'<dl class="idea-facts"><div><dt>Best unit</dt><dd>{unit_links(sizes)}</dd></div>'
+                     f'<div><dt>Layout</dt><dd>{layout}</dd></div><div><dt>Good to know</dt><dd>{tip}</dd></div></dl></article>')
+            continue
+        uses += (f'<article class="idea deep" id="{aid}"><h3>{name}</h3><p class="idea-answer"><strong>{d["answer"]}</strong></p>'
+                 + chips([("Power need", d["power"]), ("Layout", d["layout"]), ("Set-up cost", d["cost"]), ("Best unit", " or ".join(f"{s} sq ft" for s in sizes))])
+                 + f'<p>{what}</p>'
+                 f'<h4>Technical profile</h4><div class="profile-grid">'
+                 f'<section class="profile-card"><h5>Equipment that fits</h5><ul>{"".join(f"<li>{k}</li>" for k in d["kit"])}</ul></section>'
+                 f'<section class="profile-card"><h5>Power and utilities</h5><p>{d["power_detail"]}</p></section>'
+                 f'<section class="profile-card wide"><h5>Safety and site rules</h5><p>{d["safety"]}</p></section></div>'
+                 f'<h4>Floor plan</h4><dl class="idea-facts">'
+                 f'<div><dt>Vertical racking</dt><dd>{d["racking"]}</dd></div>'
+                 f'<div><dt>Mobile benches</dt><dd>{d["benches"]}</dd></div>'
+                 f'<div><dt>Flow of goods</dt><dd>{d["flow"]}</dd></div></dl>'
+                 f'<h4>Launch checklist</h4><div class="profile-grid">'
+                 f'<section class="profile-card"><h5>Start-up supplies</h5><ul class="check">{"".join(f"<li>{k}</li>" for k in d["supplies"])}</ul></section>'
+                 f'<section class="profile-card"><h5>Insurance to discuss</h5><p>{d["cover"]}</p><p><a class="text-link" href="/small-business-insurance-guide.html">Small business insurance guide</a></p></section></div>'
+                 f'<dl class="idea-facts"><div><dt>Best unit</dt><dd>{unit_links(sizes)}</dd></div><div><dt>Good to know</dt><dd>{tip}</dd></div></dl></article>')
+    answer = ""
+    if prof.get("answer"):
+        r = prof["rating"]
+        answer = (f'<div class="answer-box"><p><strong>{prof["answer"]}</strong></p>'
+                  + chips([("Power need", r["power"], prof.get("power_note")), ("Layout", r["layout"], prof.get("layout_note")), ("Set-up cost", r["cost"], prof.get("cost_note"))])
+                  + '</div>')
+    plan = ""
+    if deep:
+        plan = ('<h2 id="plan">Planning a small unit floor</h2>'
+                '<p><strong>Go up the walls, keep benches mobile and give goods one clear route from the door to the work area and back.</strong></p>'
+                '<ul class="tick-list"><li><strong>Measure before you buy racking.</strong> Ask us for the height of the unit you are viewing, then choose shelving that uses it safely, fixed to the wall where the manufacturer says so.</li>'
+                '<li><strong>Heavy low, light high.</strong> Keep heavy stock and machines at or below waist height and light, bulky items on the top shelves.</li>'
+                '<li><strong>Lockable castors.</strong> Benches and rails on lockable wheels let one room switch between making, photographing and packing.</li>'
+                '<li><strong>One-way flow.</strong> Goods in at the door, work in the middle, finished orders back by the door. The 150, 180 and 300 sq ft units have roller shutters; the 160 sq ft unit has a security door.</li>'
+                '<li><strong>Sockets first.</strong> Put machines near sockets and avoid chaining extension leads.</li></ul>')
+    srcs = ""
+    if prof.get("sources"):
+        srcs = '<h2 id="sources">Official guidance</h2><ul class="source-list">' + "".join(f'<li><a class="text-link" href="{u}" target="_blank" rel="noopener noreferrer">{n}</a></li>' for n, u in prof["sources"]) + '</ul>'
     others = " · ".join(f'<a class="text-link" href="/{x["slug"]}.html">{x["short"]}</a>' for x in INDUSTRIES if x is not ind)
     main = f'''<main id="main">
 {crumbs_html([(n, u.replace(SITE, "")) for n, u in crumb])}
-<section class="wrap guide-hero"><p class="eyebrow">Business ideas · {ind["short"]}</p><h1>{ind["h1"][0]}<br><em>{ind["h1"][1]}</em></h1><p class="intro">{ind["lead"]}</p><p class="guide-meta">By The Rock Factory, Blackpool · Updated {UPDATED}</p><div class="actions"><a class="button" href="{WA_H}" target="_blank" rel="noopener noreferrer">Ask if your business suits a unit</a><a class="button secondary" href="/#prices">Units and prices</a></div></section>
-<section class="section wrap guide-body"><div class="guide-grid"><aside class="guide-toc" aria-label="On this page"><p class="eyebrow">On this page</p><ol>{toc}<li><a href="#why">Why our units suit</a></li><li><a href="#checklist">Start-up checklist</a></li><li><a href="#faq">Questions</a></li></ol></aside>
-<div class="guide-content"><h2>Ideas and how to set them up</h2>{uses}
+<section class="wrap guide-hero"><p class="eyebrow">Business ideas · {ind["short"]}</p><h1>{ind["h1"][0]}<br><em>{ind["h1"][1]}</em></h1>{answer}<p class="intro">{ind["lead"]}</p><p class="guide-meta">By The Rock Factory, Blackpool · Updated {UPDATED}</p><div class="actions"><a class="button" href="{WA_H}" target="_blank" rel="noopener noreferrer">Ask if your business suits a unit</a><a class="button secondary" href="/#prices">Units and prices</a></div></section>
+<section class="section wrap guide-body"><div class="guide-grid"><aside class="guide-toc" aria-label="On this page"><p class="eyebrow">On this page</p><ol>{toc}{'<li><a href="#plan">Planning the floor</a></li>' if plan else ''}<li><a href="#why">Why our units suit</a></li><li><a href="#checklist">Start-up checklist</a></li><li><a href="#faq">Questions</a></li>{'<li><a href="#sources">Official guidance</a></li>' if srcs else ''}</ol></aside>
+<div class="guide-content"><h2>Ideas and how to set them up</h2>{uses}{plan}
 <h2 id="why">Why our units suit {ind["short"].lower()}</h2><ul class="tick-list">{"".join(f"<li>{w}</li>" for w in ind["why"])}<li>Lighting, standard single-phase electricity and Wi-Fi are already connected in every unit (there is no three-phase power), with 24-hour access, free CCTV app access covering the entrance and the area outside the units, and shared facilities.</li></ul>
 <div class="callout"><h3>Not allowed in our units</h3><p>Nothing that melts or heats combustible materials such as waxes, plastics, resins or oils, no flammable liquids or gases in bulk, and no car storage. Low-risk materials such as wood, paper, card, fabric and dry goods are fine. Every business use needs our approval first.</p></div>
 <h2 id="checklist">Start-up checklist</h2><ol class="steps">{"".join(f"<li><span>{c}</span></li>" for c in CHECKLIST)}</ol>
-<h2 id="faq">Questions</h2><div class="faq-list">{faq_html(ind["faqs"] + GENERAL_FAQS[1:5])}</div>
+<h2 id="faq">Questions</h2><div class="faq-list">{faq_html(ind["faqs"] + GENERAL_FAQS[1:5])}</div>{srcs}
 <p class="fine-print">Prices are subject to availability. Minimum rental term: one month, then one month’s notice to leave. Swap to a bigger or smaller unit any time, subject to availability. Electricity usage is charged separately at the supplier rate, with no markup. This guide is general information, not legal, insurance or tax advice.</p>
 <h2>More business ideas</h2><p><a class="text-link" href="/{HUB}.html">All business ideas</a> · {others}</p></div></div></section>
 </main>'''
@@ -353,9 +409,30 @@ def hub_page(t):
     not_ok = "".join(f"<li><strong>{h}.</strong> {d}</li>" for h, d in NOT_SUITABLE)
     sources = "".join(f'<li><a class="text-link" href="{u}" target="_blank" rel="noopener noreferrer">{n}</a></li>' for n, u in SOURCES)
     n_ideas = sum(len(x["uses"]) for x in INDUSTRIES)
+    mrows = ""
+    for x in INDUSTRIES:
+        p = PROFILES.get(x["slug"], {}); r = p.get("rating")
+        if not r: continue
+        from collections import Counter
+        top = Counter(u[1][0] for u in x["uses"]).most_common(1)[0][0]
+        cell = lambda v, note: f'<td data-sort="{RANK[v]}"><strong class="lvl" data-level="{RANK[v]}">{v}</strong>{f"<small>{note}</small>" if note else ""}</td>'
+        mrows += (f'<tr data-power="{RANK[r["power"]]}" data-layout="{RANK[r["layout"]]}" data-cost="{RANK[r["cost"]]}">'
+                  f'<th scope="row" data-sort="{x["short"]}"><a href="/{x["slug"]}.html">{x["short"]}</a>{"<small>Full technical profiles</small>" if p.get("uses") else ""}</th>'
+                  + cell(r["power"], p.get("power_note")) + cell(r["layout"], p.get("layout_note")) + cell(r["cost"], p.get("cost_note"))
+                  + f'<td data-sort="{top}" class="nowrap">{top} sq ft</td><td data-sort="{len(x["uses"])}">{len(x["uses"])}</td></tr>')
+    help_html = "".join(f"<li><strong>{h}.</strong> {d}</li>" for h, d in RATING_HELP)
+    matrix = f'''<section class="section wrap" id="compare"><div class="section-head"><h2>Compare industries<br><em>at a glance</em></h2><p><strong>The lowest-risk, lowest-cost starts are online selling, trade storage and market trading. Textiles, repair and making need more power and planning but still run on standard sockets.</strong></p></div>
+<div class="matrix-tools" role="group" aria-label="Filter industries" hidden><button type="button" class="filter is-on" data-filter="all" aria-pressed="true">All industries</button><button type="button" class="filter" data-filter="power" aria-pressed="false">Low power</button><button type="button" class="filter" data-filter="layout" aria-pressed="false">Simple layout</button><button type="button" class="filter" data-filter="cost" aria-pressed="false">Low set-up cost</button></div>
+<div class="table-wrap"><table class="matrix" id="matrix"><caption class="sr-only">Industries compared by power need, layout complexity and set-up cost</caption><thead><tr><th scope="col" aria-sort="none"><button type="button" data-col="0">Industry</button></th><th scope="col" aria-sort="none"><button type="button" data-col="1">Power need</button></th><th scope="col" aria-sort="none"><button type="button" data-col="2">Layout</button></th><th scope="col" aria-sort="none"><button type="button" data-col="3">Set-up cost</button></th><th scope="col" aria-sort="none"><button type="button" data-col="4">Usual unit</button></th><th scope="col" aria-sort="none"><button type="button" data-col="5">Ideas</button></th></tr></thead><tbody>{mrows}</tbody></table></div>
+<ul class="tick-list rating-help">{help_html}</ul></section>
+<script>(()=>{{const t=document.getElementById("matrix"),tools=document.querySelector(".matrix-tools");if(!t||!tools)return;tools.hidden=false;const body=t.tBodies[0];
+tools.addEventListener("click",e=>{{const b=e.target.closest("button");if(!b)return;tools.querySelectorAll("button").forEach(x=>{{x.classList.toggle("is-on",x===b);x.setAttribute("aria-pressed",x===b)}});const f=b.dataset.filter;[...body.rows].forEach(r=>{{r.hidden=f!=="all"&&r.dataset[f]!=="1"}})}});
+t.tHead.addEventListener("click",e=>{{const b=e.target.closest("button");if(!b)return;const th=b.parentElement,c=+b.dataset.col,asc=th.getAttribute("aria-sort")!=="ascending";t.tHead.querySelectorAll("th").forEach(h=>h.setAttribute("aria-sort","none"));th.setAttribute("aria-sort",asc?"ascending":"descending");
+const v=r=>{{const s=r.cells[c].dataset.sort;return isNaN(s)?s:+s}};[...body.rows].sort((a,b)=>{{const x=v(a),y=v(b);return (x>y?1:x<y?-1:0)*(asc?1:-1)}}).forEach(r=>body.appendChild(r))}})}})();</script>'''
     main = f'''<main id="main">
 {crumbs_html([("Business ideas", f"/{HUB}.html")])}
-<section class="wrap guide-hero"><p class="eyebrow">Guide for small businesses · Blackpool</p><h1>{n_ideas} business ideas<br><em>for a small unit</em></h1><p class="intro">Ready to move your business out of the spare room or garage? A small unit gives you a proper base with lower costs than a shop or large warehouse. Here are {n_ideas} low-risk business ideas that suit our 150 to 300 sq ft units at The Old Rock Factory, Keswick Road, with how to set each one up.</p><p class="guide-meta">By The Rock Factory, Blackpool · Updated {UPDATED}</p><div class="actions"><a class="button" href="{WA_H}" target="_blank" rel="noopener noreferrer">Ask if your business suits a unit</a><a class="button secondary" href="#which-unit">Which unit fits?</a></div></section>
+<section class="wrap guide-hero"><p class="eyebrow">Guide for small businesses · Blackpool</p><h1>{n_ideas} business ideas<br><em>for a small unit</em></h1><div class="answer-box"><p><strong>The best businesses for a 150 to 300 sq ft unit work with dry, low-risk materials and run on standard single-phase sockets: online selling, sewing and embroidery, repair benches, makers' studios, dry goods packing and trade storage.</strong></p></div><p class="intro">Ready to move your business out of the spare room or garage? A small unit gives you a proper base with lower costs than a shop or large warehouse. Here are {n_ideas} low-risk business ideas that suit our 150 to 300 sq ft units at The Old Rock Factory, Keswick Road, with how to set each one up.</p><p class="guide-meta">By The Rock Factory, Blackpool · Updated {UPDATED}</p><div class="actions"><a class="button" href="{WA_H}" target="_blank" rel="noopener noreferrer">Ask if your business suits a unit</a><a class="button secondary" href="#compare">Compare industries</a></div></section>
+{matrix}
 <section class="section wrap"><div class="section-head"><h2>Ideas by<br><em>industry</em></h2><p>Choose an industry for detailed set-up guides: the best unit, layout and things to know.</p></div><div class="idea-cards">{cards}</div></section>
 <section class="section wrap guide-body"><div class="guide-content wide">
 <h2>What a small unit is good for</h2><p>150 sq ft is roughly the floor area of a single garage. That is enough for an online shop's stock and packing bench, one or two sewing machines and a cutting table, a repair bench with secure storage, a photography studio or a tradesperson's tools and materials. The best businesses for a small unit keep stock compact, work with dry, low-risk materials and make the most of the walls with shelving.</p>

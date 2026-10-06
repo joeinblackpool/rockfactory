@@ -1,0 +1,1143 @@
+{
+ "_note": "Deep profiles for industry pages and ratings for the hub comparison grid. Ratings compare fitting out a unit, not stock. Facts about the units come only from BRIEF.md: single-phase power only, no ceiling heights, approval needed for every use.",
+ "unit-ideas-online-sellers": {
+  "answer": "Online selling is one of the easiest businesses to run from a 150 sq ft unit: standard sockets cover everything you need, the work is dry and low-risk, and a roller shutter makes stock in and parcels out quick.",
+  "rating": {
+   "power": "Low",
+   "layout": "Simple",
+   "cost": "Low"
+  },
+  "power_note": "Lights, a laptop, a label printer and a scale",
+  "layout_note": "Shelving and one packing bench",
+  "cost_note": "Shelving, a bench and a label printer",
+  "sources": [
+   [
+    "Set up as a sole trader (GOV.UK)",
+    "https://www.gov.uk/set-up-sole-trader"
+   ],
+   [
+    "Employers' liability insurance (GOV.UK)",
+    "https://www.gov.uk/employers-liability-insurance"
+   ]
+  ],
+  "uses": {
+   "E-commerce stock storage": {
+    "answer": "A 150 sq ft roller-shutter unit holds a small online shop's stock, a packing bench and a label printer, with a clear lane for couriers.",
+    "power": "Low",
+    "layout": "Simple",
+    "cost": "Low",
+    "kit": [
+     "Steel boltless shelving bays along both long walls",
+     "A packing bench about 1.8 m long with a roll holder for tape and paper",
+     "Thermal label printer and parcel scale on the Wi-Fi",
+     "Sack truck or folding platform trolley",
+     "Clear lidded crates and shelf labels"
+    ],
+    "power_detail": "Everything runs from standard 13 amp sockets on the single-phase supply: lights, a laptop, a label printer, a scale and a phone charger. You will rarely need more than one double socket at the bench.",
+    "safety": "Boxed, dry stock is exactly what our units are set up for. There is no melting, heating or flammable processing, so the main things to manage are tidy aisles and not stacking cardboard against heaters. Tell us what you sell when you enquire, because every use needs our approval.",
+    "racking": "Run shelving along both long walls and use the full height that your unit allows; we can tell you the height of the unit you are viewing. Heavy and fast-selling lines go at waist height, light bulky stock and spare packaging go on the top shelves, and slow sellers go low.",
+    "benches": "Put the packing bench on lockable castors. Roll it to the middle when a big batch arrives for checking and labelling, then push it back against the wall by the door for everyday packing.",
+    "flow": "Deliveries come in through the roller shutter and go straight onto a goods-in shelf for checking. Stock then moves to its labelled bay, orders are picked to the packing bench, and sealed parcels wait on a dispatch shelf next to the shutter for collection.",
+    "supplies": [
+     "Three to five shelving bays",
+     "Packing bench and stool",
+     "Label printer and labels",
+     "Parcel scale",
+     "Boxes, mailing bags, paper fill and tape",
+     "Shelf labels and a simple stock list",
+     "Sack truck"
+    ],
+    "cover": "Ask a broker about stock cover for the goods in the unit, goods in transit if you deliver yourself, and public liability if customers or couriers come to the unit. Employers' liability is a legal requirement in most cases once you take on staff."
+   },
+   "Vintage and reseller clothing": {
+    "answer": "Clothing rails, a photo corner and a steaming and packing table fit comfortably in 150 sq ft, and clothes are low-risk stock that is easy to organise.",
+    "power": "Low",
+    "layout": "Simple",
+    "cost": "Low",
+    "kit": [
+     "Heavy-duty double clothing rails on castors",
+     "Garment steamer",
+     "Plain backdrop or wall with two LED softbox lights",
+     "Mannequin or hanging photo rail",
+     "Packing table with mailing bags and tissue"
+    ],
+    "power_detail": "A steamer, two LED lights and a laptop all run from standard sockets. Keep the steamer on its own socket rather than a long extension lead.",
+    "safety": "Clothing is dry, low-risk stock. Keep bags and tissue in closed boxes and away from the steamer and any heater, and empty the steamer at the end of the day.",
+    "racking": "Use rails for hung stock and wall shelving above them for folded items, shoes and bags in clear boxes. Label each rail by size, brand or platform so pickers find items fast.",
+    "benches": "Wheeled rails let you change the room in minutes: push them together to open a photo area, or line them up by the door on dispatch day.",
+    "flow": "Bags of new stock arrive at the door and go to a sorting rail. Items are cleaned and steamed, photographed in the corner, listed, and then hung on the stock rails. Sold items are picked, packed on the table and left on the dispatch shelf by the door.",
+    "supplies": [
+     "Two or three rails",
+     "Steamer",
+     "Two LED lights and a backdrop",
+     "Hangers and size dividers",
+     "Mailing bags, tissue and labels",
+     "Clear boxes for accessories"
+    ],
+    "cover": "Stock cover for clothing in the unit and public liability if buyers collect in person are worth discussing with a broker. Some platforms cover items in transit, so check what your selling platform includes."
+   },
+   "Subscription box packing": {
+    "answer": "A 180 or 300 sq ft unit gives room for flat-packed boxes, product stock and a long assembly line for packing each month's boxes in batches.",
+    "power": "Low",
+    "layout": "Moderate",
+    "cost": "Low",
+    "kit": [
+     "Long folding tables set up as an assembly line",
+     "Shelving for products by month or box type",
+     "Pallet of flat-packed boxes stored upright",
+     "Label printer and scale",
+     "Tape guns and box cutters"
+    ],
+    "power_detail": "A label printer, a scale and a laptop on standard sockets cover the whole operation.",
+    "safety": "Dry boxed items such as socks, books, stationery and packaged snacks are fine. Ask us before including anything flammable, such as aerosols. Packaged food needs extra thought: see our dry goods and botanicals guide.",
+    "racking": "Stand flat-packed boxes upright on one side to save floor space. Put this month's products at waist height and next month's stock higher up, with a labelled bay for each box version.",
+    "benches": "Folding or wheeled tables can be lined up as a packing line on dispatch week and folded away the rest of the month to leave room for deliveries.",
+    "flow": "Products arrive at the shutter and are checked into their bays. On packing day, boxes are made up at the start of the line, filled station by station, sealed, labelled and stacked on the dispatch side nearest the door.",
+    "supplies": [
+     "Two or three long tables",
+     "Shelving bays",
+     "Flat-packed boxes and tissue",
+     "Insert cards",
+     "Tape guns, labels and a scale",
+     "Clipboard checklist for each box"
+    ],
+    "cover": "Stock and contents cover for products waiting to be packed, and products liability if you sell your own branded items. Talk to a broker about cover for goods in transit and for anyone who helps you on packing days."
+   },
+   "Trading cards, comics and books": {
+    "answer": "The 160 sq ft security-door unit suits small, valuable paper stock: a grading desk, archive boxes on shelving and a separate packing area.",
+    "power": "Low",
+    "layout": "Simple",
+    "cost": "Low",
+    "kit": [
+     "Desk with a daylight task lamp and magnifier",
+     "Archive boxes and card storage boxes",
+     "Toploaders, sleeves and comic bags",
+     "Lockable steel cabinet for high-value items",
+     "Small scale and label printer"
+    ],
+    "power_detail": "A task lamp, laptop and printer use very little power on standard sockets.",
+    "safety": "Paper and card are low-risk stock. Keep them in closed boxes off the floor. The units are not climate-controlled, so ask us if your stock is sensitive to temperature or damp.",
+    "racking": "Shelving up the walls with archive boxes labelled by set, title or year. Keep the most valuable stock in a lockable cabinet rather than on open shelves.",
+    "benches": "A wheeled cart holds the stock you are currently sorting, so the desk stays clear and the cart can be locked away at the end of the day.",
+    "flow": "Stock arrives through the security door to a sorting table, is graded and photographed at the desk, then filed into labelled boxes. Sold items are packed at a separate table so stock and packaging never mix.",
+    "supplies": [
+     "Shelving and archive boxes",
+     "Desk and task lamp",
+     "Sleeves, toploaders and bags",
+     "Lockable cabinet",
+     "Rigid mailers and labels"
+    ],
+    "cover": "High-value stock is the main risk, so ask a broker about stock cover with the right limits for individual items, and cover for items in transit. Public liability matters if buyers come to the unit."
+   },
+   "Board game and book publishing fulfilment": {
+    "answer": "A 180 or 300 sq ft unit can hold a small publisher's print run on shelving and pallets, with a packing station for orders and pre-orders.",
+    "power": "Low",
+    "layout": "Moderate",
+    "cost": "Low",
+    "kit": [
+     "Heavy-duty long-span shelving for cartons",
+     "Pallet truck if stock arrives on pallets",
+     "Packing bench with scale and label printer",
+     "Book mailers and boxes in several sizes"
+    ],
+    "power_detail": "Standard sockets cover label printing, a scale and a laptop.",
+    "safety": "Printed books, games and card are low-risk. Keep cartons off the floor and keep the route from the shutter clear when a delivery is due.",
+    "racking": "Long-span shelving with full cartons on the lower levels and open cartons at waist height for picking. Plan the space before a print run lands so a pallet has somewhere to go.",
+    "benches": "A wheeled packing bench can be moved beside the stock bay that is selling fastest during a launch or crowdfunding fulfilment.",
+    "flow": "Pallets or cartons come in through the roller shutter, are counted and shelved, then picked to the packing bench. Packed orders are stacked by courier on the dispatch side by the door.",
+    "supplies": [
+     "Long-span shelving",
+     "Packing bench",
+     "Scale and label printer",
+     "Mailers and boxes",
+     "Pallet truck if needed"
+    ],
+    "cover": "Stock cover for the print run and products liability for your own titles are worth discussing with a broker, along with cover for goods in transit."
+   },
+   "Packaging supplies distribution": {
+    "answer": "Light, bulky packaging stock suits a 180 or 300 sq ft roller-shutter unit, with heavy items low and light stock high on shelving.",
+    "power": "Low",
+    "layout": "Simple",
+    "cost": "Low",
+    "kit": [
+     "Heavy-duty shelving bays",
+     "Sack truck and platform trolley",
+     "Order desk with a laptop and printer"
+    ],
+    "power_detail": "A laptop and printer on standard sockets is all most distributors need.",
+    "safety": "Paper and card are fine. Ask us before storing large quantities of plastic film or foam, so we can check it suits the building.",
+    "racking": "Bulky but light stock, such as rolls of paper and flat boxes, goes high; heavy items such as tape cartons stay low. Keep each product in its own labelled bay.",
+    "benches": "A wheeled order desk can sit by the door during delivery runs and move back when stock arrives.",
+    "flow": "Stock comes in through the shutter to its bay. Orders are picked into the van loading area by the door and loaded straight from there.",
+    "supplies": [
+     "Shelving bays",
+     "Trolleys",
+     "Order desk",
+     "Stock labels and a price list"
+    ],
+    "cover": "Ask a broker about stock cover, goods in transit for deliveries and public liability for visits to customers' premises."
+   }
+  }
+ },
+ "unit-ideas-textiles-leather": {
+  "answer": "Sewing, embroidery and leatherwork fit well in a 150 to 180 sq ft unit: most machines run on standard single-phase sockets, and fabric and leather are low-risk materials with no melting or heating involved.",
+  "rating": {
+   "power": "Medium",
+   "layout": "Moderate",
+   "cost": "Medium"
+  },
+  "power_note": "Several machines and an iron on standard sockets",
+  "layout_note": "Cutting table, machine bench and rails",
+  "cost_note": "One or two specialist machines",
+  "sources": [
+   [
+    "Health and safety made simple (HSE)",
+    "https://www.hse.gov.uk/simple-health-safety/"
+   ],
+   [
+    "Employers' liability insurance (GOV.UK)",
+    "https://www.gov.uk/employers-liability-insurance"
+   ]
+  ],
+  "uses": {
+   "Tailoring and alterations": {
+    "answer": "One or two sewing machines, an overlocker, a cutting table and rails for customers' garments fit in a 150 or 160 sq ft unit.",
+    "power": "Medium",
+    "layout": "Moderate",
+    "cost": "Medium",
+    "kit": [
+     "Industrial lockstitch sewing machine with a servo motor",
+     "Overlocker",
+     "Cutting table at standing height",
+     "Steam iron or steam generator on a heat-proof stand",
+     "Rails for jobs in progress and finished work",
+     "Full-length mirror for fittings"
+    ],
+    "power_detail": "Industrial machines with servo motors run on standard single-phase sockets and draw little power. A steam generator iron draws the most, so give it its own socket. There is no three-phase power in the units.",
+    "safety": "Fabric and thread are low-risk materials. Use the iron on a heat-proof stand and switch it off at the end of the day. Every business use needs our approval first.",
+    "racking": "Shelving above the machines for thread, zips and trims in labelled boxes. Hang customers' garments on rails tagged with name and collection date.",
+    "benches": "Put the cutting table on lockable castors so it can be pushed against the wall to make room for a fitting, then rolled back out for cutting.",
+    "flow": "Customers hand over garments at the door, which are tagged and hung on the in-progress rail. Work moves to the cutting table, then to the machines and the pressing station, and finished items go to a collection rail near the door.",
+    "supplies": [
+     "Sewing machine and overlocker",
+     "Cutting table",
+     "Iron and board",
+     "Two rails and hangers",
+     "Tags and job book",
+     "Mirror",
+     "Basic stock of thread and zips"
+    ],
+    "cover": "Customers' garments in your care are the key risk, so ask a broker about goods in trust cover, plus public liability for customers at fittings and contents cover for your machines."
+   },
+   "Embroidery and personalisation": {
+    "answer": "Single-head and small multi-head embroidery machines that run on a standard socket, plus blank stock on shelving, fit in a 150 or 180 sq ft unit.",
+    "power": "Medium",
+    "layout": "Moderate",
+    "cost": "High",
+    "kit": [
+     "Single-head or small multi-head commercial embroidery machine on its stand",
+     "Hooping station",
+     "Laptop with digitising software",
+     "Thread rack",
+     "Heat press for transfers, if we approve it"
+    ],
+    "power_detail": "Check that any machine you buy runs on single-phase power from a normal socket, because there is no three-phase supply. A heat press draws a lot of power, so give it its own socket and ask us about it first.",
+    "safety": "Stitching onto fabric is dry, mechanical work. A heat press heats transfers rather than melting combustible materials, but it is still a heat source, so tell us about it when you enquire.",
+    "racking": "Blank garments on shelving by size and colour, thread on a wall rack above the machine, and finished orders bagged and labelled on a separate shelf.",
+    "benches": "A wheeled hooping and folding table can sit beside the machine during a run and be moved to the door for bagging and dispatch.",
+    "flow": "Blank stock comes in through the shutter to its shelf. Garments are hooped, embroidered, trimmed and folded, then bagged and labelled on the dispatch shelf by the door.",
+    "supplies": [
+     "Embroidery machine",
+     "Hoops and stabiliser",
+     "Thread in core colours",
+     "Digitising software",
+     "Shelving for blanks",
+     "Bags and labels"
+    ],
+    "cover": "Ask a broker about contents cover for the machine, which is usually the biggest single cost, goods in trust for customers' own garments, and products liability for items you sell."
+   },
+   "Leather goods workshop": {
+    "answer": "Cutting, hand-stitching and finishing small leather goods needs a big flat surface and good lighting, which a 150 or 160 sq ft unit gives you.",
+    "power": "Low",
+    "layout": "Moderate",
+    "cost": "Medium",
+    "kit": [
+     "Large self-healing cutting mat on a sturdy table",
+     "Stitching pony and hand tools",
+     "Hide rack for flat or rolled hides",
+     "Strap cutter and edge tools",
+     "Task lighting",
+     "Leather sewing machine (optional)"
+    ],
+    "power_detail": "Most leatherwork is by hand. Lighting and an optional leather sewing machine run on standard sockets.",
+    "safety": "Dry hides and hand tools are fine. Ask us before using solvent-based dyes or glues in any quantity, and keep any you do use in small, closed containers.",
+    "racking": "Store hides flat on deep shelves or rolled on a wall rack, with hardware such as buckles and rivets in labelled drawers.",
+    "benches": "A wheeled finishing bench can be pulled next to the cutting table when you batch-produce, then pushed aside when you need the floor for large hides.",
+    "flow": "Hides come in and go to the rack. Pieces are cut on the big table, stitched at the bench, finished and checked, then packed for orders or market stock.",
+    "supplies": [
+     "Cutting table and mat",
+     "Hand tools and stitching pony",
+     "Hide rack",
+     "Thread and hardware",
+     "Packing materials"
+    ],
+    "cover": "Products liability for goods you sell, contents cover for tools and stock, and public liability if customers visit are the covers to raise with a broker."
+   },
+   "Curtains, blinds and soft furnishings": {
+    "answer": "Made-to-measure curtains need the longest table you can fit, so a 180 or 300 sq ft roller-shutter unit is the best fit.",
+    "power": "Medium",
+    "layout": "Complex",
+    "cost": "Medium",
+    "kit": [
+     "Long padded work table",
+     "Industrial straight-stitch machine",
+     "Blind-hemming machine",
+     "Fabric roll rack",
+     "Steam iron"
+    ],
+    "power_detail": "Sewing machines and an iron run on standard sockets. Spread heavy-draw items such as irons across different sockets.",
+    "safety": "Fabric is low-risk. Keep it away from heaters and switch the iron off at the end of the day.",
+    "racking": "Fabric rolls on a wall rack, linings and tapes on shelving, finished orders hung or boxed near the door.",
+    "benches": "Machines on wheeled benches can be pushed to the wall when the full length of the table is needed for measuring and cutting.",
+    "flow": "Rolls arrive through the shutter to the rack. Fabric is measured and cut on the long table, sewn at the machines, pressed, then folded or hung ready for fitting.",
+    "supplies": [
+     "Long table",
+     "Sewing machines",
+     "Fabric rack",
+     "Measuring tools",
+     "Tapes, linings and hooks"
+    ],
+    "cover": "Ask a broker about public liability for fitting in customers' homes, goods in trust for customers' fabric and contents cover for machines."
+   },
+   "Costume and dancewear making": {
+    "answer": "Costume makers need rails, a sewing area and space for fittings, which fit in a 150 or 160 sq ft unit.",
+    "power": "Medium",
+    "layout": "Moderate",
+    "cost": "Medium",
+    "kit": [
+     "Domestic or industrial sewing machine",
+     "Overlocker or coverstitch machine for stretch fabrics",
+     "Rails for finished costumes",
+     "Mirror for fittings",
+     "Boxes for trims and embellishments"
+    ],
+    "power_detail": "Machines and an iron run on standard sockets.",
+    "safety": "Fabric, trims and sequins are low-risk. Hot-fix stone applicators are small heat tools, so tell us if you plan to use them.",
+    "racking": "Rails for finished costumes, shelving above for fabric and trims in labelled boxes by colour.",
+    "benches": "Wheeled rails can be moved to open a fitting area with the mirror when dancers or performers visit.",
+    "flow": "Fabric comes in to shelving, is cut and sewn, decorated at the bench, fitted, and hung on the finished rail for collection.",
+    "supplies": [
+     "Sewing machine and overlocker",
+     "Rails",
+     "Mirror",
+     "Trims and fabric stock",
+     "Garment bags"
+    ],
+    "cover": "Public liability for fittings, goods in trust for performers' costumes and contents cover for machines are worth discussing with a broker."
+   }
+  }
+ },
+ "unit-ideas-makers-studios": {
+  "answer": "Most makers' studios suit a 150 to 180 sq ft unit: framing, hand woodwork, jewellery, sign-making, paper goods and photography all work with dry materials and standard single-phase sockets.",
+  "rating": {
+   "power": "Medium",
+   "layout": "Moderate",
+   "cost": "Medium"
+  },
+  "power_note": "Benchtop machines and extraction on standard sockets",
+  "layout_note": "Zones for making, finishing and packing",
+  "cost_note": "Benchtop machines or studio kit",
+  "sources": [
+   [
+    "Woodworking (HSE)",
+    "https://www.hse.gov.uk/woodworking/"
+   ],
+   [
+    "Health and safety made simple (HSE)",
+    "https://www.hse.gov.uk/simple-health-safety/"
+   ]
+  ],
+  "uses": {
+   "Picture framing": {
+    "answer": "A framing workshop fits in a 150 or 180 sq ft unit with upright racks for mouldings, board and glass along one wall.",
+    "power": "Low",
+    "layout": "Moderate",
+    "cost": "Medium",
+    "kit": [
+     "Mitre guillotine or mitre saw",
+     "Underpinner",
+     "Mount cutter",
+     "Glass cutting table",
+     "Vertical racks for moulding lengths, board and glass"
+    ],
+    "power_detail": "Most framing tools are manual or pneumatic. A mitre saw and a small compressor run on standard sockets.",
+    "safety": "Wood, board and glass are low-risk materials. Store glass upright in a rack, never flat on the floor.",
+    "racking": "Moulding lengths stand upright in a wall rack, board and glass in slotted racks, and finished frames are wrapped and stacked by the door.",
+    "benches": "A wheeled assembly bench can be pulled out for large frames and pushed back against the wall for everyday work.",
+    "flow": "Mouldings and board come in through the shutter to their racks. Each job is cut, mounted, glazed and assembled, then wrapped and placed by the door for collection.",
+    "supplies": [
+     "Mitre cutter",
+     "Underpinner",
+     "Mount cutter",
+     "Racks",
+     "Starter mouldings, board and glass",
+     "Wrapping materials"
+    ],
+    "cover": "Customers' artwork in your care makes goods in trust cover important. Ask a broker about that, contents cover for tools, and public liability for visitors."
+   },
+   "Small-scale woodworking": {
+    "answer": "Hand tools and benchtop machines with dust extraction fit in a 180 or 300 sq ft roller-shutter unit, and wood is a low-risk material.",
+    "power": "Higher",
+    "layout": "Complex",
+    "cost": "Medium",
+    "kit": [
+     "Heavy workbench with vice",
+     "Benchtop bandsaw or scroll saw",
+     "Benchtop pillar drill",
+     "Mitre saw on a mobile stand",
+     "Dust extractor or workshop vacuum",
+     "Timber wall rack"
+    ],
+    "power_detail": "Benchtop machines run on single-phase power, which is what the units have. Choose single-phase machines and avoid running two motors at once on the same socket. There is no three-phase power.",
+    "safety": "Wood is low-risk to store and work. Fine dust is the main issue, so use extraction and clear offcuts daily. HSE has guidance on wood dust. Ask us before using solvent-based finishes in any quantity.",
+    "racking": "Timber on a wall rack with long lengths low and offcuts in a bin, clamps on a wall rail, and hand tools on a pegboard above the bench.",
+    "benches": "Put benchtop machines on wheeled stands with locking castors so they can be rolled out to use and pushed back to keep the floor clear.",
+    "flow": "Timber comes in through the shutter to the rack, is cut at the machines, assembled at the bench, sanded with extraction running, then finished and packed near the door.",
+    "supplies": [
+     "Workbench",
+     "Two or three benchtop machines",
+     "Dust extraction",
+     "Clamps and hand tools",
+     "Timber rack",
+     "Dust masks and ear defenders"
+    ],
+    "cover": "Ask a broker about contents cover for tools and machines, products liability for items you sell, and public liability if customers visit."
+   },
+   "Jewellery bench": {
+    "answer": "The 160 sq ft security-door unit suits a jeweller's bench with secure storage for metals and stones.",
+    "power": "Low",
+    "layout": "Simple",
+    "cost": "Medium",
+    "kit": [
+     "Jeweller's bench with sweeps tray",
+     "Flex-shaft motor",
+     "Polishing motor with dust hood",
+     "Ultrasonic cleaner",
+     "Lockable steel cabinet"
+    ],
+    "power_detail": "Bench motors, a polisher and an ultrasonic cleaner all run on standard sockets.",
+    "safety": "Metal hand-work is low-risk. Ask us before using an open-flame torch or a casting kiln, because these need our approval.",
+    "racking": "Small labelled drawers for findings and stones, tools on a rack above the bench, and stock and customers' items in the lockable cabinet.",
+    "benches": "Keep polishing on a separate wheeled stand so dust stays away from the main bench.",
+    "flow": "Repairs are booked in through the door and logged, worked at the bench, polished and cleaned, then stored in the cabinet until collection.",
+    "supplies": [
+     "Bench",
+     "Flex-shaft and burs",
+     "Polisher",
+     "Cleaner",
+     "Lockable cabinet",
+     "Job envelopes"
+    ],
+    "cover": "Customers' jewellery is high value, so goods in trust cover with the right limits is the main cover to discuss with a broker, along with stock and contents cover."
+   },
+   "Vinyl signs and decals": {
+    "answer": "A vinyl plotter, weeding table and laminator fit in a 150 or 180 sq ft unit, and plotting and weeding involve no melting.",
+    "power": "Low",
+    "layout": "Moderate",
+    "cost": "Medium",
+    "kit": [
+     "Vinyl cutting plotter",
+     "Long weeding and application table",
+     "Cold laminator",
+     "Vinyl roll wall rack",
+     "Computer with design software"
+    ],
+    "power_detail": "A plotter, a computer and a cold laminator use little power on standard sockets.",
+    "safety": "Vinyl sheet is fine to store and cut. Tell us before adding a printer that uses solvent inks.",
+    "racking": "Vinyl rolls on a wall rack by colour, application tape and transfer film on shelving, and finished signs flat on a shelf.",
+    "benches": "A wheeled application table can be rolled to the shutter for large signs and back against the wall for small decals.",
+    "flow": "Rolls come in to the rack. Designs are cut on the plotter, weeded and taped at the table, then packed or loaded for fitting.",
+    "supplies": [
+     "Plotter",
+     "Table",
+     "Vinyl and tape stock",
+     "Weeding tools",
+     "Roll rack"
+    ],
+    "cover": "Ask a broker about public liability for fitting signs on site, products liability and contents cover for the plotter."
+   },
+   "Paper goods and stationery": {
+    "answer": "Greeting cards, invitations, prints and notebooks need a printer, a guillotine and dry, tidy storage, all of which fit easily in a 150 or 160 sq ft unit.",
+    "power": "Low",
+    "layout": "Simple",
+    "cost": "Low",
+    "kit": [
+     "Desktop or small production digital printer",
+     "Heavy-duty stack guillotine or rotary trimmer",
+     "Creasing and scoring board or machine",
+     "Corner rounder and hole punch",
+     "Flat file drawers or boxes for paper stock",
+     "Packing table with cello bags and backing boards"
+    ],
+    "power_detail": "A digital printer, laptop and task lighting run on standard 13 amp sockets. A production printer is the biggest draw, so give it its own socket.",
+    "safety": "Paper and card are low-risk stock and there is no heating or melting involved. Keep stock in closed boxes off the floor and keep offcuts in a lidded bin that you empty each week.",
+    "racking": "Paper stock flat in boxes or drawers on the lower shelves, where it is heavy, and finished designs boxed and labelled by range on the upper shelves. Use the height of the walls rather than stacking boxes on the floor.",
+    "benches": "A wheeled table can be the cutting station during a print run and the packing station on order day. Lock the castors while you use the guillotine.",
+    "flow": "Paper and envelopes come in through the door to the stock shelves, go to the printer, then to cutting and folding, then to the packing table. Finished orders and wholesale boxes wait on a dispatch shelf by the door.",
+    "supplies": [
+     "Printer and ink or toner",
+     "Guillotine and creasing board",
+     "Paper and card stock",
+     "Envelopes and cello bags",
+     "Shelving and boxes",
+     "Label printer"
+    ],
+    "cover": "Ask a broker about stock cover, contents cover for the printer and cutting kit, and products liability if you sell your own designs to shops."
+   },
+   "Product photography studio": {
+    "answer": "A backdrop, two or three lights and a shooting table fit in a 150 or 180 sq ft unit, and the windowless ground floor gives you complete control of the light.",
+    "power": "Low",
+    "layout": "Moderate",
+    "cost": "Medium",
+    "kit": [
+     "Backdrop stand with paper rolls in white, grey and black",
+     "Two or three LED lights with softboxes",
+     "Shooting table with a sweep",
+     "Light tent for small products",
+     "Camera, tripod and tethering cable",
+     "Editing desk with a calibrated monitor"
+    ],
+    "power_detail": "LED studio lights draw far less than older tungsten lights, so a full setup with a computer runs from standard sockets.",
+    "safety": "Camera kit, props and backdrops are low-risk. Tape cables down or run them along the walls so nobody trips when moving products around.",
+    "racking": "Backdrop rolls on a wall rack, props on shelving sorted by colour or theme, and clients' products on their own labelled shelf near the door, separate from your props.",
+    "benches": "Put lights and the shooting table on wheels so you can reset the set in a minute between products, or clear the floor for a larger item.",
+    "flow": "Clients' products come in through the door and are logged on their shelf. Each product goes to the set, is shot, then edited at the desk while it goes back to its shelf to be returned.",
+    "supplies": [
+     "Backdrop stand and rolls",
+     "Lights and softboxes",
+     "Shooting table",
+     "Light tent",
+     "Camera and tripod",
+     "Editing computer"
+    ],
+    "cover": "Goods in trust cover for clients' products, contents cover for camera kit and public liability for clients who visit are the main covers to ask a broker about."
+   },
+   "Podcast and voiceover booth": {
+    "answer": "The 160 sq ft security-door unit makes a quiet, private recording room with space for a host and two guests.",
+    "power": "Low",
+    "layout": "Simple",
+    "cost": "Medium",
+    "kit": [
+     "Acoustic foam or mineral wool panels for walls and ceiling corners",
+     "Dynamic microphones on boom arms",
+     "Audio interface or podcast mixer",
+     "Closed-back headphones",
+     "Recording desk and quiet chairs",
+     "Ring light and camera if you film episodes"
+    ],
+    "power_detail": "Audio kit, a computer and LED video lights run on standard sockets.",
+    "safety": "Recording kit is low-risk. Fix acoustic panels securely and keep cables tidy.",
+    "racking": "Shelving for spare mics, cables and stands in labelled boxes, kept on the wall behind the camera.",
+    "benches": "A wheeled desk can switch between a solo voiceover position facing the wall and a round-table podcast setup.",
+    "flow": "Guests come in through the security door to a seat at the desk. Recordings go straight to the computer and to cloud storage over the Wi-Fi.",
+    "supplies": [
+     "Acoustic panels",
+     "Microphones and arms",
+     "Interface",
+     "Headphones",
+     "Desk and chairs"
+    ],
+    "cover": "Contents cover for audio and video kit and public liability for guests are the covers to discuss with a broker."
+   }
+  }
+ },
+ "unit-ideas-tech-repair": {
+  "answer": "Repair benches are a good fit for a 150 or 160 sq ft unit: repair and assembly are dry, mechanical jobs, the tools run on standard single-phase sockets, and the security-door unit keeps customers' devices safe overnight.",
+  "rating": {
+   "power": "Medium",
+   "layout": "Moderate",
+   "cost": "Medium"
+  },
+  "power_note": "Soldering stations, chargers and test kit",
+  "layout_note": "Clean bench, secure storage and booking-in area",
+  "cost_note": "Specialist bench tools and parts stock",
+  "sources": [
+   [
+    "Health and safety made simple (HSE)",
+    "https://www.hse.gov.uk/simple-health-safety/"
+   ],
+   [
+    "Employers' liability insurance (GOV.UK)",
+    "https://www.gov.uk/employers-liability-insurance"
+   ]
+  ],
+  "uses": {
+   "Phone, tablet and laptop repair": {
+    "answer": "An anti-static repair bench, micro-soldering kit and a lockable cabinet for customers' devices fit in a 160 sq ft security-door unit.",
+    "power": "Medium",
+    "layout": "Moderate",
+    "cost": "Medium",
+    "kit": [
+     "ESD anti-static bench mat and wrist strap",
+     "Temperature-controlled soldering station",
+     "Stereo microscope",
+     "Hot air rework station",
+     "Fume extractor",
+     "Screen separator and press",
+     "Lockable cabinet for devices"
+    ],
+    "power_detail": "Soldering and rework stations, a microscope light and chargers run on standard sockets. Use a surge-protected power strip at the bench.",
+    "safety": "Repair is dry, mechanical work. Solder melts metal, not combustible materials, but use a fume extractor. Store replacement batteries in their packaging and do not keep damaged or swollen batteries in the unit.",
+    "racking": "Parts in labelled drawer cabinets above the bench, devices awaiting repair in tagged trays, and finished repairs in the lockable cabinet.",
+    "benches": "A wheeled booking-in desk by the door keeps customers away from the repair bench.",
+    "flow": "Customers book devices in at the door desk, devices are tagged and stored, repaired at the bench, tested, and locked away until collection.",
+    "supplies": [
+     "ESD bench mat",
+     "Soldering station",
+     "Microscope",
+     "Fume extractor",
+     "Screwdriver kit",
+     "Parts stock",
+     "Job tags and booking system"
+    ],
+    "cover": "Customers' devices are the main risk, so ask a broker about goods in trust cover. Public liability for customers and contents cover for your kit are also worth raising. If you handle data, ICO registration may apply."
+   },
+   "PC building and IT services": {
+    "answer": "An assembly bench, a test bench and parts shelving fit in a 150 or 180 sq ft unit, with Wi-Fi for updates and network testing.",
+    "power": "Medium",
+    "layout": "Moderate",
+    "cost": "Medium",
+    "kit": [
+     "Assembly bench with ESD mat and wrist strap",
+     "Test bench with spare monitor, keyboard and PSU tester",
+     "Labelled parts shelving",
+     "Network switch and cable tester",
+     "Cable management supplies and cable ties"
+    ],
+    "power_detail": "Gaming PCs under stress tests draw more than most kit, so test one machine per socket and use surge-protected strips. Everything runs on standard single-phase sockets.",
+    "safety": "Hardware assembly and configuration are dry, low-risk jobs. Keep packaging flattened and stored rather than piled by the bench.",
+    "racking": "Parts on labelled shelving by type: cases low, boards and cards in the middle, small parts in drawers. Boxed, finished builds sit on a shelf by the door.",
+    "benches": "Put the test bench on wheels so a machine can be rolled aside for an overnight burn-in test while you build the next one.",
+    "flow": "Parts arrive at the door, are checked against the order and shelved. Builds are assembled, moved to the test bench, imaged and updated over the Wi-Fi, then boxed for delivery or collection.",
+    "supplies": [
+     "Two benches",
+     "ESD mat and strap",
+     "Test monitor and peripherals",
+     "Screwdriver set",
+     "Shelving and parts drawers",
+     "Surge-protected strips"
+    ],
+    "cover": "If you give IT advice or set up networks, ask a broker about professional indemnity. Stock cover, goods in trust for customers' machines and public liability are also worth raising."
+   },
+   "Drone assembly and repair": {
+    "answer": "Building and repairing camera and racing drones needs a clean bench, parts drawers and careful battery handling, which fits in a 150 or 160 sq ft unit.",
+    "power": "Medium",
+    "layout": "Moderate",
+    "cost": "Medium",
+    "kit": [
+     "Assembly bench with good task lighting",
+     "Temperature-controlled soldering station and fume extractor",
+     "Parts drawer cabinets for motors, ESCs and props",
+     "Smart balance charger",
+     "LiPo fire-safe charging bags or a metal battery box"
+    ],
+    "power_detail": "Chargers, a soldering station and a laptop for flight controller setup run on standard sockets.",
+    "safety": "Assembly and wiring are mechanical work, but lithium polymer batteries need care. Charge them in fire-safe bags, only while you are in the unit, and never store damaged or puffed batteries. Ask us about how many batteries you plan to keep.",
+    "racking": "Parts in labelled drawer cabinets above the bench, frames and finished drones in boxes on shelving, and batteries in their fire-safe box on a low shelf away from card and paper.",
+    "benches": "A wheeled test cart keeps powered-up testing away from the stock and the main bench.",
+    "flow": "Parts or customers' drones come in through the door, are logged, repaired or built at the bench, configured on the laptop, then boxed for collection or testing outdoors.",
+    "supplies": [
+     "Bench and lighting",
+     "Soldering kit and extractor",
+     "Charger and fire-safe bags",
+     "Parts drawers",
+     "Hand tools"
+    ],
+    "cover": "Ask a broker about goods in trust for customers' drones, products liability for drones you build and sell, and contents cover for tools. Flying itself has separate CAA rules."
+   },
+   "Bicycle servicing": {
+    "answer": "A workstand, a tool wall and wall hooks for bikes fit in a 150 or 180 sq ft roller-shutter unit.",
+    "power": "Low",
+    "layout": "Moderate",
+    "cost": "Medium",
+    "kit": [
+     "Professional repair workstand",
+     "Pegboard tool wall",
+     "Wheel truing stand",
+     "Wall hooks or vertical bike racks",
+     "Track pump and small compressor",
+     "Parts washer using water-based degreaser"
+    ],
+    "power_detail": "Lighting and a small compressor run on standard sockets. Push-bike servicing uses mostly hand tools.",
+    "safety": "Mechanical repairs are low-risk. Use water-based degreasers rather than solvents, and ask us before working on or storing e-bike batteries.",
+    "racking": "Hang bikes waiting for repair or collection on wall hooks to keep the floor clear, with tyres, tubes and parts on shelving.",
+    "benches": "A wheeled parts and tool cart moves between the workstand and the truing stand.",
+    "flow": "Bikes come in through the shutter and are tagged, serviced on the stand, test-ridden outside, then hung by the door ready to collect.",
+    "supplies": [
+     "Workstand",
+     "Tool kit",
+     "Truing stand",
+     "Wall hooks",
+     "Pump",
+     "Consumables: cables, chains, brake pads, tubes"
+    ],
+    "cover": "Goods in trust cover for customers' bikes, public liability and contents cover for tools are the covers to raise with a broker."
+   },
+   "Locksmith base and key cutting": {
+    "answer": "The 160 sq ft security-door unit makes a secure base for cutting keys, repairing cylinders and keeping lock stock.",
+    "power": "Low",
+    "layout": "Simple",
+    "cost": "Medium",
+    "kit": [
+     "Key cutting machine on a solid bench",
+     "Labelled drawer cabinets for blanks and locks",
+     "Cylinder repair bench and pinning kit",
+     "Van stock trolley"
+    ],
+    "power_detail": "Key cutting machines run on standard sockets.",
+    "safety": "Mechanical work is low-risk. Keep swarf swept up and stock in drawers.",
+    "racking": "Key blanks in labelled drawers by profile, locks on shelving by type, and van restock boxes by the door.",
+    "benches": "A wheeled restock trolley is loaded overnight and rolled straight to the van in the morning.",
+    "flow": "Stock arrives through the door to its drawers, keys and cylinders are prepared at the bench, and the van is restocked from the trolley.",
+    "supplies": [
+     "Key machine",
+     "Blank stock",
+     "Drawer cabinets",
+     "Pinning kit",
+     "Trolley"
+    ],
+    "cover": "Public liability for work at customers' properties and tools and stock cover are the main covers to discuss with a broker."
+   },
+   "Tool and knife sharpening": {
+    "answer": "A sharpening station on a solid bench fits in a 150 sq ft unit, with a clean area for finished work.",
+    "power": "Low",
+    "layout": "Simple",
+    "cost": "Low",
+    "kit": [
+     "Water-cooled sharpening system",
+     "Whetstones and honing tools",
+     "Solid bench",
+     "Tagged trays for customers' items"
+    ],
+    "power_detail": "Water-cooled sharpeners run on standard sockets.",
+    "safety": "Keep the sharpening area clear of card and paper. Ask us about any dry grinder that throws sparks before you install it.",
+    "racking": "Customers' items in tagged trays on shelving, stones and spares above the bench.",
+    "benches": "A wheeled tray trolley carries finished work away from the sharpening area.",
+    "flow": "Items are logged in at the door, sharpened, checked and returned from the finished shelf.",
+    "supplies": [
+     "Sharpening system",
+     "Stones",
+     "Bench",
+     "Trays and log book"
+    ],
+    "cover": "Goods in trust for customers' tools and public liability are worth discussing with a broker."
+   }
+  }
+ },
+ "unit-ideas-trades-storage": {
+  "answer": "A 150 or 180 sq ft roller-shutter unit works as a secure lock-up for tools, materials and stock: storage needs only lighting and a socket, and tools, timber and boxed goods are low-risk.",
+  "rating": {
+   "power": "Low",
+   "layout": "Simple",
+   "cost": "Low"
+  },
+  "power_note": "Lights and battery chargers",
+  "layout_note": "Shelving with a clear loading lane",
+  "cost_note": "Heavy-duty shelving and a bench",
+  "sources": [
+   [
+    "Health and safety made simple (HSE)",
+    "https://www.hse.gov.uk/simple-health-safety/"
+   ],
+   [
+    "Employers' liability insurance (GOV.UK)",
+    "https://www.gov.uk/employers-liability-insurance"
+   ]
+  ],
+  "uses": {
+   "Tradesperson tool and materials store": {
+    "answer": "Electricians, plumbers, joiners and decorators can keep tools, fittings and materials in a 150 or 180 sq ft unit, so the van is no longer the warehouse.",
+    "power": "Low",
+    "layout": "Simple",
+    "cost": "Low",
+    "kit": [
+     "Heavy-duty boltless shelving",
+     "Pegboard or slatwall tool wall",
+     "Battery charging station on a shelf",
+     "Prep bench with vice",
+     "Pipe or cable reel rack"
+    ],
+    "power_detail": "Lights and battery chargers run on standard sockets. Charge battery packs while you are in the unit.",
+    "safety": "Tools, timber, fixings and water-based paints are low-risk. Ask us before storing solvent-based paints, fuel or gas cylinders.",
+    "racking": "Heavy materials low, fittings in labelled bins at eye level, long lengths on a wall rack, and hand tools on the tool wall.",
+    "benches": "A wheeled prep bench can be pulled out for cutting and pushed back to leave room for a delivery.",
+    "flow": "Materials come in through the shutter to their shelves. Each job is picked into crates the night before and staged by the door for a fast load in the morning.",
+    "supplies": [
+     "Shelving",
+     "Tool wall",
+     "Bins and labels",
+     "Bench",
+     "Sack truck"
+    ],
+    "cover": "Ask a broker about tools cover, stock cover for materials in the unit, and public liability for your work on site. Employers' liability is a legal requirement in most cases once you take on staff."
+   },
+   "Event and wedding prop storage": {
+    "answer": "Backdrops, arches, linen and centrepieces need height and dry space, which a 180 or 300 sq ft roller-shutter unit gives you.",
+    "power": "Low",
+    "layout": "Moderate",
+    "cost": "Low",
+    "kit": [
+     "Deep shelving for boxed props",
+     "Upright rack for backdrops and arches",
+     "Lidded crates for linen",
+     "Platform trolley"
+    ],
+    "power_detail": "Lights and battery chargers for LED decorations run on standard sockets.",
+    "safety": "Props, fabric and wood are low-risk. Keep linen in lidded crates to stay clean and dry.",
+    "racking": "Tall items stand against the back wall, linen in labelled crates on shelving, and small decorations in clear boxes by theme.",
+    "benches": "A wheeled staging table by the shutter is where each event is packed into crates.",
+    "flow": "Props come back through the shutter, are checked and cleaned, returned to shelves, then picked to the staging table for the next event.",
+    "supplies": [
+     "Shelving",
+     "Crates",
+     "Trolley",
+     "Staging table"
+    ],
+    "cover": "Contents cover for props and public liability for setting up at venues are worth discussing with a broker."
+   },
+   "Home staging furniture": {
+    "answer": "Accent furniture, rugs, lamps, cushions and art for staging homes fit in a 180 or 300 sq ft roller-shutter unit, kept clean and off the floor.",
+    "power": "Low",
+    "layout": "Moderate",
+    "cost": "Low",
+    "kit": [
+     "Fitted furniture covers and moving blankets",
+     "Low pallets or platforms to keep furniture off the floor",
+     "Wall rack for rolled rugs",
+     "Slotted upright rack for framed art and mirrors",
+     "Shelving for lamps, cushions and accessories in lidded boxes",
+     "Furniture dollies and a platform trolley"
+    ],
+    "power_detail": "Lighting is all you need for storage. A socket is handy for testing lamps before they go out.",
+    "safety": "Furniture and soft furnishings are low-risk. Keep fabric items covered and in lidded boxes so they stay clean between properties.",
+    "racking": "Sofas and tables on pallets along the back wall, rugs rolled on the rack, art upright in slots, and accessories boxed by room style (living room, bedroom, dining) on shelving.",
+    "benches": "Furniture dollies make each piece mobile, so you can pull out a full room set by the shutter in a few minutes.",
+    "flow": "Returning pieces come in through the shutter, are checked and cleaned, covered and shelved by style. For the next property, a room set is pulled forward to the loading area by the door.",
+    "supplies": [
+     "Covers and blankets",
+     "Pallets",
+     "Rug and art racks",
+     "Lidded boxes",
+     "Dollies and trolley",
+     "Inventory list with photos"
+    ],
+    "cover": "Ask a broker about contents cover for your staging stock and public liability for work in clients' homes."
+   },
+   "Property maintenance supplies": {
+    "answer": "Landlords and property managers can keep spare fittings, flooring, fixings and tools in a 150 or 180 sq ft unit, organised by property or job type.",
+    "power": "Low",
+    "layout": "Simple",
+    "cost": "Low",
+    "kit": [
+     "Shelving labelled by property or job type",
+     "Small parts bins for fixings, plumbing and electrical spares",
+     "Compact repair bench",
+     "Rack for flooring offcuts and boards",
+     "Wall board with the stock list"
+    ],
+    "power_detail": "Lighting and battery tool chargers on standard sockets.",
+    "safety": "Spares, fixings and flooring are low-risk. Keep cleaning products to everyday quantities, and ask us before storing anything flammable.",
+    "racking": "Heavy items such as flooring and tiles low, small parts in labelled bins at eye level, and turnover kits (bulbs, smoke alarm batteries, seals) in boxes by property.",
+    "benches": "A small wheeled bench can be rolled out for a quick repair or assembly and parked against the wall.",
+    "flow": "Supplies come in through the shutter to their shelves. Each job is picked into a crate from the stock list and loaded from the door.",
+    "supplies": [
+     "Shelving and bins",
+     "Repair bench",
+     "Hand and power tools",
+     "Stock list",
+     "Crates"
+    ],
+    "cover": "Contents cover for supplies and tools and public liability for work at properties are the main covers to raise with a broker."
+   },
+   "Cleaning company equipment": {
+    "answer": "Vacuums, floor machines, mops and everyday supplies for a commercial or domestic cleaning business fit in a 150 or 160 sq ft unit.",
+    "power": "Low",
+    "layout": "Simple",
+    "cost": "Low",
+    "kit": [
+     "Floor space along one wall for machines",
+     "Shelving for consumables",
+     "Charging station for cordless vacuums and machines",
+     "Wall hooks for mops and poles",
+     "Team supply caddies or trolleys"
+    ],
+    "power_detail": "Chargers for cordless kit run on standard sockets. Spread chargers across sockets rather than chaining extension leads.",
+    "safety": "Keep cleaning chemicals to everyday quantities in their original containers. Water for refilling is in the shared facilities.",
+    "racking": "Consumables such as cloths, bags and paper on shelving, chemicals on a low shelf in their original containers, and poles and mops on wall hooks.",
+    "benches": "Each team's supply caddy or trolley is restocked at the end of the day and stands ready by the door.",
+    "flow": "Teams return kit through the door, machines go on charge, caddies are restocked from the shelves, and everything is staged by the door for the morning.",
+    "supplies": [
+     "Shelving",
+     "Hooks",
+     "Chargers",
+     "Caddies",
+     "Stock of consumables"
+    ],
+    "cover": "Public liability for work at clients' premises, contents cover for machines and employers' liability once you have staff are the covers to raise with a broker."
+   },
+   "Business archives and stock overflow": {
+    "answer": "Overflow stock, seasonal stock or boxed records fit in a 150 or 160 sq ft unit, indexed so you can find things quickly.",
+    "power": "Low",
+    "layout": "Simple",
+    "cost": "Low",
+    "kit": [
+     "Archive boxes in one standard size",
+     "Boltless shelving",
+     "Box labels and a printed or online index",
+     "Step stool for the top shelves"
+    ],
+    "power_detail": "Lighting only.",
+    "safety": "Paper and boxed stock are low-risk. The units are not climate-controlled, so ask us if anything is sensitive to temperature or damp. Records with personal data should be stored securely and kept only as long as you need them.",
+    "racking": "Archive boxes on shelving by year or category, with the most-used boxes at waist height and old records on the top shelves.",
+    "benches": "A small wheeled desk lets you work through a box in the unit without carrying it home.",
+    "flow": "Boxes come in through the door, are numbered and logged on the index, then shelved. Retrieval is by box number.",
+    "supplies": [
+     "Boxes",
+     "Shelving",
+     "Labels",
+     "Index",
+     "Step stool"
+    ],
+    "cover": "Contents cover for stock in the unit is the main cover to discuss with a broker."
+   }
+  }
+ },
+ "unit-ideas-dry-goods-botanicals": {
+  "answer": "Dry food packing and botanicals can work in a small unit if no heating or cooking is involved and the council accepts your setup: tea blending, spice packing, pre-roasted coffee bags, hampers and dried flowers, all with our approval first.",
+  "rating": {
+   "power": "Low",
+   "layout": "Moderate",
+   "cost": "Medium"
+  },
+  "power_note": "Scales, a heat sealer and a label printer",
+  "layout_note": "Separate clean packing area for food",
+  "cost_note": "Scales, sealer, food-grade storage",
+  "sources": [
+   [
+    "Food business registration (GOV.UK)",
+    "https://www.gov.uk/food-business-registration"
+   ],
+   [
+    "Safer food, better business (FSA on GOV.UK)",
+    "https://www.gov.uk/government/publications/safer-food-better-business-sfbb/safer-food-better-business-sfbb"
+   ],
+   [
+    "Allergen guidance for food businesses (FSA on GOV.UK)",
+    "https://www.gov.uk/government/publications/allergen-guidance-for-food-businesses"
+   ],
+   [
+    "Allergen labelling for PPDS food (FSA on GOV.UK)",
+    "https://www.gov.uk/government/publications/introduction-to-allergen-labelling-for-ppds-food"
+   ]
+  ],
+  "uses": {
+   "Loose-leaf tea blending and packing": {
+    "answer": "Blending and packing loose-leaf tea and herbal infusions is dry work that fits in a 150 or 160 sq ft unit, once you have registered as a food business and we have approved the use.",
+    "power": "Low",
+    "layout": "Moderate",
+    "cost": "Medium",
+    "kit": [
+     "Food-grade airtight tubs or bins for each tea",
+     "Stainless steel blending bowls and scoops",
+     "Precision digital scale (0.1 g) and a larger bench scale",
+     "Impulse bag sealer for foil or kraft pouches",
+     "Label printer for ingredients and allergen labels",
+     "Easy-clean stainless or laminate packing table"
+    ],
+    "power_detail": "Scales, a label printer and an impulse sealer run on standard sockets. An impulse sealer only heats briefly to close a bag; it does not cook or melt anything in bulk, but mention it when you ask us for approval.",
+    "safety": "Tea and dried herbs are dry goods with no cooking or heating. Food hygiene rules still apply: you need to register with Blackpool Council at least 28 days before trading, keep a food safety plan such as Safer Food, Better Business, and talk to the council about handwashing and cleaning facilities. Water is in the shared facilities, so ask us what arrangements suit your setup before you commit.",
+    "racking": "Sealed tubs of each tea on shelving off the floor, sorted so ingredients with allergens sit on their own shelf. Packaging and finished stock go on separate shelves from open ingredients.",
+    "benches": "Keep one fixed clean table for open food. A wheeled table next to it handles labelling, boxing and dispatch, so packaging work never happens on the food surface.",
+    "flow": "Ingredients come in through the door, are checked against the delivery note and stored in sealed tubs. Blends are weighed and mixed on the clean table, packed and sealed, labelled at the wheeled table, then boxed on a dispatch shelf by the door.",
+    "supplies": [
+     "Food-grade tubs",
+     "Scales",
+     "Bag sealer",
+     "Pouches and labels",
+     "Cleaning kit and blue roll",
+     "Food safety plan and records",
+     "Batch log"
+    ],
+    "cover": "Products liability is important when people consume what you sell. Ask a broker about that, stock cover and public liability. Employers' liability is a legal requirement in most cases once you take on staff."
+   },
+   "Spice and dried herb blending": {
+    "answer": "Spice blends and dried herbs can be weighed and packed in a 150 or 180 sq ft unit, with careful dust control and allergen labelling.",
+    "power": "Low",
+    "layout": "Moderate",
+    "cost": "Medium",
+    "kit": [
+     "Food-grade sealed containers",
+     "Stainless steel blending bowls and scoops",
+     "Precision and bench scales",
+     "Grinder for small batches (ask us first)",
+     "Jars or pouches and an impulse sealer",
+     "Label printer"
+    ],
+    "power_detail": "Scales, a small grinder and a sealer run on standard sockets.",
+    "safety": "No heating or cooking is involved. Some spice ingredients are among the 14 major allergens, including celery, mustard and sesame, so keep them separate and label them clearly. Fine powders create dust, so work in small batches and clean down after each one. Register with the council and ask us before you start.",
+    "racking": "Sealed containers on shelving by ingredient, with allergen ingredients kept on their own shelf. Finished jars boxed on a separate rack.",
+    "benches": "A fixed clean table for open spices and a wheeled labelling and packing table that moves next to it for each batch.",
+    "flow": "Ingredients come in, are logged and stored. Each batch is weighed, blended, filled and sealed on the clean table, labelled on the wheeled table, then stored for dispatch near the door.",
+    "supplies": [
+     "Containers",
+     "Scales",
+     "Jars or pouches",
+     "Labels",
+     "Cleaning kit",
+     "Food safety records",
+     "Batch log"
+    ],
+    "cover": "Products liability, stock cover and public liability are the covers to raise with a broker."
+   },
+   "Pre-roasted coffee packing": {
+    "answer": "Bagging and selling coffee that is already roasted can work in a 150 or 160 sq ft unit. Roasting itself is not allowed, because it involves heat.",
+    "power": "Low",
+    "layout": "Simple",
+    "cost": "Medium",
+    "kit": [
+     "Sealed bins for whole beans",
+     "Commercial grinder for ground coffee",
+     "Scale for weighing bags",
+     "Valve bags and an impulse sealer",
+     "Label printer"
+    ],
+    "power_detail": "A commercial grinder, scales and a sealer run on standard sockets.",
+    "safety": "Our units do not allow roasting or any cooking, so buy your coffee already roasted from a roaster. Packing beans and grinding are dry processes. You still need to register as a food business and keep food safety records.",
+    "racking": "Sealed bins of beans on shelving off the floor, empty bags and labels on a separate shelf, and finished bags boxed by blend.",
+    "benches": "A wheeled grinder stand lets you move between whole-bean and ground orders without crossing the packing area.",
+    "flow": "Roasted beans arrive in sealed bags, go to bins, are weighed and bagged (or ground and bagged), sealed, labelled and placed on the dispatch shelf by the door.",
+    "supplies": [
+     "Bean bins",
+     "Grinder",
+     "Scale",
+     "Valve bags",
+     "Sealer",
+     "Labels"
+    ],
+    "cover": "Products liability, stock cover and public liability are the covers to discuss with a broker."
+   },
+   "Hampers and pre-packed gift boxes": {
+    "answer": "Hampers made from pre-packed food, sweets and gifts, including Blackpool rock, fit in a 180 or 300 sq ft unit with room for seasonal stock.",
+    "power": "Low",
+    "layout": "Moderate",
+    "cost": "Low",
+    "kit": [
+     "Shelving for pre-packed stock by best-before date",
+     "Long assembly table",
+     "Hamper baskets and boxes",
+     "Shredded paper fill",
+     "Cellophane and ribbon"
+    ],
+    "power_detail": "A label printer and laptop on standard sockets.",
+    "safety": "Pre-packed foods stay sealed in their packaging, so there is no open food handling. You usually still need to register as a food business. Rotate stock by best-before date, and only include alcohol if you have the right licence.",
+    "racking": "Pre-packed food on shelving, oldest dates at the front, baskets stacked high, fill and ribbon in boxes.",
+    "benches": "Folding or wheeled tables become an assembly line in the run-up to Christmas and fold away in quiet months.",
+    "flow": "Stock arrives through the shutter and is shelved by date. Hampers are assembled on the table, wrapped, and stacked by the door for delivery.",
+    "supplies": [
+     "Shelving",
+     "Assembly tables",
+     "Baskets and boxes",
+     "Fill and wrapping",
+     "Labels"
+    ],
+    "cover": "Products liability, stock cover and goods in transit if you deliver are worth raising with a broker."
+   },
+   "Dried flower studio": {
+    "answer": "Dried flower bouquets, wreaths and arrangements need hanging space and a workbench, which fit in a 150 or 160 sq ft unit.",
+    "power": "Low",
+    "layout": "Moderate",
+    "cost": "Low",
+    "kit": [
+     "Hanging rails or freestanding drying racks",
+     "Workbench",
+     "Floristry tools and wire",
+     "Shelving for stems by type",
+     "Packing boxes"
+    ],
+    "power_detail": "Lighting and a dehumidifier on standard sockets, if needed.",
+    "safety": "Dried flowers are dry, low-risk material, but they catch light easily, so keep them well away from heaters and lamps. Dried flowers are not food, so food rules do not apply unless you add edible items.",
+    "racking": "Stems on shelving by type and colour, bunches hung on rails, and finished arrangements boxed on upper shelves.",
+    "benches": "A wheeled work table lets you switch between making wreaths and packing orders.",
+    "flow": "Stems come in, are sorted and stored, arranged on the bench, then boxed and stored by the door for dispatch or collection.",
+    "supplies": [
+     "Rails and shelving",
+     "Bench",
+     "Tools and wire",
+     "Ribbon",
+     "Boxes"
+    ],
+    "cover": "Stock cover and public liability for clients and markets are the covers to discuss with a broker."
+   }
+  }
+ },
+ "unit-ideas-event-hire": {
+  "rating": {
+   "power": "Low",
+   "layout": "Simple",
+   "cost": "Low"
+  },
+  "power_note": "Lights and chargers",
+  "layout_note": "Racking with a loading lane",
+  "cost_note": "Shelving and trolleys"
+ },
+ "unit-ideas-market-traders": {
+  "rating": {
+   "power": "Low",
+   "layout": "Simple",
+   "cost": "Low"
+  },
+  "power_note": "Lights and a card reader charger",
+  "layout_note": "Stock shelves and a loading area",
+  "cost_note": "Shelving and crates"
+ },
+ "unit-ideas-furniture-upcycling": {
+  "rating": {
+   "power": "Medium",
+   "layout": "Moderate",
+   "cost": "Medium"
+  },
+  "power_note": "Sanders and power tools",
+  "layout_note": "Work area plus finished stock",
+  "cost_note": "Power tools and extraction"
+ },
+ "unit-ideas-gardening-landscaping": {
+  "rating": {
+   "power": "Low",
+   "layout": "Simple",
+   "cost": "Low"
+  },
+  "power_note": "Battery tool chargers",
+  "layout_note": "Tool racks and bulky stock",
+  "cost_note": "Racking and a bench"
+ },
+ "unit-ideas-clubs-community": {
+  "rating": {
+   "power": "Low",
+   "layout": "Simple",
+   "cost": "Low"
+  },
+  "power_note": "Lights only for most groups",
+  "layout_note": "Shelving and labelled crates",
+  "cost_note": "Shelving and crates"
+ },
+ "unit-ideas-mobile-services": {
+  "rating": {
+   "power": "Low",
+   "layout": "Simple",
+   "cost": "Low"
+  },
+  "power_note": "Chargers and lights",
+  "layout_note": "Stockroom shelving",
+  "cost_note": "Shelving and trolleys"
+ }
+}
