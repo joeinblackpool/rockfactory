@@ -485,3 +485,10 @@ summary::after { top: 17px; }
 .page-visual { border-radius: var(--r); box-shadow: var(--shadow-lift); overflow: hidden; }
 .page-visual .page-photo img, .page-visual .office-placeholder { border-radius: 0; border: 0; }
 .page-visual .price-ticket { border-radius: 0; box-shadow: none; }
+/* Breadcrumb */
+.crumbs { padding-top: 22px; font-size: .8125rem; color: var(--muted); }
+.crumbs a { color: var(--muted); }
+.crumbs span[aria-current] { color: var(--ink); font-weight: 600; }
+.unit-top h3 a, .price-table th a { text-decoration: none; }
+.unit-top h3 a:hover, .price-table th a:hover { color: var(--blue); }
+.photo-gallery.natural { align-items: start; } .photo-gallery.natural img { aspect-ratio: auto; object-fit: initial; }
