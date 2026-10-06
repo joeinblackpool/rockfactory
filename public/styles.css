@@ -492,3 +492,6 @@ summary::after { top: 17px; }
 .unit-top h3 a, .price-table th a { text-decoration: none; }
 .unit-top h3 a:hover, .price-table th a:hover { color: var(--blue); }
 .photo-gallery.natural { align-items: start; } .photo-gallery.natural img { aspect-ratio: auto; object-fit: initial; }
+.row-link { text-decoration: none; display: inline-flex; flex-wrap: wrap; gap: 4px 10px; }
+.row-link:hover { color: var(--blue); }
+.row-more { color: var(--blue); font-weight: 600; text-decoration: underline; text-underline-offset: 4px; }
