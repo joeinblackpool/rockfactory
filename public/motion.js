@@ -29,28 +29,35 @@
   const sel = [".section-head", ".space-card", ".who-card", ".idea-card", ".biz-card", ".unit-card", ".facility", ".feature",
     ".archive-print", ".page-photo", ".photo-gallery img", ".table-wrap", ".faq-list details", ".steps li", ".opening-card",
     ".callout", ".guide-content > h2", ".idea", ".contrast li", ".quick", ".answer-box"].join(",");
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach((e) => {
-      if (!e.isIntersecting) return;
-      e.target.classList.add("in");
-      io.unobserve(e.target);
-    });
-  }, { rootMargin: "0px 0px -8% 0px", threshold: 0.08 });
+  // Elements waiting to appear. Checked every frame: anything on screen or already scrolled past is shown,
+  // so jumping down the page (e.g. "See prices") never leaves content hidden above you.
+  let pending = [];
   const vh = innerHeight;
   document.querySelectorAll(sel).forEach((el) => {
     if (el.getBoundingClientRect().top < vh * 0.92) return;
     const sibs = el.parentElement ? [...el.parentElement.children].filter((c) => c.matches(sel)) : [];
     el.style.setProperty("--d", `${Math.min(sibs.indexOf(el), 5) * 70}ms`);
     el.classList.add("reveal");
-    io.observe(el);
+    pending.push(el);
   });
+  const reveal = () => {
+    if (!pending.length) return;
+    const edge = innerHeight * 0.92;
+    pending = pending.filter((el) => {
+      if (el.getBoundingClientRect().top >= edge) return true;
+      el.classList.add("in");
+      return false;
+    });
+  };
+  addEventListener("beforeprint", () => { pending.forEach((el) => el.classList.add("in")); pending = []; });
 
-  // One animation frame loop: marquee, gentle parallax on big photos.
+  // One animation frame loop: reveals, marquee, gentle parallax on big photos.
   let x = 0, last = scrollY, v = 0;
   const par = [...document.querySelectorAll(".archive-floor img, .archive-cut img, .archive-rolling img")];
   const tick = () => {
     const y = scrollY, dy = y - last; last = y;
     v += (dy - v) * 0.12;
+    reveal();
     if (track) {
       x -= 0.6 + Math.abs(v) * 0.35;
       const w = track.scrollWidth / 4;

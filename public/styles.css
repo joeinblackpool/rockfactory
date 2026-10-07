@@ -1075,3 +1075,171 @@ body::after { background: var(--casing); }
 @media print { .marquee, .cursor-dot, .cursor-ring, .site-footer-mega::after { display: none; } .site-footer-mega { background: none; color: inherit; box-shadow: none; } }
 .cursor-dot.is-hidden { opacity: 0; }
 @media (max-width: 800px) { .site-footer-mega::after { font-size: calc((100vw - 48px) / 6); } }
+
+/* ===== Riso Rock: the art-school layer =====
+   Colours lifted from the photographs: the yellow "Cut Price Rock" sign, the blue of the logo and the sea,
+   a seaside mint, the red casing, and the pink of the rock sticks for small bursts only.
+   Abstract shapes, squiggles, tilted zine cards, print grain and off-register photo shadows.
+   All CSS: no page text, headings or links change, and nothing here moves the layout. */
+:root {
+  --rr-red: #ee3a2c;
+  --rr-blue: #2b3cdb;
+  --rr-yellow: #ffd23f;
+  --rr-mint: #3ec5a5;
+  --rr-pink: #ff7eb6;
+  --sh-sun: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Ccircle cx='100' cy='100' r='96' fill='%23ffd23f'/%3E%3C/svg%3E");
+  --sh-moon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 100'%3E%3Cpath d='M0 100a100 100 0 0 1 200 0z' fill='%23ee3a2c'/%3E%3C/svg%3E");
+  --sh-waves: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 90' fill='none' stroke='%232b3cdb' stroke-width='9' stroke-linecap='round'%3E%3Cpath d='M6 20c19-14 38-14 57 0s38 14 57 0 38-14 57 0 38 14 57 0'/%3E%3Cpath d='M6 48c19-14 38-14 57 0s38 14 57 0 38-14 57 0 38 14 57 0'/%3E%3Cpath d='M6 76c19-14 38-14 57 0s38 14 57 0 38-14 57 0 38 14 57 0'/%3E%3C/svg%3E");
+  --sh-burst: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cpath fill='%23ff7eb6' d='M100 0l17 46 44-22-15 47 49 6-42 26 34 36-49-4 4 49-36-34-26 42-6-49-47 15 22-44L3 117l46-17L3 83l46-17-22-44 47 15 6-49 26 42 36-34-4 49 49-4-34 36 42 26-49 6 15 47-44-22z'/%3E%3C/svg%3E");
+  --sh-dots: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120' fill='%233ec5a5'%3E%3Ccircle cx='10' cy='10' r='6'/%3E%3Ccircle cx='10' cy='35' r='6'/%3E%3Ccircle cx='10' cy='60' r='6'/%3E%3Ccircle cx='10' cy='85' r='6'/%3E%3Ccircle cx='10' cy='110' r='6'/%3E%3Ccircle cx='35' cy='10' r='6'/%3E%3Ccircle cx='35' cy='35' r='6'/%3E%3Ccircle cx='35' cy='60' r='6'/%3E%3Ccircle cx='35' cy='85' r='6'/%3E%3Ccircle cx='35' cy='110' r='6'/%3E%3Ccircle cx='60' cy='10' r='6'/%3E%3Ccircle cx='60' cy='35' r='6'/%3E%3Ccircle cx='60' cy='60' r='6'/%3E%3Ccircle cx='60' cy='85' r='6'/%3E%3Ccircle cx='60' cy='110' r='6'/%3E%3Ccircle cx='85' cy='10' r='6'/%3E%3Ccircle cx='85' cy='35' r='6'/%3E%3Ccircle cx='85' cy='60' r='6'/%3E%3Ccircle cx='85' cy='85' r='6'/%3E%3Ccircle cx='85' cy='110' r='6'/%3E%3Ccircle cx='110' cy='10' r='6'/%3E%3Ccircle cx='110' cy='35' r='6'/%3E%3Ccircle cx='110' cy='60' r='6'/%3E%3Ccircle cx='110' cy='85' r='6'/%3E%3Ccircle cx='110' cy='110' r='6'/%3E%3C/svg%3E");
+  --sh-squig: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 40' fill='none' stroke='%23ee3a2c' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 25c15-22 30 18 45-4s30-18 45 4 30 18 45-4 30-18 45 4 30 18 45-4 30-18 45 4'/%3E%3C/svg%3E");
+  --sh-squigb: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 40' fill='none' stroke='%23141110' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 25c15-22 30 18 45-4s30-18 45 4 30 18 45-4 30-18 45 4 30 18 45-4 30-18 45 4'/%3E%3C/svg%3E");
+  --sh-squigy: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 40' fill='none' stroke='%23ffd23f' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 25c15-22 30 18 45-4s30-18 45 4 30 18 45-4 30-18 45 4 30 18 45-4 30-18 45 4'/%3E%3C/svg%3E");
+  --sh-blob: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cpath fill='%233ec5a5' d='M45 30c30-28 90-30 122 2s38 88 10 120-90 52-125 30S-8 120 6 82s9-24 39-52z'/%3E%3C/svg%3E");
+  --sh-grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .55 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* Print grain over everything, like a risograph */
+html::after { content: ""; position: fixed; inset: 0; z-index: 9998; pointer-events: none; background: var(--sh-grain); opacity: .16; mix-blend-mode: multiply; }
+
+/* Highlighter swipe behind the coloured half of every big heading */
+h1 em, h2 em { background: linear-gradient(transparent 58%, var(--rr-yellow) 58%, var(--rr-yellow) 90%, transparent 90%); -webkit-box-decoration-break: clone; box-decoration-break: clone; padding-inline: .04em; }
+/* A hand-drawn squiggle under section headings */
+.section-head h2::after, .guide-content > h2::after { content: ""; display: block !important; width: 180px; height: 24px; margin-top: 18px; background: var(--sh-squig) left center / contain no-repeat; border-radius: 0; box-shadow: none; }
+.section-head { border-top-width: 4px; }
+
+/* Abstract shapes drift behind content. Each section gets a different composition. */
+main > section { position: relative; isolation: isolate; }
+main > section::after { content: ""; position: absolute; z-index: -1; pointer-events: none; background-repeat: no-repeat; background-size: contain; animation: rr-float 14s ease-in-out infinite alternate; }
+@keyframes rr-float { from { transform: translate3d(0, 0, 0) rotate(var(--rot, 0deg)); } to { transform: translate3d(0, -26px, 0) rotate(calc(var(--rot, 0deg) + 8deg)); } }
+main > section:nth-of-type(6n+1)::after { width: 260px; height: 260px; right: -40px; top: 40px; background-image: var(--sh-sun); --rot: 0deg; }
+main > section:nth-of-type(6n+2)::after { width: 300px; height: 112px; left: -30px; bottom: 30px; background-image: var(--sh-waves); --rot: -6deg; }
+main > section:nth-of-type(6n+3)::after { width: 170px; height: 170px; right: 4%; top: 30px; background-image: var(--sh-burst); --rot: 12deg; }
+main > section:nth-of-type(6n+4)::after { width: 150px; height: 150px; left: 2%; bottom: 40px; background-image: var(--sh-dots); --rot: 0deg; }
+main > section:nth-of-type(6n+5)::after { width: 240px; height: 120px; right: 6%; bottom: 20px; background-image: var(--sh-moon); --rot: -10deg; }
+main > section:nth-of-type(6n)::after { width: 230px; height: 230px; left: -50px; top: 60px; background-image: var(--sh-blob); --rot: 20deg; }
+
+/* Hero: a yellow sun rising behind the photo, blue sea lines, a pink burst; photo printed slightly off-register */
+.hero { position: relative; }
+.hero::before { content: ""; position: absolute; z-index: -1; width: min(42vw, 560px); aspect-ratio: 1; right: -4%; top: 4%; background: var(--sh-sun) center / contain no-repeat; }
+.hero::after { width: 320px !important; height: 120px !important; left: 38% !important; right: auto !important; top: auto !important; bottom: 36px !important; background-image: var(--sh-waves) !important; }
+.home-unit-photo img, .page-photo img, .page-visual { box-shadow: 14px 14px 0 var(--rr-blue), -8px -8px 0 var(--rr-pink); }
+.home-unit-photo::before { content: ""; position: absolute; z-index: 2; width: 120px; height: 120px; right: -34px; top: -40px; background: var(--sh-burst) center / contain no-repeat; animation: rf-spin 40s linear infinite reverse; pointer-events: none; }
+
+/* Colour chapters. Text colours chosen for contrast on each ground. */
+:is(#who, .related, .faq-section) { --tone: var(--rr-yellow); --tone-fg: var(--lettering); }
+:is(.community-section, .location) { --tone: var(--rr-blue); --tone-fg: #fffaf0; }
+:is(.facilities-section, .rental-section, #coming-soon) { --tone: var(--rr-mint); --tone-fg: var(--lettering); }
+:is(.cta-band, #ideas) { --tone: var(--rr-red); --tone-fg: var(--lettering); }
+:is(#who, .related, .faq-section, .community-section, .location, .facilities-section, .rental-section, #coming-soon, .cta-band, #ideas) {
+  background: var(--tone); color: var(--tone-fg); box-shadow: 0 0 0 100vmax var(--tone); clip-path: inset(0 -100vmax);
+}
+:is(#who, .related, .faq-section, .community-section, .location, .facilities-section, .rental-section, #coming-soon, .cta-band, #ideas)
+  :is(h2, .section-head p, .fine-print, .community-note, .intro, .eyebrow) { color: var(--tone-fg); }
+:is(.biz-card, .who-card, .idea-card, .space-card, .callout, .quick, .unit-card, .facility, .feature, details) :is(.eyebrow, h3, p) { color: var(--lettering); }
+:is(.biz-card, .who-card, .idea-card, .callout, .facility, .feature) p { color: var(--muted); }
+:is(#who, .related, .faq-section, .community-section, .location, .facilities-section, .rental-section, #coming-soon, .cta-band, #ideas) .section-head { border-top-color: var(--tone-fg); }
+:is(#who, .related, .faq-section, .facilities-section, .rental-section, #coming-soon, .cta-band, #ideas) h2 em { color: var(--lettering); background: linear-gradient(transparent 58%, #fffaf0 58%, #fffaf0 90%, transparent 90%); }
+:is(.community-section, .location) h2 em { color: var(--rr-yellow); background: none; }
+:is(.community-section, .location) .section-head h2::after { background-image: var(--sh-squigy); }
+:is(#who, .related, .faq-section, .facilities-section, .rental-section, #coming-soon, .cta-band, #ideas) .section-head h2::after { background-image: var(--sh-squigb); }
+:is(#who, .related, .faq-section, .facilities-section, .rental-section, #coming-soon, .cta-band, #ideas) .eyebrow::before { filter: grayscale(1) brightness(0); }
+.location .eyebrow::before, .community-section .eyebrow::before { filter: none; }
+.location .button, .cta-band .button { background: var(--lettering); border-color: var(--lettering); color: #fffaf0; }
+.location .button:hover, .cta-band .button:hover { background: #fffaf0; color: var(--lettering); border-color: #fffaf0; }
+.cta-band .quick .button { background: #1f8f4e; border-color: #1f8f4e; color: #fff; }
+.faq-section details { border-bottom-color: var(--lettering); }
+.faq-section .faq-list { border-top-color: var(--lettering); }
+/* Text links on coloured grounds go black so they stay readable */
+:is(#who, .related, .faq-section, .facilities-section, .rental-section, #coming-soon, .cta-band, #ideas) :is(.text-link, .row-more, summary::after) { color: var(--lettering); }
+:is(.biz-card, .who-card, .idea-card, .callout) :is(.text-link, .row-more) { color: var(--casing); }
+#ideas .callout { background: #fffaf0; border: 3px solid var(--lettering); box-shadow: 10px 10px 0 var(--lettering); }
+#coming-soon .section-head p, #coming-soon p { color: var(--lettering); }
+
+/* Zine cards: alternately tilted, hard black shadow, colour bars that change card to card */
+:is(.who-card, .idea-card, .biz-card, .space-card, .feature, .facility, .unit-card) { box-shadow: 8px 8px 0 var(--lettering); border: 2px solid var(--lettering); transition: transform .35s cubic-bezier(.16,1,.3,1), box-shadow .35s; }
+:is(.who-card, .idea-card, .biz-card, .space-card, .feature, .facility, .unit-card):nth-child(odd) { transform: rotate(-1.2deg); }
+:is(.who-card, .idea-card, .biz-card, .space-card, .feature, .facility, .unit-card):nth-child(even) { transform: rotate(1deg); }
+:is(.who-card, .idea-card, .biz-card, .space-card, .unit-card):hover { transform: rotate(0) translate(-4px, -4px); box-shadow: 12px 12px 0 var(--lettering); outline: 0; }
+.motion :is(.who-card, .idea-card, .biz-card, .space-card, .feature, .facility, .unit-card).reveal:not(.in) { transform: translate3d(0, 48px, 0) rotate(0); }
+:is(.space-card, .idea-card, .who-card, .biz-card, .unit-card.highlight)::before { height: 10px; }
+:is(.space-card, .idea-card, .who-card, .biz-card):nth-child(4n+1)::before { background: var(--rr-red); }
+:is(.space-card, .idea-card, .who-card, .biz-card):nth-child(4n+2)::before { background: var(--rr-blue); }
+:is(.space-card, .idea-card, .who-card, .biz-card):nth-child(4n+3)::before { background: var(--rr-mint); }
+:is(.space-card, .idea-card, .who-card, .biz-card):nth-child(4n)::before { background: var(--rr-yellow); }
+.facility { border-top-width: 2px; }
+.facility:nth-child(3n+1) { background: #fffaf0; } .facility:nth-child(3n+2) { background: #fff3c4; } .facility:nth-child(3n) { background: #ffe0ee; }
+.feature { border-left-width: 2px; }
+.feature:nth-child(3n+1) { background: #fff3c4; } .feature:nth-child(3n+2) { background: #dff5ee; } .feature:nth-child(3n) { background: #ffe0ee; }
+.who-emoji, .feature .who-emoji { filter: none; }
+
+/* Prices: blue table head, yellow hover, red prices */
+.price-table thead th { background: var(--rr-blue); color: #fffaf0; }
+.price-table tbody tr:hover { background: #fff3c4; }
+.table-wrap { border: 2px solid var(--lettering); box-shadow: 10px 10px 0 var(--rr-yellow); }
+.price-ticket { background: var(--rr-blue); color: #fffaf0; }
+
+/* Steps: numbers in a rotating set of colours */
+.steps li:nth-child(4n+1)::before { background: var(--rr-red); color: var(--lettering); }
+.steps li:nth-child(4n+2)::before { background: var(--rr-blue); color: #fffaf0; }
+.steps li:nth-child(4n+3)::before { background: var(--rr-mint); color: var(--lettering); }
+.steps li:nth-child(4n)::before { background: var(--rr-yellow); color: var(--lettering); }
+.opening-card { box-shadow: 10px 10px 0 var(--rr-mint); border: 2px solid var(--lettering); }
+
+/* Dark chapters get colour too */
+.contrast-section h2 em, .heritage-section h2 em { color: var(--rr-yellow); background: none; filter: none; }
+.contrast-head span:last-child, .contrast .new, .contrast-foot span:last-child { background: var(--rr-blue); }
+.contrast li:hover .new { background: var(--rr-red); }
+.heritage-section .archive-print:nth-child(5n+1) { box-shadow: 10px 10px 0 var(--rr-yellow); }
+.heritage-section .archive-print:nth-child(5n+2) { box-shadow: 10px 10px 0 var(--rr-pink); }
+.heritage-section .archive-print:nth-child(5n+3) { box-shadow: 10px 10px 0 var(--rr-mint); }
+.heritage-section .archive-print:nth-child(5n+4) { box-shadow: 10px 10px 0 var(--rr-blue); }
+.heritage-section .archive-print:nth-child(5n) { box-shadow: 10px 10px 0 var(--rr-red); }
+.heritage-section .archive-collage { gap: 26px; }
+.heritage-section .archive-print { overflow: visible; }
+.heritage-section .archive-print > a { overflow: hidden; }
+
+/* Marquee: yellow, with black and outlined words; footer name printed in four inks */
+.marquee { background: var(--rr-yellow); color: var(--lettering); }
+.marquee span:nth-of-type(2n)::before { -webkit-text-stroke-color: var(--lettering); }
+.site-footer-mega::after {
+  color: transparent; -webkit-background-clip: text; background-clip: text;
+  background-image: linear-gradient(180deg, var(--rr-red) 0 25%, var(--rr-yellow) 25% 50%, var(--rr-mint) 50% 75%, var(--rr-pink) 75% 100%);
+}
+.offer-banner { background: var(--rr-blue); }
+.offer-date { background: var(--rr-yellow); color: var(--lettering) !important; }
+
+/* Cursor in the same inks */
+.cursor-dot { background: var(--rr-blue); }
+.cursor-ring.is-link { border-color: var(--rr-blue); background: rgba(255,210,63,.45); }
+.cursor-ring.is-photo { background: var(--rr-yellow); border-color: var(--lettering); }
+.cursor-ring.is-photo span { color: var(--lettering); }
+
+@media (max-width: 800px) {
+  .hero::before { width: 70vw; right: -20vw; top: 34%; }
+  main > section::after { transform: scale(.6); opacity: .9; }
+  :is(.who-card, .idea-card, .biz-card, .space-card, .feature, .facility, .unit-card) { box-shadow: 6px 6px 0 var(--lettering); }
+  .home-unit-photo img, .page-photo img, .page-visual { box-shadow: 8px 8px 0 var(--rr-blue), -5px -5px 0 var(--rr-pink); }
+  .home-unit-photo::before { width: 80px; height: 80px; right: -6px; top: -26px; }
+  html::after { opacity: .1; }
+}
+@media (prefers-reduced-motion: reduce) { main > section::after, .home-unit-photo::before { animation: none; } }
+@media print { html::after, main > section::after, .hero::before, .home-unit-photo::before { display: none; } }
+html, body { overflow-x: clip; }
+/* keep the zine tilt once a card has revealed */
+.motion :is(.who-card, .idea-card, .biz-card, .space-card, .feature, .facility, .unit-card).reveal.in:nth-child(odd) { transform: rotate(-1.2deg); }
+.motion :is(.who-card, .idea-card, .biz-card, .space-card, .feature, .facility, .unit-card).reveal.in:nth-child(even) { transform: rotate(1deg); }
+.motion :is(.who-card, .idea-card, .biz-card, .space-card, .unit-card).reveal.in:hover { transform: rotate(0) translate(-4px, -4px); }
+/* card text stays dark on every coloured ground (matches the ID-level tone selectors) */
+:is(#who, .related, .faq-section, .community-section, .location, .facilities-section, .rental-section, #coming-soon, .cta-band, #ideas) :is(.biz-card, .who-card, .idea-card, .space-card, .callout, .quick, .unit-card, .facility, .feature, details) :is(.eyebrow, h3, strong) { color: var(--lettering); }
+:is(#who, .related, .faq-section, .community-section, .location, .facilities-section, .rental-section, #coming-soon, .cta-band, #ideas) :is(.biz-card, .who-card, .idea-card, .callout, .facility, .feature) p { color: var(--muted); }
+:is(#who, .related, .faq-section, .community-section, .location, .facilities-section, .rental-section, #coming-soon, .cta-band, #ideas) :is(.biz-card, .who-card, .idea-card, .callout) .eyebrow::before { filter: none; }
+.cta-band .cta-inner a:not(.button) { color: var(--lettering); }
+/* dots move up and away from the small print */
+main > section:nth-of-type(6n+4)::after { left: auto; right: 3%; bottom: auto; top: 40px; }
+@media (max-width: 800px) {
+  .hero::before { right: -10px; width: 60vw; }
+  .hero::after { left: auto !important; right: 0 !important; width: 200px !important; height: 76px !important; }
+  main > section:nth-of-type(6n+1)::after { right: 0; width: 180px; height: 180px; }
+  main > section::after { max-width: 60vw; }
+}
