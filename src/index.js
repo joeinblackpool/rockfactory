@@ -14,7 +14,8 @@ const SECURITY = {
 const withHeaders = (res, status = res.status) => {
   const h = new Headers(res.headers);
   for (const [k, v] of Object.entries(SECURITY)) h.set(k, v);
-  const type = h.get("content-type") || "";
+  let type = h.get("content-type") || "";
+  if (type.startsWith("text/html") && !/charset/i.test(type)) { type = "text/html; charset=utf-8"; h.set("content-type", type); }
   h.set("cache-control", type.startsWith("text/html") ? "public, max-age=300" : /image|font|css/.test(type) ? "public, max-age=2592000" : "public, max-age=3600");
   return new Response(res.body, { status, headers: h });
 };
