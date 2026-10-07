@@ -5,7 +5,7 @@
 - sitemap.xml (every indexable page, with lastmod) and llms.txt rebuilt from the pages themselves.
 Idempotent: running it twice gives the same files.
 """
-import json, re
+import html, json, re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -55,9 +55,9 @@ def footer_html():
         ("Spaces", [("/storage-units-blackpool.html", "Storage units"), ("/150-sq-ft-unit-blackpool.html", "150 sq ft unit"),
                     ("/160-sq-ft-unit-blackpool.html", "160 sq ft unit"), ("/180-sq-ft-unit-blackpool.html", "180 sq ft unit"),
                     ("/two-storey-unit-blackpool.html", "300 sq ft two-storey unit"), ("/offices-to-let-blackpool.html", "Offices"),
-                    ("/workshops-studios-blackpool.html", "Workshops &amp; studios"), ("/storage-pods-blackpool.html", "Storage pods (spring 2027)"),
+                    ("/workshops-studios-blackpool.html", "Workshops &amp; studios"), ("/storage-pods-blackpool.html", "Small storage units"), ("/self-storage-blackpool.html", "Self storage Blackpool"),
                     ("/compare-units.html", "Compare units and prices")]),
-        ("Guides", [("/storage-guides-blackpool.html", "Storage guides"), ("/what-size-storage-unit.html", "What size do I need?"),
+        ("Guides", [("/storage-guides-blackpool.html", "Storage guides"), ("/what-size-storage-unit.html", "What size do I need?"), ("/cheap-storage-blackpool.html", "Cheap storage tips"), ("/short-term-storage-blackpool.html", "Short-term storage"),
                     ("/business-guides-blackpool.html", "Small business guides"), ("/small-business-unit-ideas-blackpool.html", "Business ideas for a unit"),
                     ("/storage-prices-explained.html", "Prices explained"), ("/faqs.html", "Questions and answers"), ("/glossary.html", "Glossary")]),
         ("Areas", ([(f"/{areas['hub']['slug']}.html", "Fylde coast")] if areas.get("hub") else []) +
@@ -76,6 +76,23 @@ def footer_html():
 SPEC = ('<script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/assets/*"}}]},"eagerness":"moderate"}]}</script>')
 
 
+def add_faq_schema(s):
+    """Add FAQPage structured data from the visible questions on any page that has them and lacks it."""
+    if 'class="faq-list"' not in s or '"FAQPage"' in s:
+        return s
+    qa = []
+    for q, a in re.findall(r"<details><summary>(.*?)</summary><p>(.*?)</p></details>", s, re.S):
+        strip = lambda x: re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", "", x))).strip()
+        qa.append({"@type": "Question", "name": strip(q), "acceptedAnswer": {"@type": "Answer", "text": strip(a)}})
+    m = re.search(r'<script type="application/ld\+json">(.*?)</script>', s, re.S)
+    if not qa or not m:
+        return s
+    data = json.loads(m.group(1))
+    url = re.search(r'<link rel="canonical" href="([^"]+)"', s).group(1)
+    data.setdefault("@graph", []).append({"@type": "FAQPage", "@id": url + "#faq", "mainEntity": qa})
+    return s[:m.start(1)] + json.dumps(data, ensure_ascii=False) + s[m.end(1):]
+
+
 def tidy(path):
     s = path.read_text(); slug = path.stem
     s = re.sub(r'<nav class="nav" aria-label="Main navigation">.*?</nav>', lambda m: nav_html(slug), s, count=1, flags=re.S)
@@ -85,6 +102,7 @@ def tidy(path):
     s = re.sub(r'/styles\.css\?v=\d+', f'/styles.css?v={CSS_VERSION}', s)
     s = re.sub(r'\s*<script src="/motion\.js[^"]*" defer></script>', '', s)
     s = s.replace("</head>", f'  <script src="/motion.js?v={CSS_VERSION}" defer></script>\n</head>', 1)
+    s = add_faq_schema(s)
     if "speculationrules" not in s:
         s = s.replace("</head>", f"  {SPEC}\n</head>", 1)
     path.write_text(s)

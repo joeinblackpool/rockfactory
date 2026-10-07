@@ -77,6 +77,255 @@
  },
  "pages": [
   {
+   "slug": "short-term-storage-blackpool",
+   "type": "Article",
+   "title": "Short-Term Storage Blackpool, Monthly | The Rock Factory",
+   "desc": "Short-term storage in Blackpool for house moves, renovations and gaps between tenancies. One-month minimum, one month's notice, 24-hour access, FY1 5PB.",
+   "crumb": "Short-term storage",
+   "eyebrow": "Storage guide",
+   "h1": [
+    "Short-term storage",
+    "in Blackpool"
+   ],
+   "lead": "Most storage is needed for a gap: between houses, between tenancies, between the old kitchen and the new one. Here is how to rent for the gap and not a day longer.",
+   "sections": [
+    {
+     "id": "when",
+     "h2": "When short-term storage makes sense",
+     "html": "<ul class=\"tick-list\"><li>Your sale completes before your purchase does.</li><li>You are renovating and the furniture needs to be somewhere else.</li><li>You are between rentals, or moving to Blackpool for work.</li><li>A student year or a summer season ends and your things need a home.</li><li>A business is moving premises and stock needs a holding place.</li></ul><p>In every case the goal is the same: a short, predictable cost, then nothing.</p>"
+    },
+    {
+     "id": "terms",
+     "h2": "Our terms, in one paragraph",
+     "html": "<p>The minimum term is one month. After that it rolls monthly, and you give one month's notice to leave. To move in you pay one month's rent in advance and a security deposit equal to one month's rent, show valid photo ID and sign a Direct Debit mandate. Access is 24 hours a day.</p><p>The full detail is on our <a class=\"text-link\" href=\"/rental-terms.html\">rental terms page</a>.</p>"
+    },
+    {
+     "id": "plan",
+     "h2": "Plan the end before the start",
+     "html": "<p>The trick with short-term storage is to decide when it ends before it begins. Put the notice date in your calendar on the day you move in, a month before you expect to leave. Gaps have a habit of stretching, and a reminder costs nothing.</p><ol class=\"steps\"><li><strong>Work out the gap</strong><span>Your best guess at the move-out date, plus a margin.</span></li><li><strong>Size it honestly</strong><span>List the big items and count the boxes. Smaller is cheaper if it fits.</span></li><li><strong>Diary the notice</strong><span>One month before you expect to finish.</span></li><li><strong>Pack for leaving</strong><span>Label boxes by destination room, so moving out is one trip, not three.</span></li></ol>"
+    },
+    {
+     "id": "moves",
+     "h2": "House moves and chains",
+     "html": "<p>Chains break and dates slip. A ground-floor unit with roller-shutter access lets you unload a van straight in and load it straight out again. Our guide to <a class=\"text-link\" href=\"/storage-when-moving-house.html\">storage when moving house</a> covers timing, packing and van hire.</p>"
+    },
+    {
+     "id": "students",
+     "h2": "Students and seasonal gaps",
+     "html": "<p>Summer is the classic gap: a tenancy ends in June, the next one starts in September, and the bedding, books and bike need somewhere to be. A small first-floor pod, opening spring 2027, is made for exactly this. See <a class=\"text-link\" href=\"/student-storage-blackpool.html\">student storage in Blackpool</a>.</p><p>Blackpool businesses have gaps too. Guest houses, market traders and events firms often need space for one season and not the next. <a class=\"text-link\" href=\"/seasonal-storage-blackpool.html\">Seasonal storage</a> explains how to plan around the calendar.</p>"
+    },
+    {
+     "id": "business",
+     "h2": "When a business is between premises",
+     "html": "<p>If you are moving shop, closing one site before the next is ready, or holding stock for a few weeks, a ground-floor unit with roller-shutter access lets you unload straight from the van. Business use needs our approval first, so tell us what you will be storing when you message.</p><p>For paperwork that has to be kept but not in the office, read <a class=\"text-link\" href=\"/document-archive-storage.html\">document and archive storage</a>.</p>"
+    },
+    {
+     "id": "renovations",
+     "h2": "Renovations",
+     "html": "<p>Builders work faster in an empty room, and dust gets everywhere. Moving furniture out for the duration protects it and often shortens the job. See <a class=\"text-link\" href=\"/storage-during-renovation.html\">storage during a renovation</a>.</p>"
+    },
+    {
+     "id": "sizes",
+     "h2": "Which size for a short stay",
+     "html": "<div class=\"table-wrap\"><table class=\"price-table\"><thead><tr><th scope=\"col\">Space</th><th scope=\"col\">Roughly holds</th><th scope=\"col\">Price</th></tr></thead><tbody><tr><th scope=\"row\">35 sq ft pod (spring 2027)</th><td>A studio or small one-bedroom flat</td><td>Guide £17 a week</td></tr><tr><th scope=\"row\">75 sq ft room (spring 2027)</th><td>A two-bedroom home</td><td>Guide £28 a week</td></tr><tr><th scope=\"row\">150 sq ft unit</th><td>A three-bedroom home's furniture and boxes</td><td>£65 a week</td></tr></tbody></table></div><p>These are rough guides. How much fits depends on how you pack. The <a class=\"text-link\" href=\"/what-size-storage-unit.html\">unit size guide</a> has more detail.</p>"
+    },
+    {
+     "id": "cost",
+     "h2": "What a short stay costs",
+     "html": "<p>A worked example, so there are no surprises. Say you need a 150 sq ft unit for two months while a house purchase completes.</p><div class=\"table-wrap\"><table class=\"price-table\"><thead><tr><th scope=\"col\">Item</th><th scope=\"col\">Amount</th></tr></thead><tbody><tr><th scope=\"row\">Rent, two months at £65 a week</th><td>about £563</td></tr><tr><th scope=\"row\">Security deposit (one month's rent)</th><td>about £282, returned under our rental terms</td></tr><tr><th scope=\"row\">Pre-booking offer</th><td>first week free</td></tr></tbody></table></div><p>Monthly figures are the weekly rent × 52 ÷ 12. Electricity, if you use any, is charged at the supplier rate with no markup.</p>"
+    },
+    {
+     "id": "moving-out",
+     "h2": "Moving-out day",
+     "html": "<ol class=\"steps\"><li><strong>Give notice on time</strong><span>One month before your last day.</span></li><li><strong>Book the van for one trip</strong><span>Boxes labelled by room make it a single load.</span></li><li><strong>Leave it empty and clean</strong><span>Sweep out and take everything, so the deposit can be returned under our rental terms.</span></li></ol><p>Questions about dates? <a class=\"text-link\" href=\"{{WA}}\" target=\"_blank\" rel=\"noopener noreferrer\">message us on WhatsApp</a>.</p>"
+    }
+   ],
+   "faqs": [
+    [
+     "What is the shortest time I can rent for?",
+     "One month. After that it rolls monthly with one month's notice."
+    ],
+    [
+     "Can I extend if my move is delayed?",
+     "Yes. The agreement simply continues month by month until you give notice."
+    ],
+    [
+     "When can I move in?",
+     "Ground-floor units are available from 1 November 2026, with your first week free if you pre-book. Smaller first-floor pods and rooms open in spring 2027."
+    ],
+    [
+     "Can I get to my things outside office hours?",
+     "Yes. Access is 24 hours a day."
+    ]
+   ],
+   "sources": [],
+   "related": [
+    "storage-when-moving-house",
+    "storage-during-renovation",
+    "self-storage-blackpool",
+    "cheap-storage-blackpool"
+   ]
+  },
+  {
+   "slug": "cheap-storage-blackpool",
+   "type": "Article",
+   "title": "How to Get Cheap Storage in Blackpool | The Rock Factory",
+   "desc": "Eight honest ways to pay less for storage in Blackpool: size it right, compare per sq ft, watch the extras and avoid paying to store things you no longer want.",
+   "crumb": "Cheap storage Blackpool",
+   "eyebrow": "Storage guide",
+   "h1": [
+    "How to get cheap storage",
+    "in Blackpool"
+   ],
+   "lead": "The cheapest storage is rarely the one with the lowest headline price. It is the one that is the right size, on the right terms, holding only things worth keeping. Here is how to get there.",
+   "sections": [
+    {
+     "id": "right-size",
+     "h2": "1. Stop paying to store air",
+     "html": "<p>The most common way to overpay for storage is not a bad price. It is a unit that is too big. Empty floor space costs exactly the same as full floor space.</p><p>Most people size up out of caution, then pay for that caution every month. Make a list of the large items, estimate the boxes, and pack upwards: stacked boxes use height you are already paying for.</p><p>Our <a class=\"text-link\" href=\"/what-size-storage-unit.html\">unit size guide</a> turns square feet into rooms and boxes, and <a class=\"text-link\" href=\"/how-to-pack-a-storage-unit.html\">how to pack a storage unit</a> shows how to fit more into less.</p>"
+    },
+    {
+     "id": "per-sq-ft",
+     "h2": "2. Compare price per square foot, not per unit",
+     "html": "<p>A small unit nearly always looks cheaper and is nearly always more expensive per square foot. To compare fairly, work out the yearly cost per square foot: weekly price × 52 ÷ size.</p><div class=\"table-wrap\"><table class=\"price-table\"><thead><tr><th scope=\"col\">Our space</th><th scope=\"col\">Weekly price</th><th scope=\"col\">Per sq ft per year</th></tr></thead><tbody><tr><th scope=\"row\">15 sq ft pod (guide)</th><td>£10</td><td>about £34.67</td></tr><tr><th scope=\"row\">50 sq ft room (guide)</th><td>£22</td><td>about £22.88</td></tr><tr><th scope=\"row\">100 sq ft room (guide)</th><td>£34</td><td>about £17.68</td></tr><tr><th scope=\"row\">150 sq ft unit</th><td>£65</td><td>about £22.53</td></tr></tbody></table></div><p>So if you are between two sizes, the bigger one often costs less per square foot. That only helps if you would actually fill it.</p>"
+    },
+    {
+     "id": "weekly-monthly",
+     "h2": "3. Convert everything to the same period",
+     "html": "<p>Some prices are quoted weekly, some monthly, some per four weeks. Four weeks is not a month: a year has twelve months but thirteen four-week periods. Convert every quote to a monthly figure (weekly × 52 ÷ 12) before you compare.</p><p>We quote weekly prices and show the monthly figure next to them, so you never have to do this sum in your head at the counter.</p>"
+    },
+    {
+     "id": "extras",
+     "h2": "4. Ask what is not included",
+     "html": "<p>The headline price is only part of the bill. Before you sign anywhere, ask about:</p><ul class=\"tick-list\"><li>Deposits, and when you get them back.</li><li>Insurance, and whether it is compulsory.</li><li>Padlocks, admin fees and set-up charges.</li><li>Price rises after an introductory offer ends.</li><li>The notice period, and what happens if you leave early.</li></ul><p>Here, the deposit is one month's rent, the minimum term is one month and notice is one month. Electricity in ground-floor units is charged at the supplier rate with no markup.</p>"
+    },
+    {
+     "id": "declutter",
+     "h2": "5. Do not pay to store a decision",
+     "html": "<p>Storage is brilliant for things you will use again. It is an expensive way to postpone deciding about things you will not. A sideboard nobody wants costs nothing in the loft and something every month in a unit.</p><p>Spend one afternoon sorting before you move anything. Sell, donate or recycle what you would not pay to keep. Our <a class=\"text-link\" href=\"/declutter-with-storage.html\">decluttering guide</a> has a simple method.</p>"
+    },
+    {
+     "id": "short-term",
+     "h2": "6. Match the term to the job",
+     "html": "<p>Long contracts can look cheaper per month, but only if you really need the full term. If you need space for a house move or a renovation, a rolling monthly agreement means you stop paying the month the job is done.</p><p>See <a class=\"text-link\" href=\"/short-term-storage-blackpool.html\">short-term storage in Blackpool</a> for how to plan it.</p>"
+    },
+    {
+     "id": "share",
+     "h2": "7. Share, or swap as you go",
+     "html": "<p>Two households or two small businesses can split one unit, as long as you both trust each other and one person is the named tenant. And if your needs shrink, ask to move to a smaller space rather than carrying on paying for the bigger one. At The Rock Factory you can swap units any time, subject to availability.</p>"
+    },
+    {
+     "id": "first-week",
+     "h2": "8. Use the offers that are real",
+     "html": "<p>Our ground-floor units are available from 1 November 2026 and pre-booking gets your first week free. If you need something smaller, register for a first-floor pod or room, opening spring 2027 at guide prices from £10 a week. <a class=\"text-link\" href=\"{{WA}}\" target=\"_blank\" rel=\"noopener noreferrer\">message us on WhatsApp</a> to do either.</p>"
+    }
+   ],
+   "faqs": [
+    [
+     "What is the cheapest storage you offer?",
+     "From spring 2027, first-floor storage pods at guide prices from £10 a week for 15 sq ft. Our ground-floor units start at £65 a week for 150 sq ft."
+    ],
+    [
+     "Is a bigger unit better value?",
+     "Per square foot, usually yes. A 100 sq ft room at the guide price works out at about £17.68 per sq ft per year, against about £34.67 for a 15 sq ft pod. It is only better value if you would fill it."
+    ],
+    [
+     "How do I compare weekly and monthly prices?",
+     "Multiply the weekly price by 52 and divide by 12. For example, £65 a week is about £282 a month."
+    ],
+    [
+     "Are there hidden fees?",
+     "The deposit is one month's rent, refundable under our rental terms. Electricity in ground-floor units is charged at the supplier rate with no markup."
+    ]
+   ],
+   "sources": [],
+   "related": [
+    "storage-prices-explained",
+    "what-size-storage-unit",
+    "storage-pods-blackpool",
+    "declutter-with-storage"
+   ]
+  },
+  {
+   "slug": "self-storage-blackpool",
+   "type": "WebPage",
+   "title": "Self Storage Blackpool, Month by Month | The Rock Factory",
+   "desc": "Self storage in Blackpool at The Old Rock Factory, FY1 5PB. Units from 150 sq ft and £65 a week, 24-hour access, monthly terms, no long contract.",
+   "crumb": "Self storage Blackpool",
+   "eyebrow": "Self storage in Blackpool",
+   "h1": [
+    "Self storage in Blackpool,",
+    "without the small print"
+   ],
+   "lead": "Self storage should be the easiest thing you buy all year: a lockable space, a fair price, and a door you can open whenever you like. Here is exactly how it works at The Rock Factory on Keswick Road.",
+   "sections": [
+    {
+     "id": "what-it-is",
+     "h2": "What self storage actually is",
+     "html": "<p>Self storage means you rent a private space, you bring your things, and you keep the access. Nobody packs for you, nobody holds your belongings in a warehouse you cannot visit. It is your space, rented by the month.</p><p>People rarely want storage for its own sake. They want something else: a spare room back, a hallway without boxes in it, a van that is not also a shed, a house sale that does not stall because the furniture has nowhere to go. Storage is just the tool that gets them there. So when you choose a unit, start with the problem you want gone, not the square footage.</p><p>At The Rock Factory that space is either a ground-floor unit, available from 1 November 2026, or, from spring 2027, a smaller pod or room on the first floor. You can see every size side by side on our <a class=\"text-link\" href=\"/compare-units.html\">unit comparison page</a>.</p>"
+    },
+    {
+     "id": "sizes",
+     "h2": "Sizes and prices",
+     "html": "<div class=\"table-wrap\"><table class=\"price-table\"><thead><tr><th scope=\"col\">Space</th><th scope=\"col\">Access</th><th scope=\"col\">Price</th></tr></thead><tbody><tr><th scope=\"row\">150 sq ft unit</th><td>Ground floor, roller shutter</td><td>£65 a week (about £282 a month)</td></tr><tr><th scope=\"row\">160 sq ft unit</th><td>Ground floor, security door</td><td>£69 a week (about £299 a month)</td></tr><tr><th scope=\"row\">180 sq ft unit</th><td>Ground floor, roller shutter</td><td>£78 a week (about £338 a month)</td></tr><tr><th scope=\"row\">300 sq ft two-storey unit</th><td>Roller shutter, upstairs room with a window</td><td>£130 a week (about £563 a month)</td></tr><tr><th scope=\"row\">Storage pods, 15 to 35 sq ft</th><td>First floor, by stairs, spring 2027</td><td>Guide prices from £10 a week</td></tr><tr><th scope=\"row\">Storage rooms, 50 to 100 sq ft</th><td>First floor, by stairs, spring 2027</td><td>Guide prices from £22 a week</td></tr></tbody></table></div><p>Monthly figures are the weekly rent multiplied by 52 and divided by 12. We show both because a weekly price can look smaller than it is, and we would rather you budget for the real number.</p><p>Pod and room prices are guide prices until we confirm them before opening. For the detail on how storage is priced, read <a class=\"text-link\" href=\"/storage-prices-explained.html\">storage prices explained</a>.</p>"
+    },
+    {
+     "id": "how-it-works",
+     "h2": "How renting works",
+     "html": "<ol class=\"steps\"><li><strong>Tell us what you need</strong><span>Message us on WhatsApp with what you want to store and roughly how much of it.</span></li><li><strong>We confirm a space</strong><span>We check availability and suggest a size. If you are unsure, start smaller: you can swap units later, subject to availability.</span></li><li><strong>Sign up</strong><span>One month's rent in advance, a security deposit equal to one month's rent, valid photo ID and a signed Direct Debit mandate.</span></li><li><strong>Move in</strong><span>Ground-floor units from 1 November 2026. Pre-book now and your first week is free.</span></li></ol><p>The full terms are in plain English on our <a class=\"text-link\" href=\"/rental-terms.html\">rental terms page</a>.</p>"
+    },
+    {
+     "id": "terms",
+     "h2": "Month by month, not year by year",
+     "html": "<p>The minimum term is one month. After that you give one month's notice when you want to leave. There is no long contract to sign and no penalty for finishing early once your notice is up.</p><p>That matters more than it sounds. Most people underestimate how long they will need storage, and a few overestimate it. A rolling monthly agreement lets you be wrong in either direction without it costing you.</p><p>If you only need space for a short spell, such as a house move or a renovation, see <a class=\"text-link\" href=\"/short-term-storage-blackpool.html\">short-term storage in Blackpool</a>.</p>"
+    },
+    {
+     "id": "access",
+     "h2": "Access and security",
+     "html": "<ul class=\"tick-list\"><li>24-hour access, so you can collect things before work, after a shift or on a Sunday night.</li><li>Free app access to CCTV covering the entrance and the area outside the units.</li><li>Ground-floor units with roller-shutter or security-door access, so loading is straightforward.</li><li>Lighting, electricity and Wi-Fi already connected in every ground-floor unit.</li></ul><p>We recommend insuring what you store, because it is your property. Our <a class=\"text-link\" href=\"/storage-insurance-guide.html\">storage insurance guide</a> explains the options, and our <a class=\"text-link\" href=\"/storage-security-tips.html\">storage security tips</a> cover the simple things that make a difference.</p>"
+    },
+    {
+     "id": "what-to-store",
+     "h2": "What you can and cannot store",
+     "html": "<p>Furniture, boxes, paperwork, stock, tools, bikes, sports kit, seasonal decorations and most household belongings are fine.</p><ul class=\"tick-list cross\"><li>No cars or vehicle storage (buildings insurance).</li><li>No fuel, gas cylinders or solvent-based chemicals in bulk unless agreed in writing.</li><li>No cooking or hot food.</li></ul><p>The full list, with the reasons, is in <a class=\"text-link\" href=\"/what-not-to-store.html\">what not to store</a>.</p>"
+    },
+    {
+     "id": "where",
+     "h2": "Where we are",
+     "html": "<p>The Old Rock Factory, Keswick Road, off Park Road, Blackpool FY1 5PB. We are a short hop from the town centre and easy to reach from South Shore, Layton and Marton. Directions are on our <a class=\"text-link\" href=\"/find-us.html\">find us page</a>, and if you are coming from further along the coast, see <a class=\"text-link\" href=\"/storage-fylde-coast.html\">storage on the Fylde coast</a>.</p><p>Questions first? <a class=\"text-link\" href=\"{{WA}}\" target=\"_blank\" rel=\"noopener noreferrer\">message us on WhatsApp</a> and you will get an answer from a person, not a form.</p>"
+    }
+   ],
+   "faqs": [
+    [
+     "How much does self storage cost in Blackpool here?",
+     "Ground-floor units are £65 a week for 150 sq ft, £69 for 160 sq ft, £78 for 180 sq ft and £130 for the 300 sq ft two-storey unit. Smaller first-floor pods and rooms open in spring 2027 at guide prices from £10 a week."
+    ],
+    [
+     "Is there a long contract?",
+     "No. The minimum term is one month, then one month's notice to leave."
+    ],
+    [
+     "Can I get to my things at any time?",
+     "Yes. Access is 24 hours a day."
+    ],
+    [
+     "Do I need my own insurance?",
+     "We recommend it, because the belongings are yours. See our storage insurance guide for the options."
+    ],
+    [
+     "Can I store a car?",
+     "No. Car storage is not permitted because of our buildings insurance."
+    ]
+   ],
+   "sources": [],
+   "related": [
+    "storage-units-blackpool",
+    "storage-pods-blackpool",
+    "compare-units",
+    "what-size-storage-unit"
+   ]
+  },
+  {
    "slug": "what-size-storage-unit",
    "type": "Article",
    "title": "What Size Storage Unit Do I Need? | The Rock Factory",
