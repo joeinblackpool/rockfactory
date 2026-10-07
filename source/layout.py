@@ -13,7 +13,7 @@ PUB = ROOT / "public"
 CONTENT = ROOT / "source" / "content"
 SITE = "https://rockfactory.uk"
 LASTMOD = "2026-10-07"
-CSS_VERSION = "36"
+CSS_VERSION = "40"
 
 NAV = [("/", "Home"), ("/storage-units-blackpool.html", "Storage"), ("/offices-to-let-blackpool.html", "Offices"),
        ("/workshops-studios-blackpool.html", "Workshops &amp; studios"), ("/compare-units.html", "Prices"),
@@ -81,9 +81,12 @@ SPEC = ('<script type="speculationrules">{"prerender":[{"where":{"and":[{"href_m
 IMAGE_ALT = {
     "index": [
         "Storage and business unit to rent in Blackpool: empty ground-floor unit with lighting, a personnel door and its roller shutter open",
+        "Archive black-and-white photograph of a little girl biting a stick of Blackpool rock",
         "Archive black-and-white photograph of seaside rock being made by hand on a rock factory floor",
         "The end of a red stick of Blackpool rock, with Blackpool Rock lettered right through its white centre",
         "Archive photograph of rock-makers in white caps rolling a giant boil of rock by hand",
+        "Long pink and blue twists of rock being rolled by hand on a rock factory table",
+        "A rainbow stick of rock held up in front of Blackpool Tower on a sunny day",
         "Pink sticks of Blackpool rock in Blackpool Rock wrappers",
         "Vintage yellow rock-shop sign reading Direct from the Factory, Cut Price Rock",
     ],
@@ -208,6 +211,11 @@ def tidy(path):
     s = re.sub(r'/styles\.css\?v=\d+', f'/styles.css?v={CSS_VERSION}', s)
     s = re.sub(r'\s*<script src="/motion\.js[^"]*" defer></script>', '', s)
     s = s.replace("</head>", f'  <script src="/motion.js?v={CSS_VERSION}" defer></script>\n</head>', 1)
+    pre = '<link rel="preload" href="/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>'
+    for f in ("jost-latin-wght.woff2", "yellowtail-latin-400.woff2"):
+        tag = f'<link rel="preload" href="/fonts/{f}" as="font" type="font/woff2" crossorigin>'
+        if tag not in s and pre in s:
+            s = s.replace(pre, pre + "\n  " + tag, 1)
     s = add_faq_schema(s)
     s = apply_image_seo(s, slug)
     s = business_type(s)
