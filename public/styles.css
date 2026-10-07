@@ -793,148 +793,219 @@ h1 em, h2 em, .eyebrow, .text-link, .row-more, .card-bottom a, .price-table .pri
 }
 .matrix .nowrap { white-space: nowrap; }
 
-/* ===== 2027 makeover: European editorial, cut through a stick of rock =====
-   Flat print-like surfaces, hard edges, hairline ink rules, oversized type.
-   Seaside rock stays the motif: pink casing, white core, red lettering running through. */
+/* ===== 2027 rebuild: "Cut through" =====
+   One idea, taken from the rock itself: snap a stick and you see a red casing, a white core
+   and black lettering running right through. The whole site uses only those three colours.
+   Swiss-style grid, one typeface in many weights, hard edges, no shadows, no pink. */
 :root {
-  --ink: #1a1214;
-  --paper: #fbf6ef;          /* warm sand */
-  --white: #fffdfa;
-  --muted: #5d5256;
-  --line: #e6dcd3;
-  --rule: #1a1214;
-  --rock: #ef4f87;           /* casing pink, decoration */
-  --blue: #c2185b;           /* action pink, 5.9:1 on white */
-  --sign: #c8102e;           /* lettering red */
-  --sky: #f6ece3;
-  --rock-soft: #fde3ec;
-  --r: 2px; --r-sm: 2px;
-  --shadow: none; --shadow-lift: none;
-  --stripes: repeating-linear-gradient(-45deg, var(--rock) 0 7px, #fff 7px 14px);
+  --casing: #c8201c;          /* rock red: actions, rules, bands (5.3:1 on cream, 5.6:1 white on red) */
+  --casing-dark: #9e1814;
+  --core: #f7f2e8;            /* the white centre: page background */
+  --core-2: #ede5d6;          /* a shade into the sugar */
+  --lettering: #141110;       /* black lettering */
+  --ink: var(--lettering);
+  --paper: var(--core);
+  --white: #fffcf6;
+  --muted: #554c45;
+  --line: #d9cfbf;
+  --blue: var(--casing);
+  --red: var(--casing);
+  --sign: var(--casing);
+  --rock: var(--casing);
+  --rock-soft: var(--core-2);
+  --sky: var(--core-2);
+  --stripes: var(--casing);
+  --r: 0px; --r-sm: 0px; --shadow: none; --shadow-lift: none;
   --width: 1320px;
+  --seal: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Ccircle cx='100' cy='100' r='98' fill='%23c8201c'/%3E%3Ccircle cx='100' cy='100' r='80' fill='%23f7f2e8'/%3E%3Cdefs%3E%3Cpath id='c' d='M100,100 m-60,0 a60,60 0 1,1 120,0 a60,60 0 1,1 -120,0'/%3E%3C/defs%3E%3Ctext font-family='Arial,Helvetica,sans-serif' font-weight='700' font-size='21' fill='%23141110' textLength='370' lengthAdjust='spacing'%3E%3CtextPath href='%23c' textLength='370' lengthAdjust='spacing'%3EBLACKPOOL ROCK %C2%B7 BLACKPOOL ROCK %C2%B7%3C/textPath%3E%3C/text%3E%3C/svg%3E");
+  --dot: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Ccircle cx='10' cy='10' r='9' fill='%23c8201c'/%3E%3Ccircle cx='10' cy='10' r='5' fill='%23f7f2e8'/%3E%3C/svg%3E");
 }
-body { background: var(--paper); color: var(--ink); font-size: 17px; font-feature-settings: "cv11", "ss01"; }
-body::before, body::after { height: 6px; }
-::selection { background: var(--rock); color: #fff; }
+html { background: var(--core); }
+body { background: var(--core); color: var(--lettering); font-size: 17px; line-height: 1.6; }
+::selection { background: var(--casing); color: #fff; }
+a:focus-visible, summary:focus-visible { outline: 3px solid var(--casing); outline-offset: 4px; }
 
-/* Type: big, tight grotesk with an italic serif accent in sign red */
-h1, h2, h3 { font-weight: 800; letter-spacing: -.055em; line-height: .98; }
-h1 { font-size: clamp(3.4rem, 8.2vw, 8.25rem); }
-h2 { font-size: clamp(2.4rem, 5.2vw, 5rem); }
-h3 { letter-spacing: -.035em; line-height: 1.08; }
-h1 em, h2 em { font-weight: 400; letter-spacing: -.035em; color: var(--sign); }
-.eyebrow { display: inline-flex; align-items: center; gap: 10px; font-size: .75rem; letter-spacing: .14em; color: var(--ink); }
-.eyebrow::before { content: ""; width: 28px; height: 8px; background: var(--stripes); flex-shrink: 0; }
-.cta-band .eyebrow::before, .location .eyebrow::before { background: repeating-linear-gradient(-45deg, #fff 0 7px, transparent 7px 14px); }
-.section-head { border-top: 2px solid var(--rule); padding-top: 22px; }
-.section-head h2::after, .guide-content > h2::after { width: 120px; height: 8px; border-radius: 0; box-shadow: none; margin-top: 20px; }
-.section-head > p { font-size: 1rem; }
-.guide-content h2 { letter-spacing: -.045em; }
+/* The casing: a solid red edge at the top and bottom of every page, no candy stripes */
+body::before, body::after { height: 8px; background: var(--casing); }
 
-/* Offer strip: a thin ink ticker instead of a pink slab */
-.offer-banner { background: var(--ink); }
-.offer-date { background: var(--rock); color: #fff !important; padding: 3px 10px; border-radius: 0; letter-spacing: .06em; text-transform: uppercase; font-size: .75rem; }
-.whatsapp-link { border-radius: 0; border-color: #4a3f42; }
+/* Type: Inter only. Weight and colour do the work the italic serif used to do. */
+h1, h2, h3 { font-family: "Inter", system-ui, sans-serif; font-weight: 850; letter-spacing: -.06em; line-height: .95; }
+h1 { font-size: clamp(3.3rem, 7.6vw, 7.8rem); }
+h2 { font-size: clamp(2.3rem, 4.8vw, 4.6rem); }
+h3 { font-weight: 750; letter-spacing: -.035em; line-height: 1.1; }
+h1 em, h2 em { font-family: inherit; font-style: normal; font-weight: inherit; letter-spacing: inherit; color: var(--casing); }
+.eyebrow { display: inline-flex; align-items: center; gap: 10px; font-size: .75rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--lettering); }
+.eyebrow::before { content: ""; width: 14px; height: 14px; flex-shrink: 0; background: var(--dot) center / contain no-repeat; }
+.cta-band .eyebrow, .location .eyebrow { color: #fff; }
+.cta-band .eyebrow::before, .location .eyebrow::before { filter: brightness(0) invert(1); }
+p { text-wrap: pretty; }
+h1, h2 { text-wrap: balance; }
 
-/* Header: logo left, ruled nav right, current page underlined in red */
-.site-header { border-bottom: 2px solid var(--rule); }
+/* Section heads: a heavy black rule, the heading, and nothing decorative under it */
+.section-head { border-top: 3px solid var(--lettering); padding-top: 24px; }
+.section-head h2::after, .guide-content > h2::after { display: none; }
+.section-head > p { color: var(--muted); }
+.guide-content h2 { padding-top: 18px; border-top: 3px solid var(--lettering); }
+.guide-content h2:first-child { padding-top: 18px; }
+
+/* Offer strip: red casing with cream text */
+.offer-banner { background: var(--casing); color: var(--core); }
+.offer-date { background: var(--lettering); color: var(--core) !important; padding: 3px 10px; border-radius: 0; font-size: .75rem; letter-spacing: .1em; text-transform: uppercase; }
+.whatsapp-link { border-radius: 0; border-color: rgba(255,255,255,.55); color: #fff; }
+.whatsapp-link:hover { background: var(--casing-dark); border-color: #fff; }
+
+/* Header */
+.site-header { border-bottom: 3px solid var(--lettering); }
 @media (min-width: 801px) {
-  .site-header { background: rgba(251,246,239,.94); box-shadow: 0 0 0 100vmax rgba(251,246,239,.94); }
+  .site-header { background: rgba(247,242,232,.95); box-shadow: 0 0 0 100vmax rgba(247,242,232,.95); }
 }
 .brand-logo { border-radius: 0; }
-.nav { gap: 2px; }
-.nav a { border-radius: 0; padding-inline: 12px; font-weight: 600; letter-spacing: -.01em; border-bottom: 3px solid transparent; }
-.nav a:hover { background: transparent; border-bottom-color: var(--rock); }
-.nav a[aria-current=page] { background: transparent; color: var(--ink); border-bottom-color: var(--sign); }
+.brand-town { letter-spacing: -.01em; }
+.nav { gap: 0; }
+.nav a { border-radius: 0; padding-inline: 13px; font-weight: 650; border-bottom: 4px solid transparent; }
+.nav a:hover { background: transparent; border-bottom-color: var(--line); }
+.nav a[aria-current=page] { background: transparent; color: var(--lettering); border-bottom-color: var(--casing); }
 
-/* Buttons: square, solid, confident */
-.button { border-radius: 0; min-height: 54px; padding-inline: 26px; font-weight: 700; letter-spacing: -.005em; box-shadow: none; }
-.button:hover { transform: none; box-shadow: 6px 6px 0 var(--rock); background: var(--ink); border-color: var(--ink); }
-.button.secondary { background: transparent; border: 2px solid var(--ink); color: var(--ink); }
-.button.secondary:hover { background: var(--ink); color: #fff; }
-.text-link, .row-more, .card-bottom a { text-decoration-thickness: 2px; text-underline-offset: 5px; }
+/* Buttons: solid red bars; secondary is a black outline */
+.button { border-radius: 0; min-height: 54px; padding-inline: 26px; background: var(--casing); border: 2px solid var(--casing); color: #fff; font-weight: 750; box-shadow: none; }
+.button:hover { transform: none; box-shadow: none; background: var(--lettering); border-color: var(--lettering); color: #fff; }
+.button.secondary { background: transparent; border-color: var(--lettering); color: var(--lettering); }
+.button.secondary:hover { background: var(--lettering); color: var(--core); }
+.cta-band .button, .location .button { border-radius: 0; background: var(--core); border-color: var(--core); color: var(--casing); }
+.cta-band .button:hover, .location .button:hover { background: var(--lettering); border-color: var(--lettering); color: #fff; }
+.text-link, .row-more, .card-bottom a, .hero-proof a { color: var(--casing); text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 5px; border-bottom: 0; }
+.text-link:hover, .row-more:hover { color: var(--lettering); }
 
-/* Photographs: square corners on a pink offset, like a postcard on a sweet-shop shelf */
-.home-unit-photo img, .page-photo img, .real-photo img, .photo-gallery img, .archive-print img { border-radius: 0; }
-.home-unit-photo img { box-shadow: 14px 14px 0 var(--rock); }
-.photo-gallery img, .archive-print img { outline: 1px solid var(--line); }
-.page-visual { border-radius: 0; box-shadow: 14px 14px 0 var(--rock); }
+/* Photographs: square, unframed, true to the original */
+.home-unit-photo img, .page-photo img, .real-photo img, .photo-gallery img, .archive-print img { border-radius: 0; box-shadow: none; outline: 0; }
+.page-visual { border-radius: 0; box-shadow: none; }
 
-/* Hero: bigger headline, ruled facts line */
-.hero { padding-block: 56px 96px; }
-.hero h1 { line-height: .92; font-size: clamp(3.2rem, 6.4vw, 6.6rem); }
-.location .button, .cta-band .button { border-radius: 0; }
-.biz-card .eyebrow::before, .space-card .eyebrow::before, .who-card .eyebrow::before { display: none; }
-.hero .intro { font-size: 1.125rem; color: var(--ink); }
-.hero-note { padding-top: 16px; border-top: 1px solid var(--rule); font-variant-numeric: tabular-nums; }
-.home-unit-photo { margin-top: 24px; }
+/* Hero: the cut end of a stick of rock sits on the photo as a seal */
+.hero { padding-block: 64px 104px; align-items: center; }
+.hero h1 { font-size: clamp(3.2rem, 6.6vw, 6.8rem); line-height: .9; }
+.hero .intro { font-size: 1.125rem; color: var(--lettering); }
+.hero-note { padding-top: 16px; border-top: 1px solid var(--lettering); font-size: .875rem; }
+.home-unit-photo { position: relative; margin-top: 0; }
+.home-unit-photo::after { content: ""; position: absolute; left: -46px; bottom: -46px; width: 148px; height: 148px; background: var(--seal) center / contain no-repeat; pointer-events: none; animation: rf-spin 60s linear infinite; }
+@keyframes rf-spin { to { transform: rotate(360deg); } }
+.ticker { border-block: 3px solid var(--lettering); }
 
-/* Cards become flat ruled blocks with a rock-stripe edge */
-.space-card, .idea-card, .who-card, .biz-card, .unit-card, .facility, .feature, .office-feature, .idea, .requirements, .answer-box, .guide-toc, details, .opening-card, .quick, .chip, .table-wrap {
+/* Cards: flat cream-white panels with a red casing edge on top */
+.space-card, .idea-card, .who-card, .biz-card, .unit-card, .facility, .feature, .office-feature, .idea, .requirements, .answer-box, .guide-toc, details, .opening-card, .quick, .chip, .table-wrap, .callout, .adjoining, .work-note, .office-placeholder, .compact-notice p, .contrast, .tenant-offer, .offer-list {
   border-radius: 0; box-shadow: none;
 }
-.space-card, .idea-card, .who-card, .biz-card, .unit-card, .facility, .feature, .office-feature, .idea { background: var(--white); border: 1px solid var(--rule); }
-.space-card::before, .idea-card::before, .who-card::before, .biz-card::before, .unit-card.highlight::before { height: 8px; }
-.space-card:hover, .idea-card:hover, .who-card:hover, .unit-card:hover, .biz-join:hover { transform: translate(-3px, -3px); box-shadow: 6px 6px 0 var(--ink); border-color: var(--ink); }
-.who-card h3, .idea-card h3, .biz-card h3 { letter-spacing: -.04em; }
-.facility { border-top: 8px solid var(--ink); }
-.facility .stat { color: var(--sign); font-weight: 800; letter-spacing: -.05em; }
-.feature { border-left: 8px solid var(--rock); }
+.space-card::before, .idea-card::before, .who-card::before, .biz-card::before, .unit-card.highlight::before { height: 6px; background: var(--casing); }
+.space-card, .idea-card, .who-card, .biz-card, .unit-card, .facility, .feature, .office-feature, .idea { background: var(--white); border: 1px solid var(--lettering); }
+.space-card:hover, .idea-card:hover, .who-card:hover, .unit-card:hover, .biz-join:hover { transform: none; box-shadow: none; border-color: var(--casing); outline: 2px solid var(--casing); outline-offset: -1px; }
+.biz-join { background: var(--core-2); }
+.card-number { color: var(--casing); font-weight: 800; }
+.facility { border-top: 6px solid var(--casing); }
+.facility .stat { color: var(--lettering); font-weight: 850; letter-spacing: -.055em; }
+.feature { border-left: 6px solid var(--casing); }
+.who-emoji { filter: grayscale(1) contrast(1.1); }
 
-/* Tables: ink header rule, tabular prices */
-.table-wrap { border: 1px solid var(--rule); background: var(--white); }
-.price-table thead th { background: var(--ink); color: #fff; letter-spacing: .1em; }
-.price-table tbody tr:hover { background: var(--rock-soft); }
-.price-table .price, .unit-rate { font-variant-numeric: tabular-nums; font-weight: 800; }
-.compare-table tr.ours { background: var(--rock-soft); }
+/* Tables: black header, tabular red prices */
+.table-wrap { border: 1px solid var(--lettering); background: var(--white); }
+.price-table thead th { background: var(--lettering); color: var(--core); letter-spacing: .12em; }
+.price-table tbody tr:hover { background: var(--core-2); }
+.price-table .price, .unit-rate, .compare-table td { font-variant-numeric: tabular-nums; }
+.price-table .price { color: var(--casing); font-weight: 850; }
+.compare-table tr.ours { background: var(--core-2); }
+.price-ticket { background: var(--lettering); color: var(--core); border-radius: 0; box-shadow: none; }
 
-/* FAQ: a ruled list, not floating boxes */
-.faq-list { gap: 0; border-top: 2px solid var(--rule); }
-details { border: 0; border-bottom: 1px solid var(--rule); background: transparent; padding-inline: 0; }
-details[open] { box-shadow: none; background: transparent; }
+/* FAQ: a ruled list */
+.faq-list { gap: 0; border-top: 3px solid var(--lettering); }
+details { border: 0; border-bottom: 1px solid var(--lettering); background: transparent; padding-inline: 0; }
+details[open] { box-shadow: none; }
 summary { font-weight: 700; letter-spacing: -.015em; }
-summary::after { content: "+"; font-weight: 300; font-size: 1.8rem; top: 12px; }
-details[open] summary::after { content: "–"; }
+summary::after { content: "+"; color: var(--casing); font-weight: 400; font-size: 1.9rem; top: 11px; }
+details[open] summary::after { content: "−"; }
 
-/* Steps: big numerals */
-.steps li { border-top: 1px solid var(--rule); }
-.steps li::before { border-radius: 0; background: var(--ink); color: #fff; font-weight: 800; }
+/* Steps and lists */
+.steps li { border-top: 1px solid var(--lettering); }
+.steps li::before { border-radius: 50%; background: var(--casing); color: #fff; font-weight: 800; }
+.tick-list li { border-bottom-color: var(--line); }
+.tick-list li::before, .tick-list.cross li::before { color: var(--casing); }
 
-/* Bands: flat pink with a stripe edge; contrast section in deep rock-shop maroon */
-.cta-band, .location { background: var(--blue); }
-.contrast-section { background: #24101a; }
-.contrast, .tenant-offer, .offer-list, .quick { border-radius: 0; }
-.quick { box-shadow: 12px 12px 0 var(--ink); }
-.quick fieldset label { border-radius: 0; }
-.quick select, .quick input[type=text] { border-radius: 0; border-color: var(--ink); }
-.community-section { background: var(--rock-soft); }
-.heritage-section { background: var(--white); }
-.opening-card { background: var(--white); border: 1px solid var(--rule); }
-.callout, .adjoining, .work-note, .office-placeholder, .compact-notice p { border-radius: 0; }
-.answer-box { border-left-width: 8px; }
-.guide-toc { border: 0; border-top: 2px solid var(--rule); background: transparent; padding-inline: 0; }
-.example-tag { border-radius: 0; background: var(--ink); }
+/* Bands: red casing for calls to action, black for the comparison, the sugar shade for community */
+.cta-band, .location { background: var(--casing); color: #fff; }
+.cta-band::before, .location::before, .contrast-section::before, .community-section::before { display: none; }
+.cta-band h2 em, .location h2 em { color: var(--lettering); }
+.contrast-section { background: var(--lettering); }
+.contrast-section h2 em { color: var(--casing); filter: brightness(1.35); }
+.contrast { border-color: #3a3330; }
+.contrast li { border-top-color: #3a3330; }
+.contrast-head span:first-child, .contrast .old, .contrast-foot span:first-child { background: #221d1b; color: #b9aea4; }
+.contrast-head span:last-child, .contrast .new, .contrast-foot span:last-child { background: var(--casing); color: #fff; }
+.contrast li:hover .new { background: var(--casing-dark); }
+.contrast .old { text-decoration-color: rgba(200,32,28,.8); }
+.contrast-foot { border-top: 3px solid var(--casing); }
+.community-section { background: var(--core-2); border-block: 0; }
+.heritage-section { background: var(--white); border-block: 3px solid var(--lettering); }
+.opening-card { background: var(--white); border: 1px solid var(--lettering); }
+.opening-card::before { background: var(--casing); height: 6px; }
+.quick { border: 2px solid var(--lettering); }
+.quick fieldset label { border-radius: 0; border-color: var(--lettering); }
+.quick fieldset label:has(input:checked) { background: var(--lettering); border-color: var(--lettering); }
+.quick select, .quick input[type=text] { border-radius: 0; border-color: var(--lettering); }
+.offer-list { background: rgba(0,0,0,.12); }
+.answer-box { border-left: 6px solid var(--casing); }
+.guide-toc { border: 0; border-top: 3px solid var(--lettering); background: transparent; padding-inline: 0; }
+.callout { background: var(--white); border: 1px solid var(--lettering); }
+.callout.coming { border-left: 6px solid var(--casing); }
+.compact-notice { background: var(--core-2); border-block-color: var(--lettering); }
+.example-tag { border-radius: 0; background: var(--lettering); }
+.chip { border-color: var(--lettering); background: var(--white); }
+.crumbs span[aria-current] { color: var(--lettering); }
 
-/* Footer: the name runs right through, like letters in a stick of rock */
-.site-footer-mega { position: relative; border-top: 0; padding-top: 0; margin-top: 64px; }
-.site-footer-mega::before {
-  content: "BLACKPOOL ROCK FACTORY · BLACKPOOL ROCK FACTORY · BLACKPOOL ROCK FACTORY · BLACKPOOL ROCK FACTORY";
-  grid-column: 1 / -1; display: block; overflow: hidden; white-space: nowrap; margin: 0 calc(50% - 50vw) 32px;
-  padding: 18px 0; background: var(--rock); color: #fff;
-  font: 800 clamp(1.4rem, 3.4vw, 2.6rem)/1 "Inter", system-ui, sans-serif; letter-spacing: -.02em;
-  box-shadow: inset 0 6px 0 #fff, inset 0 -6px 0 #fff, inset 0 10px 0 var(--sign), inset 0 -10px 0 var(--sign);
+/* Heritage gallery: five photographs on a 12-column grid, the cut end of the rock in the middle */
+.archive-collage { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); grid-auto-rows: 150px; gap: 16px; margin-top: 48px; }
+.archive-print { margin: 0; overflow: hidden; background: var(--core-2); }
+.archive-print a, .archive-print img { display: block; width: 100%; height: 100%; }
+.archive-print img { object-fit: cover; transition: transform .6s ease; }
+.archive-print a:hover img { transform: scale(1.03); }
+.archive-floor { grid-column: 1 / 8; grid-row: 1 / 4; }
+.archive-cut { grid-column: 8 / 13; grid-row: 1 / 3; }
+.archive-rolling { grid-column: 8 / 13; grid-row: 3 / 5; }
+.archive-sweets { grid-column: 1 / 4; grid-row: 4 / 5; }
+.archive-lettering { grid-column: 4 / 8; grid-row: 4 / 5; }
+@media (max-width: 800px) {
+  .archive-collage { grid-template-columns: 1fr 1fr; grid-auto-rows: 120px; gap: 10px; }
+  .archive-floor { grid-column: 1 / -1; grid-row: 1 / 3; }
+  .archive-cut { grid-column: 1 / -1; grid-row: 3 / 5; }
+  .archive-rolling { grid-column: 1 / -1; grid-row: 5 / 7; }
+  .archive-sweets { grid-column: 1; grid-row: 7 / 9; }
+  .archive-lettering { grid-column: 2; grid-row: 7 / 9; }
 }
-.footer-head { letter-spacing: .14em; color: var(--ink); }
-.footer-cols li a:hover { color: var(--sign); }
 
-/* Floating WhatsApp button squared to match */
+/* Footer: the wrapper label. Black lettering on the white core, red casing above and below. */
+.site-footer, .site-footer-mega { border-top: 0; }
+.site-footer-mega { position: relative; padding-top: 0; margin-top: 72px; }
+.site-footer-mega::before {
+  content: "BLACKPOOL ROCK FACTORY  ·  BLACKPOOL ROCK FACTORY  ·  BLACKPOOL ROCK FACTORY  ·  BLACKPOOL ROCK FACTORY";
+  grid-column: 1 / -1; display: block; overflow: hidden; white-space: pre; margin: 0 calc(50% - 50vw) 40px;
+  padding: 22px 0; background: var(--core); color: var(--lettering);
+  border-block: 14px solid var(--casing);
+  font: 900 clamp(1.5rem, 3.8vw, 3rem)/1 "Inter", system-ui, sans-serif; letter-spacing: -.03em;
+}
+.footer-brand { position: relative; padding-bottom: 120px; }
+.footer-brand::after { content: ""; position: absolute; left: 0; bottom: 0; width: 104px; height: 104px; background: var(--seal) center / contain no-repeat; }
+.footer-head { letter-spacing: .16em; color: var(--lettering); }
+.footer-cols li a { color: var(--muted); }
+.footer-cols li a:hover { color: var(--casing); }
+
+/* Phones: the WhatsApp bar stays WhatsApp green so people recognise it, squared off */
 .wa-float { border-radius: 0 !important; }
 
 @media (max-width: 800px) {
-  h1 { font-size: clamp(2.9rem, 13vw, 4.4rem); }
-  .home-unit-photo img, .page-visual { box-shadow: 8px 8px 0 var(--rock); }
-  .home-unit-photo { margin-right: 8px; }
-  .site-footer-mega::before { padding: 14px 0; }
+  h1 { font-size: clamp(2.8rem, 12.5vw, 4.3rem); }
+  .hero h1 { font-size: clamp(2.8rem, 12.5vw, 4.3rem); }
+  .home-unit-photo::after { left: auto; right: 10px; bottom: -36px; width: 96px; height: 96px; }
+  .site-footer-mega::before { padding: 16px 0; border-block-width: 10px; }
+  .footer-brand { padding-bottom: 0; }
+  .footer-brand::after { display: none; }
 }
-@media (prefers-reduced-motion: reduce) { .space-card:hover, .idea-card:hover, .who-card:hover, .unit-card:hover, .biz-join:hover { transform: none; } }
-@media print { .site-footer-mega::before { display: none; } .home-unit-photo img, .page-visual { box-shadow: none; } }
+@media (prefers-reduced-motion: reduce) { .home-unit-photo::after { animation: none; } .archive-print img { transition: none; } }
+@media print { .site-footer-mega::before, .home-unit-photo::after, .footer-brand::after { display: none; } }
+.offer-banner .whatsapp-link { border-radius: 0; background: var(--lettering); border-color: var(--lettering); }
+.offer-banner .whatsapp-link:hover { background: var(--casing-dark); border-color: #fff; }
