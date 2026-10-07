@@ -66,7 +66,7 @@ def render(template, p, names, hub=None, children=()):
 
     crumb = ([(hub["crumb"], f"/{hub['slug']}.html")] if hub else []) + [(p["crumb"], f"/{slug}.html")]
     m = re.search(r'<script type="application/ld\+json">(.*?)</script>', s, re.S)
-    biz = next(x for x in json.loads(m.group(1))["@graph"] if x["@type"] == "LocalBusiness")
+    biz = next(x for x in json.loads(m.group(1))["@graph"] if x.get("@id", "").endswith("/#business"))
     node = {"@type": p["type"], "@id": url + "#page", "url": url, "name": title.split(" | ")[0], "description": desc,
             "inLanguage": "en-GB", "isPartOf": {"@id": f"{SITE}/#website"}, "dateModified": UPDATED[0]}
     if p["type"] == "Article":

@@ -50,7 +50,7 @@ def build():
     indexable = len(BUSINESSES) >= MIN_TO_INDEX
     s = re.sub(r'(<meta name="robots" content=")[^"]*', lambda m: m.group(1) + ("index, follow, max-image-preview:large" if indexable else "noindex, follow"), s, count=1)
     m = re.search(r'<script type="application/ld\+json">(.*?)</script>', s, re.S)
-    biz = next(x for x in json.loads(m.group(1))["@graph"] if x["@type"] == "LocalBusiness")
+    biz = next(x for x in json.loads(m.group(1))["@graph"] if x.get("@id", "").endswith("/#business"))
     graph = [biz,
              {"@type": "CollectionPage", "@id": url + "#page", "url": url, "name": title, "description": desc, "inLanguage": "en-GB",
               "isPartOf": {"@id": f"{SITE}/#website"}, "about": {"@id": f"{SITE}/#business"}},
@@ -102,7 +102,7 @@ def icework_page():
     s = re.sub(r'(<link rel="canonical" href=")[^"]*', lambda m: m.group(1) + url, s, count=1)
     s = re.sub(r'(<meta property="og:url" content=")[^"]*', lambda m: m.group(1) + url, s, count=1)
     m = re.search(r'<script type="application/ld\+json">(.*?)</script>', s, re.S)
-    biz = next(x for x in json.loads(m.group(1))["@graph"] if x["@type"] == "LocalBusiness")
+    biz = next(x for x in json.loads(m.group(1))["@graph"] if x.get("@id", "").endswith("/#business"))
     ice = {"@type": "ProfessionalService", "@id": url + "#icework", "name": "IceWork", "url": "https://icework.co.uk/",
            "email": "iceworks@f1rst.co.uk", "description": "Web design, SEO and hosting for small businesses in Blackpool and the Fylde coast.",
            "address": biz["address"], "areaServed": [{"@type": "City", "name": n} for n in ["Blackpool", "Lytham St Annes", "Poulton-le-Fylde", "Thornton-Cleveleys", "Fleetwood", "Preston"]],
