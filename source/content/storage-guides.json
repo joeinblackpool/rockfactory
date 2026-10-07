@@ -77,6 +77,103 @@
  },
  "pages": [
   {
+   "slug": "interconnecting-units-blackpool",
+   "type": "WebPage",
+   "title": "Interconnecting Units in Blackpool | The Rock Factory",
+   "desc": "Rent one unit now and open the door to the next when you grow. Interconnecting storage and business units in Blackpool: go bigger or smaller, month by month.",
+   "crumb": "Interconnecting units",
+   "eyebrow": "Grow, shrink, open a door",
+   "h1": [
+    "Interconnecting units",
+    "that grow with you"
+   ],
+   "lead": "Most businesses guess their space wrong, and a lease makes them live with the guess. Here, some units have doors between them. Take one, then open the door to the next when you need it, or close it again when you don't.",
+   "photos": [
+    {
+     "file": "unit-interconnecting-doors",
+     "alt": "Interconnecting storage units in Blackpool with personnel doors on both sides, so two units can be rented side by side"
+    },
+    {
+     "file": "interconnecting-units-1",
+     "alt": "Interconnecting door between two adjoining units at The Rock Factory, Blackpool"
+    },
+    {
+     "file": "interconnecting-units-2",
+     "alt": "Two adjoining units opened up into one larger space at The Rock Factory, Blackpool"
+    },
+    {
+     "file": "interconnecting-units-3",
+     "alt": "Row of adjoining ground-floor units at The Old Rock Factory, Keswick Road, Blackpool"
+    }
+   ],
+   "sections": [
+    {
+     "id": "the-problem",
+     "h2": "The trouble with guessing",
+     "html": "<p>Ask anyone who has taken on premises and they will tell you the same thing: they got the size wrong. Too big, and you pay every month for empty floor. Too small, and you are stacking boxes on the workbench by spring.</p><p>The usual answer is a bigger lease, signed for years, based on where you hope to be. That is a strange way to plan a small business. You are being asked to predict the future and then pay for the prediction.</p><p>Interconnecting units let you skip the guessing. You rent for the business you have today, and keep the option of the business you might have tomorrow, without moving out to get it.</p>"
+    },
+    {
+     "id": "how-it-works",
+     "h2": "How it works",
+     "html": "<p>Some of our ground-floor units have interconnecting doors. Rent one, and if the unit next door is free when you need more room, you can rent that too and move between them without going outside. Two or three adjoining units can work as one space.</p><ul class=\"tick-list\"><li>Rent one, two or three adjoining units, subject to availability.</li><li>Move between them through the internal door, not round the outside.</li><li>Side-by-side units can give you both a roller shutter for loading and a personnel door for everyday use.</li><li>Rent is based on floor area, so two units cost what the two units cost. No premium for joining them up.</li></ul><p>Not every unit has a neighbour you can open into, so <a class=\"text-link\" href=\"{{WA}}\" target=\"_blank\" rel=\"noopener noreferrer\">message us on WhatsApp</a> and we will tell you which ones do and what is free.</p>"
+    },
+    {
+     "id": "go-bigger",
+     "h2": "Going bigger",
+     "html": "<p>Growth rarely arrives tidily. It turns up as one big order, one new machine, one season that goes better than expected. When it does, you want more room this month, not after a six-week search and a removal van.</p><p>With an adjoining unit, expanding can be as simple as opening a door. Your stock, your bench and your address stay exactly where they are. Your customers do not even notice you have grown, apart from the fact that you can now say yes to more of them.</p>"
+    },
+    {
+     "id": "go-smaller",
+     "h2": "Going smaller",
+     "html": "<p>Nobody likes to talk about shrinking, which is exactly why most premises make it so expensive. A quiet winter, a product line you drop, a move to working from home part of the week: all perfectly normal, all painful when you are tied into space you no longer need.</p><p>Here you can hand back a unit with one month's notice, or swap to a smaller one any time, subject to availability. Tightening down is not a failure. It is just good housekeeping, and your rent should follow it.</p>"
+    },
+    {
+     "id": "seasons",
+     "h2": "Seasonal businesses",
+     "html": "<p>Blackpool runs on seasons. Event hire, market traders and anyone selling to visitors can need twice the space in summer and half of it in winter. Two adjoining units in the busy months and one in the quiet ones means you are never paying for the peak all year round.</p><p>For more on planning around the calendar, see <a class=\"text-link\" href=\"/seasonal-business-blackpool.html\">running a seasonal business in Blackpool</a>.</p>"
+    },
+    {
+     "id": "cost",
+     "h2": "What it costs",
+     "html": "<p>You pay each unit's normal weekly rent, so the sums are simple:</p><div class=\"table-wrap\"><table class=\"price-table\"><thead><tr><th scope=\"col\">Unit</th><th scope=\"col\">Weekly rent</th><th scope=\"col\">About per month</th></tr></thead><tbody><tr><th scope=\"row\">150 sq ft</th><td>£65</td><td>£282</td></tr><tr><th scope=\"row\">160 sq ft</th><td>£69</td><td>£299</td></tr><tr><th scope=\"row\">180 sq ft</th><td>£78</td><td>£338</td></tr></tbody></table></div><p>So if, for example, a 150 and a 160 sq ft unit sat side by side, the two together would be £134 a week for 310 sq ft. Which units adjoin depends on the building, so ask us which combinations are available. Electricity is charged at the supplier rate with no markup, and the deposit is one month's rent.</p><p>Every unit side by side: <a class=\"text-link\" href=\"/compare-units.html\">compare units and prices</a>.</p>"
+    },
+    {
+     "id": "why-it-matters",
+     "h2": "Why this is the clever bit",
+     "html": "<p>The most valuable thing a small business can own is the freedom to change its mind. Interconnecting units turn space from a bet into an option: you pay for what you use now, and the next step is already built into the wall.</p><p>Ready to start with one? See the <a class=\"text-link\" href=\"/150-sq-ft-unit-blackpool.html\">150 sq ft unit</a>, the <a class=\"text-link\" href=\"/160-sq-ft-unit-blackpool.html\">160 sq ft unit</a> or the <a class=\"text-link\" href=\"/180-sq-ft-unit-blackpool.html\">180 sq ft unit</a>, or <a class=\"text-link\" href=\"{{WA}}\" target=\"_blank\" rel=\"noopener noreferrer\">message us on WhatsApp</a> and tell us what you do.</p>"
+    }
+   ],
+   "faqs": [
+    [
+     "Can I rent two units next to each other?",
+     "Yes, subject to availability. Some units have interconnecting doors, so you can rent two or three adjoining units and move between them without going outside."
+    ],
+    [
+     "Is there an extra charge for joining units?",
+     "No. Rent is based on floor area, so you pay each unit's normal weekly rent."
+    ],
+    [
+     "Can I give back one of the units later?",
+     "Yes. Give one month's notice on a unit you no longer need, or swap to a smaller unit any time, subject to availability."
+    ],
+    [
+     "Do all units have interconnecting doors?",
+     "No, only some. Message us on WhatsApp and we will tell you which units adjoin and which are free."
+    ],
+    [
+     "Can I have a roller shutter and a normal door?",
+     "Renting side-by-side units can give you both roller-shutter access for loading and a personnel door for everyday use."
+    ]
+   ],
+   "sources": [],
+   "related": [
+    "storage-units-blackpool",
+    "compare-units",
+    "seasonal-business-blackpool",
+    "move-business-out-of-home"
+   ]
+  },
+  {
    "slug": "short-term-storage-blackpool",
    "type": "Article",
    "title": "Short-Term Storage Blackpool, Monthly | The Rock Factory",

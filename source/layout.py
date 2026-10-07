@@ -13,7 +13,7 @@ PUB = ROOT / "public"
 CONTENT = ROOT / "source" / "content"
 SITE = "https://rockfactory.uk"
 LASTMOD = "2026-10-07"
-CSS_VERSION = "42"
+CSS_VERSION = "43"
 
 NAV = [("/", "Home"), ("/storage-units-blackpool.html", "Storage"), ("/offices-to-let-blackpool.html", "Offices"),
        ("/workshops-studios-blackpool.html", "Workshops &amp; studios"), ("/compare-units.html", "Prices"),
@@ -55,7 +55,7 @@ def footer_html():
         ("Spaces", [("/storage-units-blackpool.html", "Storage units"), ("/150-sq-ft-unit-blackpool.html", "150 sq ft unit"),
                     ("/160-sq-ft-unit-blackpool.html", "160 sq ft unit"), ("/180-sq-ft-unit-blackpool.html", "180 sq ft unit"),
                     ("/two-storey-unit-blackpool.html", "300 sq ft two-storey unit"), ("/offices-to-let-blackpool.html", "Offices"),
-                    ("/workshops-studios-blackpool.html", "Workshops &amp; studios"), ("/storage-pods-blackpool.html", "Small storage units"), ("/self-storage-blackpool.html", "Self storage Blackpool"),
+                    ("/workshops-studios-blackpool.html", "Workshops &amp; studios"), ("/storage-pods-blackpool.html", "Small storage units"), ("/interconnecting-units-blackpool.html", "Interconnecting units"), ("/self-storage-blackpool.html", "Self storage Blackpool"),
                     ("/compare-units.html", "Compare units and prices")]),
         ("Guides", [("/storage-guides-blackpool.html", "Storage guides"), ("/what-size-storage-unit.html", "What size do I need?"), ("/cheap-storage-blackpool.html", "Cheap storage tips"), ("/short-term-storage-blackpool.html", "Short-term storage"),
                     ("/business-guides-blackpool.html", "Small business guides"), ("/small-business-unit-ideas-blackpool.html", "Business ideas for a unit"),
