@@ -126,7 +126,7 @@ def link_pages():
         if u["size"] in built:
             href = f'/{u["slug"]}.html'
             new = (f'<tr><th scope="row"><a href="{href}">{u["size"]} sq ft</a></th>'
-                   f'<td><a class="row-link" href="{href}">{u["short"]} <span class="row-more">{"Photos &amp; details" if u["photos"] else "Details"} →</span></a></td>')
+                   f'<td>{u["short"]} <a class="row-more" href="{href}">{u["size"]} sq ft {"photos &amp; details" if u["photos"] else "details"} →</a></td>')
         else:
             new = f'<tr><th scope="row">{u["size"]} sq ft</th><td>{u["short"]}</td>'
         s = s[:row.start()] + new + s[row.end():]
