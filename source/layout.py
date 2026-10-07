@@ -13,7 +13,7 @@ PUB = ROOT / "public"
 CONTENT = ROOT / "source" / "content"
 SITE = "https://rockfactory.uk"
 LASTMOD = "2026-10-07"
-CSS_VERSION = "30"
+CSS_VERSION = "32"
 
 NAV = [("/", "Home"), ("/storage-units-blackpool.html", "Storage"), ("/offices-to-let-blackpool.html", "Offices"),
        ("/workshops-studios-blackpool.html", "Workshops &amp; studios"), ("/compare-units.html", "Prices"),
@@ -83,6 +83,8 @@ def tidy(path):
     s = s.replace('src="assets/', 'src="/assets/').replace('srcset="assets/', 'srcset="/assets/').replace(', assets/', ', /assets/')
     s = re.sub(r'href="(?!/|https?:|#|mailto:|data:)([a-z0-9-]+\.html)', r'href="/\1', s)
     s = re.sub(r'/styles\.css\?v=\d+', f'/styles.css?v={CSS_VERSION}', s)
+    s = re.sub(r'\s*<script src="/motion\.js[^"]*" defer></script>', '', s)
+    s = s.replace("</head>", f'  <script src="/motion.js?v={CSS_VERSION}" defer></script>\n</head>', 1)
     if "speculationrules" not in s:
         s = s.replace("</head>", f"  {SPEC}\n</head>", 1)
     path.write_text(s)

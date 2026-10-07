@@ -1009,3 +1009,69 @@ details[open] summary::after { content: "−"; }
 @media print { .site-footer-mega::before, .home-unit-photo::after, .footer-brand::after { display: none; } }
 .offer-banner .whatsapp-link { border-radius: 0; background: var(--lettering); border-color: var(--lettering); }
 .offer-banner .whatsapp-link:hover { background: var(--casing-dark); border-color: #fff; }
+
+/* ===== Motion and atmosphere (motion.js). Transform and opacity only: no layout shift, text never hidden from search. ===== */
+/* Scroll reveals for content below the fold */
+.motion .reveal { opacity: 0; transform: translate3d(0, 48px, 0); transition: opacity .9s cubic-bezier(.16,1,.3,1) var(--d, 0ms), transform .9s cubic-bezier(.16,1,.3,1) var(--d, 0ms); }
+.motion .reveal.in { opacity: 1; transform: none; }
+.motion .archive-print.reveal, .motion .page-photo.reveal { opacity: 1; transform: none; }
+.motion .archive-print.reveal > *, .motion .page-photo.reveal > * { clip-path: inset(100% 0 0 0); transition: clip-path 1.2s cubic-bezier(.77,0,.18,1) var(--d, 0ms); }
+.motion .archive-print.reveal.in > *, .motion .page-photo.reveal.in > * { clip-path: inset(0 0 0 0); }
+.motion .archive-print img { transition: none; will-change: transform; }
+
+/* Dark chapters: the heritage story goes black, like the studio sites that alternate light and dark */
+.heritage-section { background: var(--lettering); color: var(--core); border-block: 0; }
+.heritage-section .section-head { border-top-color: var(--core); }
+.heritage-section h2, .heritage-section .eyebrow, .heritage-copy p { color: var(--core); }
+.heritage-section h2 em { color: #ff3b30; }
+.heritage-section .archive-print { background: #221d1b; }
+
+/* Marquee strip: big outlined words drifting across, speeding up with the scroll */
+.marquee { overflow: hidden; background: var(--casing); color: var(--core); border-block: 0; margin-top: 72px; padding-block: 26px; }
+.marquee-track { display: flex; align-items: center; gap: 40px; width: max-content; will-change: transform; }
+.marquee span::before { content: attr(data-w); font: 900 clamp(2.4rem, 7vw, 6rem)/1 "Inter", system-ui, sans-serif; letter-spacing: -.05em; white-space: nowrap; }
+.marquee span:nth-of-type(2n)::before { color: transparent; -webkit-text-stroke: 2px var(--core); }
+.marquee i { width: clamp(36px, 5vw, 64px); height: clamp(36px, 5vw, 64px); flex-shrink: 0; background: var(--seal) center / contain no-repeat; }
+.has-marquee .site-footer-mega { margin-top: 0; }
+.has-marquee .site-footer-mega::before { display: none; }
+
+/* Footer goes black, with the name set huge underneath the links */
+.site-footer-mega { background: var(--lettering); color: var(--core); box-shadow: 0 0 0 100vmax var(--lettering); clip-path: inset(0 -100vmax); padding-top: 64px; padding-bottom: 0; }
+.has-marquee .site-footer-mega { padding-top: 64px; }
+.site-footer-mega .brand-town, .site-footer-mega .footer-head { color: var(--core); }
+.site-footer-mega .brand-town small, .site-footer-mega .footer-note, .site-footer-mega .footer-cols li a { color: #b9aea4; }
+.site-footer-mega .footer-note a { color: var(--core); }
+.site-footer-mega .footer-cols li a:hover { color: #fff; }
+.site-footer-mega::after { content: "Rock Factory"; grid-column: 1 / -1; display: block; margin-top: 40px; font: 900 calc(min(1320px, 100vw - 96px) / 6)/.8 "Inter", system-ui, sans-serif; letter-spacing: -.07em; color: var(--casing); white-space: nowrap; padding-bottom: .24em; }
+body::after { background: var(--casing); }
+
+/* Custom cursor (mouse only): a red dot and a trailing ring; over photos it reads "view" */
+.has-cursor, .has-cursor a, .has-cursor button, .has-cursor summary, .has-cursor label { cursor: none; }
+.has-cursor input, .has-cursor select, .has-cursor textarea { cursor: auto; }
+.cursor-dot, .cursor-ring { position: fixed; left: 0; top: 0; z-index: 9999; pointer-events: none; border-radius: 50%; }
+.cursor-dot { width: 8px; height: 8px; margin: -4px 0 0 -4px; background: var(--casing); }
+.cursor-ring { width: 40px; height: 40px; margin: -20px 0 0 -20px; border: 1.5px solid var(--lettering); display: grid; place-items: center; transition: width .3s, height .3s, margin .3s, background .3s, border-color .3s; mix-blend-mode: normal; }
+.cursor-ring span { font: 700 .8125rem/1 "Inter", sans-serif; letter-spacing: .02em; color: var(--core); }
+.cursor-ring.is-link { width: 64px; height: 64px; margin: -32px 0 0 -32px; border-color: var(--casing); background: rgba(200,32,28,.12); }
+.cursor-ring.is-photo { width: 92px; height: 92px; margin: -46px 0 0 -46px; border-color: var(--casing); background: var(--casing); }
+.cursor-ring.is-down { width: 28px; height: 28px; margin: -14px 0 0 -14px; }
+.cursor-out .cursor-dot, .cursor-out .cursor-ring { opacity: 0; }
+.button, .whatsapp-link { transition: transform .35s cubic-bezier(.16,1,.3,1), background .2s, color .2s, border-color .2s; }
+
+/* Page-to-page: a red wipe instead of a plain cross-fade */
+@keyframes rf-wipe-in { from { clip-path: inset(100% 0 0 0); } to { clip-path: inset(0 0 0 0); } }
+@keyframes rf-hold { to { opacity: 1; } }
+::view-transition-old(root) { animation: rf-hold .55s both; }
+::view-transition-new(root) { animation: rf-wipe-in .55s cubic-bezier(.77,0,.18,1) both; }
+
+@media (max-width: 800px) {
+  .marquee { padding-block: 16px; margin-top: 48px; }
+  .site-footer-mega { padding-top: 40px; }
+  .site-footer-mega::after { margin-top: 24px; margin-bottom: 84px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-old(root), ::view-transition-new(root) { animation: none; }
+}
+@media print { .marquee, .cursor-dot, .cursor-ring, .site-footer-mega::after { display: none; } .site-footer-mega { background: none; color: inherit; box-shadow: none; } }
+.cursor-dot.is-hidden { opacity: 0; }
+@media (max-width: 800px) { .site-footer-mega::after { font-size: calc((100vw - 48px) / 6); } }

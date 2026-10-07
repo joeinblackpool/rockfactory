@@ -3,6 +3,7 @@
 Storage units, offices, workshops and artist studios at The Old Rock Factory, Keswick Road, Blackpool FY1 5PB.
 
 - `public/` – the website (plain HTML, CSS and images). Edit these files directly.
+- `public/motion.js` – optional motion (scroll reveals, footer marquee, mouse cursor, magnetic buttons). Added to every page by `source/layout.py`. It never changes page text, the headline or the hero photo, uses transform/opacity only (no layout shift) and switches off for reduced motion.
 - `src/index.js` – small Cloudflare Worker: https and www → apex redirects, security headers, caching, 404 page.
 - `wrangler.jsonc` – Worker `rockfactory`, serving rockfactory.uk and www.rockfactory.uk.
 - `test/check.mjs` – pre-deploy checks: `node test/check.mjs`.
