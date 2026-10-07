@@ -90,20 +90,20 @@
    "lead": "Most businesses guess their space wrong, and a lease makes them live with the guess. Here, some units have doors between them. Take one, then open the door to the next when you need it, or close it again when you don't.",
    "photos": [
     {
-     "file": "unit-interconnecting-doors",
-     "alt": "Interconnecting storage units in Blackpool with personnel doors on both sides, so two units can be rented side by side"
+     "file": "interconnecting-units-2",
+     "alt": "Storage unit in Blackpool with a solid security door on each side wall, leading to the adjoining units"
+    },
+    {
+     "file": "interconnecting-units-4",
+     "alt": "Ground-floor unit with its roller shutter open and a solid security door through to the unit next door, The Rock Factory, Blackpool"
     },
     {
      "file": "interconnecting-units-1",
-     "alt": "Interconnecting door between two adjoining units at The Rock Factory, Blackpool"
-    },
-    {
-     "file": "interconnecting-units-2",
-     "alt": "Two adjoining units opened up into one larger space at The Rock Factory, Blackpool"
+     "alt": "Bright unit with a grey security door to the neighbouring unit and an open personnel door to the outside, Keswick Road, Blackpool"
     },
     {
      "file": "interconnecting-units-3",
-     "alt": "Row of adjoining ground-floor units at The Old Rock Factory, Keswick Road, Blackpool"
+     "alt": "Two-storey unit with a staircase to the upstairs room and a security door through to the adjoining unit, The Rock Factory, Blackpool"
     }
    ],
    "sections": [
@@ -115,7 +115,12 @@
     {
      "id": "how-it-works",
      "h2": "How it works",
-     "html": "<p>Some of our ground-floor units have interconnecting doors. Rent one, and if the unit next door is free when you need more room, you can rent that too and move between them without going outside. Two or three adjoining units can work as one space.</p><ul class=\"tick-list\"><li>Rent one, two or three adjoining units, subject to availability.</li><li>Move between them through the internal door, not round the outside.</li><li>Side-by-side units can give you both a roller shutter for loading and a personnel door for everyday use.</li><li>Rent is based on floor area, so two units cost what the two units cost. No premium for joining them up.</li></ul><p>Not every unit has a neighbour you can open into, so <a class=\"text-link\" href=\"{{WA}}\" target=\"_blank\" rel=\"noopener noreferrer\">message us on WhatsApp</a> and we will tell you which ones do and what is free.</p>"
+     "html": "<p>Some of our ground-floor units have interconnecting security doors. Rent one, and if the unit next door is free when you need more room, you can rent that too and move between them without going outside. Two or three adjoining units can work as one space.</p><ul class=\"tick-list\"><li>Rent one, two or three adjoining units, subject to availability.</li><li>Move between them through the internal door, not round the outside.</li><li>Side-by-side units can give you both a roller shutter for loading and a personnel door for everyday use.</li><li>Rent is based on floor area, so two units cost what the two units cost. No premium for joining them up.</li></ul><p>Not every unit has a neighbour you can open into, so <a class=\"text-link\" href=\"{{WA}}\" target=\"_blank\" rel=\"noopener noreferrer\">message us on WhatsApp</a> and we will tell you which ones do and what is free.</p>"
+    },
+    {
+     "id": "security",
+     "h2": "Locked until you need it",
+     "html": "<p>An interconnecting door is only useful if you never have to think about it. So every one of them is a solid security door, and the facility keeps it locked.</p><ul class=\"tick-list\"><li>Solid security doors between units, not flimsy partitions.</li><li>Locked by the facility, not by your neighbour.</li><li>No neighbouring tenant can open it or use it.</li><li>It is only unlocked when one tenant rents both units and asks us to open it up.</li></ul><p>So the door next to your bench is, for all practical purposes, a wall. Until the day you want it to be a door.</p>"
     },
     {
      "id": "go-bigger",
@@ -144,6 +149,10 @@
     }
    ],
    "faqs": [
+    [
+     "Can the tenant next door get into my unit?",
+     "No. The interconnecting doors are solid security doors, kept locked by the facility. No neighbouring tenant can open or use them. A door is only unlocked when one tenant rents both units."
+    ],
     [
      "Can I rent two units next to each other?",
      "Yes, subject to availability. Some units have interconnecting doors, so you can rent two or three adjoining units and move between them without going outside."
