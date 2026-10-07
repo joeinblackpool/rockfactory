@@ -78,7 +78,7 @@ def pod_gallery():
     figs = "".join(
         f'<figure class="page-photo"><a href="/assets/{f}.webp" target="_blank" rel="noopener noreferrer" aria-label="View full photograph: {alt}">'
         f'<img src="/assets/{f}.webp"' + (f' srcset="/assets/{f}-800.webp 800w, /assets/{f}.webp 1280w" sizes="(max-width: 800px) 100vw, 33vw"' if (PUB / "assets" / f"{f}-800.webp").exists() else "")
-        + f' alt="{alt}" loading="lazy" decoding="async"></a><figcaption>{cap}</figcaption></figure>' for f, alt, cap in have)
+        + f' alt="{alt}" loading="lazy" decoding="async"></a></figure>' for f, alt, cap in have)
     return ('<section class="section wrap" id="pod-photos" aria-labelledby="pod-photos-title"><div class="section-head"><h2 id="pod-photos-title">Small rooms,<br><em>big relief</em></h2>'
             '<p>Your own door, your own key, a lined little room for the things that have been living in your hallway. Here is how they are coming along.</p></div>'
             f'<div class="photo-gallery natural pod-gallery">{figs}</div></section>')

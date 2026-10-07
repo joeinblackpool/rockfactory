@@ -796,7 +796,7 @@ p, li { text-wrap: pretty; }
 
 /* Photos as postcards: cream border, soft drop shadow */
 .home-unit-photo img, .page-photo img, .real-photo img, .photo-gallery img, .archive-print img, .home-archive-photo img { border-radius: 0; box-shadow: none; outline: 0; }
-.page-photo, .photo-gallery figure, .archive-print, .pod-gallery figure { background: var(--card); padding: 10px; box-shadow: 0 16px 26px -14px rgba(20, 30, 50, .55); }
+.page-photo, .photo-gallery figure, .archive-print, .pod-gallery figure { background: var(--card); padding: 7px; box-shadow: 0 16px 26px -14px rgba(20, 30, 50, .55); }
 
 /* HOME HERO: a framed travel poster */
 .hero { position: relative; display: grid; grid-template-columns: 1.08fr .92fr; gap: 28px; align-items: center; padding: 46px 54px 0; margin-top: 18px; margin-bottom: 30px;
@@ -811,16 +811,14 @@ p, li { text-wrap: pretty; }
 .hero .intro { color: var(--navy); font-weight: 500; font-size: 1.08rem; max-width: 36ch; }
 .hero-note { border-top: 0; color: var(--navy); font-size: .9rem; font-weight: 600; }
 .hero-proof a { color: var(--navy); }
-.poster-art { position: relative; min-height: 470px; align-self: stretch; }
+.poster-art { position: relative; min-height: 500px; align-self: stretch; }
 .poster-art::after { content: ""; position: absolute; right: -24px; top: -14px; z-index: 3; width: 128px; height: 128px; background: var(--seal) center / contain no-repeat; transform: rotate(-12deg); }
-.home-unit-photo, .home-archive-photo { position: absolute; margin: 0; background: var(--card); padding: 12px 12px 44px; box-shadow: 0 18px 30px -12px rgba(20, 30, 50, .55); }
+.home-unit-photo, .home-archive-photo { position: absolute; margin: 0; background: var(--card); padding: 10px; box-shadow: 0 18px 30px -12px rgba(20, 30, 50, .55); }
 .home-unit-photo::after { content: none; }
-.home-archive-photo { right: 0; top: 0; width: min(350px, 82%); transform: rotate(3deg); }
-.home-archive-photo img { width: 100%; height: 330px; object-fit: cover; object-position: 40% 30%; filter: grayscale(1) sepia(.28); }
-.home-unit-photo { left: -18px; bottom: 26px; width: min(270px, 64%); transform: rotate(-5deg); z-index: 2; }
+.home-archive-photo { right: -14px; top: -6px; width: min(440px, 96%); transform: rotate(3deg); }
+.home-archive-photo img { width: 100%; height: 360px; object-fit: cover; object-position: 40% 30%; filter: grayscale(1) sepia(.28); }
+.home-unit-photo { left: -34px; bottom: 22px; width: min(330px, 74%); transform: rotate(-5deg); z-index: 2; }
 .home-unit-photo img { width: 100%; height: auto; }
-.poster-art figcaption { position: absolute; left: 16px; right: 16px; bottom: 8px; font-family: var(--script); font-size: 1.45rem; line-height: 1.2; color: var(--navy); }
-.home-archive-photo figcaption { text-align: right; }
 .poster-band { grid-column: 1 / -1; margin: 0 -54px; background: var(--navy); color: var(--cream); text-align: center; font-family: var(--display); font-weight: 600; font-size: clamp(.95rem, 1.8vw, 1.35rem); letter-spacing: .32em; text-transform: uppercase; padding: 18px 10px; }
 .poster-band span { color: var(--red); margin: 0 .7em; }
 
@@ -920,7 +918,7 @@ summary::after { color: var(--red); font-weight: 400; }
 .location .button { border-radius: 0; background: var(--red); border-color: var(--red); color: var(--cream); box-shadow: 4px 4px 0 var(--cream); }
 
 /* Heritage: postcards pinned in a tidy grid */
-.archive-collage { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); grid-auto-rows: 200px; gap: 22px; margin-top: 44px; }
+.archive-collage { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); grid-auto-rows: 245px; gap: 16px; margin-top: 44px; }
 .archive-print { margin: 0; overflow: visible; }
 .archive-print a, .archive-print img { display: block; width: 100%; height: 100%; }
 .archive-print img { object-fit: cover; }
@@ -975,7 +973,6 @@ summary::after { color: var(--red); font-weight: 400; }
 /* Floating WhatsApp bar on phones stays WhatsApp green, squared */
 .wa-float { border-radius: 0 !important; font-family: var(--display); letter-spacing: .1em; text-transform: uppercase; }
 .pod-gallery { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
-.pod-gallery figcaption { margin-top: 10px; font-family: var(--script); font-size: 1.4rem; color: var(--navy); }
 
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; gap: 10px; padding: 30px 22px 0; border-width: 8px; outline-offset: 4px; }
@@ -989,13 +986,13 @@ summary::after { color: var(--red); font-weight: 400; }
   .page-hero, .guide-hero { background-size: 0 0, auto; }
   .price-ticket { grid-template-columns: 1fr; }
   .poster-art { min-height: 400px; margin-top: 8px; }
-  .home-archive-photo { width: 76%; }
-  .home-archive-photo img { height: 240px; }
-  .home-unit-photo { left: 0; width: 56%; bottom: 20px; }
+  .home-archive-photo { width: 88%; right: -6px; }
+  .home-archive-photo img { height: 270px; }
+  .home-unit-photo { left: -6px; width: 64%; bottom: 16px; }
   .poster-art::after { right: -4px; width: 96px; height: 96px; }
   .poster-band { margin: 0 -22px; letter-spacing: .18em; }
   .page-hero, .guide-hero { padding: 26px 20px 30px !important; border-width: 8px; outline-offset: 4px; }
-  .archive-collage { grid-template-columns: 1fr 1fr; grid-auto-rows: 150px; gap: 14px; }
+  .archive-collage { grid-template-columns: 1fr 1fr; grid-auto-rows: 170px; gap: 12px; }
   .archive-floor { grid-column: 1 / -1; grid-row: 1 / 3; } .archive-cut { grid-column: 1; grid-row: 3; } .archive-rolling { grid-column: 2; grid-row: 3; }
   .archive-twists { grid-column: 1; grid-row: 4 / 6; } .archive-tower { grid-column: 2; grid-row: 4 / 6; } .archive-sweets { grid-column: 1; grid-row: 6; } .archive-lettering { grid-column: 2; grid-row: 6; }
   .pod-gallery { grid-template-columns: 1fr; }
@@ -1007,3 +1004,9 @@ summary::after { color: var(--red); font-weight: 400; }
   .button, .space-card, .idea-card, .who-card, .unit-card { transition: none; }
 }
 @media print { html::after, .marquee, .cursor-dot, .cursor-ring, .site-footer-mega::after, .poster-art::after { display: none; } .hero, .page-hero, .guide-hero { background: none; border: 1px solid #000; outline: 0; } }
+/* Tighter rhythm: less dead space between sections and around photos */
+.section { padding-block: clamp(48px, 6vw, 72px); }
+.section-head { margin-bottom: 30px; }
+.page-visual { padding: 7px; }
+.hero { padding-bottom: 0; }
+.poster-art { margin-bottom: 18px; }
