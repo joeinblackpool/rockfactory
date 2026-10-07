@@ -13,7 +13,7 @@ PUB = ROOT / "public"
 CONTENT = ROOT / "source" / "content"
 SITE = "https://rockfactory.uk"
 LASTMOD = "2026-10-07"
-CSS_VERSION = "41"
+CSS_VERSION = "42"
 
 NAV = [("/", "Home"), ("/storage-units-blackpool.html", "Storage"), ("/offices-to-let-blackpool.html", "Offices"),
        ("/workshops-studios-blackpool.html", "Workshops &amp; studios"), ("/compare-units.html", "Prices"),
@@ -63,7 +63,7 @@ def footer_html():
         ("Areas", ([(f"/{areas['hub']['slug']}.html", "Fylde coast")] if areas.get("hub") else []) +
                   [(f"/{p['slug']}.html", p["crumb"]) for p in areas["pages"]]),
         ("The Rock Factory", [("/about.html", "About us"), ("/find-us.html", "Find us"), ("/rental-terms.html", "Rental terms"),
-                              ("/our-businesses.html", "Our businesses"), ("/blackpool-rock-history.html", "Blackpool rock history")]),
+                              ("/our-businesses.html", "Our businesses"), ("/blackpool-rock-history.html", "Blackpool rock history"), ("/how-rock-is-made-video.html", "How rock is made (video)")]),
     ]
     cols = [(h, [(u, t) for u, t in links if (PUB / (u.strip("/") or "index.html")).exists()]) for h, links in cols]
     colhtml = "".join(f'<div class="footer-col"><p class="footer-head">{h}</p><ul>' + "".join(f'<li><a href="{u}">{t}</a></li>' for u, t in links) + "</ul></div>"
