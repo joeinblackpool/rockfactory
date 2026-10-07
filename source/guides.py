@@ -87,6 +87,16 @@ def render(template, p, names, hub=None, children=()):
     if p.get("faqs"):
         toc += '<li><a href="#faq">Questions</a></li>'
     body = ""
+    photos = [ph for ph in p.get("photos", []) if (PUB / "assets" / f"{ph['file']}.webp").exists()]
+    if photos:
+        figs = ""
+        for ph in photos:
+            f = ph["file"]; alt = esc(ph["alt"])
+            small = (PUB / "assets" / f"{f}-800.webp").exists()
+            srcset = f' srcset="/assets/{f}-800.webp 800w, /assets/{f}.webp 1400w" sizes="(max-width: 800px) 100vw, 50vw"' if small else ""
+            figs += (f'<figure class="page-photo"><a href="/assets/{f}.webp" target="_blank" rel="noopener noreferrer" aria-label="View full photograph: {alt}">'
+                     f'<img src="/assets/{f}.webp"{srcset} alt="{alt}" loading="lazy" decoding="async"></a></figure>')
+        body += f'<div class="photo-gallery natural guide-photos">{figs}</div>'
     if children:
         body += f'<h2 id="all-guides">All {esc(p["crumb"].lower())}</h2><div class="idea-cards">' + "".join(card(c["slug"], names) for c in children) + "</div>"
         toc = '<li><a href="#all-guides">All guides</a></li>' + toc

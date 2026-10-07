@@ -16,7 +16,7 @@ file in the repo. Do not run git. Do not call any mcp__hearthbot__ tools.
 - First-floor storage pods and rooms opening spring 2027, reached by stairs: GUIDE prices (to be confirmed) pods 15/25/35 sq ft from £10/£14/£17 a week, rooms 50/75/100 sq ft £22/£28/£34 a week (/storage-pods-blackpool.html). Always call these "guide prices".
 - Units available from 1 November 2026. Pre-bookings get the first week free.
 - Rent is based on floor area. Prices subject to availability. Minimum term one month, then one month's notice to leave. Rolling monthly, no long lease.
-- Swap to a bigger or smaller unit any time, subject to availability. Some units have interconnecting doors: rent two or three adjoining units; side-by-side units can give both roller-shutter and personnel-door access.
+- Swap to a bigger or smaller unit any time, subject to availability. Some units have interconnecting doors: rent two or three adjoining units; side-by-side units can give both roller-shutter and personnel-door access. Interconnecting doors are solid security doors, kept locked by the facility; no neighbouring tenant can use them; unlocked only when one tenant rents both units.
 - Lighting, electricity and Wi-Fi already connected in every unit. Standard single-phase electricity only (no three-phase). Electricity usage charged separately at the supplier rate, no markup. No utility deposits.
 - 24-hour access. Free app access to CCTV covering the entrance and the area outside the units.
 - Shared facilities: tea and coffee room, toilets, water. Tenants can receive mail and clients at the unit.
