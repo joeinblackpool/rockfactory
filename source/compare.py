@@ -38,7 +38,7 @@ def build(pub=PUB):
     s = re.sub(r'(<link rel="canonical" href=")[^"]*', lambda m: m.group(1) + url, s, count=1)
     s = re.sub(r'(<meta property="og:url" content=")[^"]*', lambda m: m.group(1) + url, s, count=1)
     m = re.search(r'<script type="application/ld\+json">(.*?)</script>', s, re.S)
-    biz = next(g for g in json.loads(m.group(1))["@graph"] if g["@type"] == "LocalBusiness")
+    biz = next(g for g in json.loads(m.group(1))["@graph"] if g.get("@id", "").endswith("/#business"))
     graph = [biz,
              {"@type": "Article", "@id": url + "#article", "headline": "Self storage prices in Blackpool, compared", "description": desc,
               "url": url, "inLanguage": "en-GB", "dateModified": "2026-10-06", "author": {"@id": f"{SITE}/#business"},

@@ -13,7 +13,7 @@ PUB = ROOT / "public"
 CONTENT = ROOT / "source" / "content"
 SITE = "https://rockfactory.uk"
 LASTMOD = "2026-10-07"
-CSS_VERSION = "34"
+CSS_VERSION = "35"
 
 NAV = [("/", "Home"), ("/storage-units-blackpool.html", "Storage"), ("/offices-to-let-blackpool.html", "Offices"),
        ("/workshops-studios-blackpool.html", "Workshops &amp; studios"), ("/compare-units.html", "Prices"),
@@ -76,6 +76,112 @@ def footer_html():
 SPEC = ('<script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/assets/*"}}]},"eagerness":"moderate"}]}</script>')
 
 
+# Photo descriptions written for each page they appear on (same file, page-specific wording).
+# Keyed by page and the photo's position in <main>. Applied last, so regenerating a page never loses them.
+IMAGE_ALT = {
+    "index": [
+        "Storage and business unit to rent in Blackpool: empty ground-floor unit with lighting, a personnel door and its roller shutter open",
+        "Archive black-and-white photograph of seaside rock being made by hand on a rock factory floor",
+        "The end of a red stick of Blackpool rock, with Blackpool Rock lettered right through its white centre",
+        "Archive photograph of rock-makers in white caps rolling a giant boil of rock by hand",
+        "Pink sticks of Blackpool rock in Blackpool Rock wrappers",
+        "Vintage yellow rock-shop sign reading Direct from the Factory, Cut Price Rock",
+    ],
+    "storage-units-blackpool": [
+        "Storage unit to rent in Blackpool with its roller shutter open and overhead lighting, at The Rock Factory on Keswick Road",
+        "Blackpool storage unit with a personnel door, painted concrete floor and overhead light",
+        "Adjoining storage units in Blackpool with personnel doors on both sides, so two units can be rented side by side",
+        "Clean, empty storage unit in Blackpool with lighting and an access door, ready for personal or business storage",
+        "Ground-floor storage unit at The Rock Factory, Blackpool, with its roller shutter raised for easy loading",
+    ],
+    "150-sq-ft-unit-blackpool": [
+        "Inside the 150 sq ft ground-floor storage unit to rent in Blackpool: grey painted floor, white walls, overhead light and a dark grey door",
+        "The 150 sq ft storage unit at The Rock Factory, Blackpool, empty and ready to move into, with lighting already fitted",
+        "Roller-shutter entrance to the 150 sq ft storage unit on Keswick Road, Blackpool, set in a white rendered wall",
+    ],
+    "160-sq-ft-unit-blackpool": [
+        "Inside the 160 sq ft ground-floor storage unit in Blackpool: grey floor, white walls, overhead light and a grey internal door",
+        "The 160 sq ft storage unit at The Rock Factory, Blackpool, empty with lighting already connected",
+        "Steel security door with a lever handle and lock on the 160 sq ft storage unit, Keswick Road, Blackpool",
+    ],
+    "180-sq-ft-unit-blackpool": [
+        "Inside the 180 sq ft ground-floor storage unit in Blackpool, looking out through the raised roller shutter onto the lane",
+        "The 180 sq ft storage unit at The Rock Factory, Blackpool: grey floor, white walls and a grey door beside the roller shutter",
+        "Galvanised roller shutter on the 180 sq ft storage unit at The Old Rock Factory, Keswick Road, Blackpool",
+    ],
+    "two-storey-unit-blackpool": [
+        "Inside the 300 sq ft two-storey unit to rent in Blackpool: grey floor, white walls and a staircase up to the first-floor room",
+        "Staircase to the upstairs office or storage room in the 300 sq ft two-storey unit at The Rock Factory, Blackpool",
+        "Outside the two-storey unit in Blackpool: Rock Factory sign, first-floor window and a galvanised roller shutter with a security camera above",
+    ],
+    "workshops-studios-blackpool": [
+        "Workshop space to rent in Blackpool: grey unit with overhead lighting and personnel doors on both sides",
+        "Unit being prepared for approved workshop and artist studio use at The Rock Factory, Blackpool",
+        "Small workshop unit in Blackpool with a personnel door, painted concrete floor and overhead light",
+        "Adjoining workshop units in Blackpool with personnel doors on both sides, for a larger studio or workshop",
+        "Studio space to rent in Blackpool with lighting and an access door, ready to fit out",
+        "Workshop unit with its roller shutter raised for loading tools and materials, The Rock Factory, Blackpool",
+    ],
+    "offices-to-let-blackpool": [
+        "Small office to let in Blackpool being refurbished at The Rock Factory: a decorator painting the walls, a desk under dust sheets and a sign reading Offices under construction, available from Jan 2027",
+    ],
+}
+
+
+def main_images(s):
+    m = re.search(r"<main.*?</main>", s, re.S)
+    return re.findall(r"<img[^>]*>", m.group(0)) if m else []
+
+
+def apply_image_seo(s, slug):
+    """Page-specific alt text, matching 'view full photograph' labels, and the page's main image in its structured data."""
+    m = re.search(r"<main.*?</main>", s, re.S)
+    if not m:
+        return s
+    main, alts, i = m.group(0), IMAGE_ALT.get(slug, []), [0]
+    if alts and len(re.findall(r"<img[^>]*>", main)) != len(alts):
+        print(f"  ! {slug}: photo count changed, page-specific alt text not applied; update IMAGE_ALT")
+        alts = []
+    def one(mm):
+        a, img = mm.group(1) or "", mm.group(2)
+        k = i[0]; i[0] += 1
+        if k < len(alts):
+            alt = html.escape(alts[k], quote=True)
+            img = re.sub(r'alt="[^"]*"', f'alt="{alt}"', img, count=1)
+            a = re.sub(r'aria-label="View (?:the )?full photograph[^"]*"', f'aria-label="View full photograph: {alt}"', a)
+        return a + img
+    main = re.sub(r'(<a [^>]*>)?(<img[^>]*>)', one, main)
+    s = s[:m.start()] + main + s[m.end():]
+    imgs = main_images(s)
+    j = re.search(r'<script type="application/ld\+json">(.*?)</script>', s, re.S)
+    if imgs and j:
+        first = imgs[0]
+        src = re.search(r'src="([^"]+)"', first).group(1)
+        w, h = re.search(r'width="(\d+)"', first), re.search(r'height="(\d+)"', first)
+        alt = html.unescape(re.search(r'alt="([^"]*)"', first).group(1))
+        data = json.loads(j.group(1))
+        for node in data.get("@graph", []):
+            if node.get("@type") in ("WebPage", "Article", "CollectionPage", "AboutPage", "ContactPage") and "url" in node:
+                node["primaryImageOfPage"] = {"@type": "ImageObject", "url": SITE + src, "caption": alt,
+                                              **({"width": int(w.group(1)), "height": int(h.group(1))} if w and h else {})}
+                break
+        s = s[:j.start(1)] + json.dumps(data, ensure_ascii=False) + s[j.end(1):]
+    return s
+
+
+def business_type(s):
+    """The site's own business is a self-storage facility (it also lets offices and workshops): use schema.org SelfStorage,
+    a LocalBusiness subtype, so search engines file it under storage. Other businesses on the page keep their own types."""
+    m = re.search(r'<script type="application/ld\+json">(.*?)</script>', s, re.S)
+    if not m:
+        return s
+    data = json.loads(m.group(1))
+    for node in data.get("@graph", []):
+        if node.get("@id", "").endswith("/#business"):
+            node["@type"] = "SelfStorage"
+    return s[:m.start(1)] + json.dumps(data, ensure_ascii=False) + s[m.end(1):]
+
+
 def add_faq_schema(s):
     """Add FAQPage structured data from the visible questions on any page that has them and lacks it."""
     if 'class="faq-list"' not in s or '"FAQPage"' in s:
@@ -103,6 +209,8 @@ def tidy(path):
     s = re.sub(r'\s*<script src="/motion\.js[^"]*" defer></script>', '', s)
     s = s.replace("</head>", f'  <script src="/motion.js?v={CSS_VERSION}" defer></script>\n</head>', 1)
     s = add_faq_schema(s)
+    s = apply_image_seo(s, slug)
+    s = business_type(s)
     if "speculationrules" not in s:
         s = s.replace("</head>", f"  {SPEC}\n</head>", 1)
     path.write_text(s)
@@ -126,8 +234,12 @@ def main():
             pages[f.stem] = s
     slugs = [x for x in ORDER if x in pages] + sorted(x for x in pages if x not in ORDER)
     loc = lambda x: f"{SITE}/" if x == "index" else f"{SITE}/{x}.html"
-    (PUB / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-                                     + "".join(f"  <url><loc>{loc(x)}</loc><lastmod>{LASTMOD}</lastmod></url>\n" for x in slugs) + "</urlset>\n")
+    def imgs(x):
+        srcs = list(dict.fromkeys(re.search(r'src="([^"]+)"', i).group(1) for i in main_images(pages[x])))
+        return "".join(f"<image:image><image:loc>{SITE}{u}</image:loc></image:image>" for u in srcs if u.startswith("/assets/"))
+    (PUB / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" '
+                                     'xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n'
+                                     + "".join(f"  <url><loc>{loc(x)}</loc><lastmod>{LASTMOD}</lastmod>{imgs(x)}</url>\n" for x in slugs) + "</urlset>\n")
     # llms.txt: keep the hand-written summary at the top, then list every page with its description.
     llms = PUB / "llms.txt"; head = llms.read_text().split("\n## ")[0].rstrip()
     def line(x):

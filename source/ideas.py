@@ -292,7 +292,7 @@ def page(template, slug, title, desc, crumb, main, extra_graph):
     s = re.sub(r'(<meta property="og:url" content=")[^"]*', lambda m: m.group(1) + url, s, count=1)
     s = re.sub(r'(<meta property="og:type" content=")[^"]*', lambda m: m.group(1) + "article", s, count=1)
     m = re.search(r'<script type="application/ld\+json">(.*?)</script>', s, re.S)
-    biz = next(x for x in json.loads(m.group(1))["@graph"] if x["@type"] == "LocalBusiness")
+    biz = next(x for x in json.loads(m.group(1))["@graph"] if x.get("@id", "").endswith("/#business"))
     crumbs = [{"@type": "ListItem", "position": 1, "name": "Home", "item": f"{SITE}/"}]
     for i, (n, u) in enumerate(crumb, start=2):
         crumbs.append({"@type": "ListItem", "position": i, "name": n, "item": u})

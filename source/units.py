@@ -72,7 +72,7 @@ def build(u, template):
     s = re.sub(r'(<link rel="canonical" href=")[^"]*', lambda m: m.group(1) + url, s, count=1)
     s = re.sub(r'(<meta property="og:url" content=")[^"]*', lambda m: m.group(1) + url, s, count=1)
     m = re.search(r'<script type="application/ld\+json">(.*?)</script>', s, re.S)
-    biz = next(x for x in json.loads(m.group(1))["@graph"] if x["@type"] == "LocalBusiness")
+    biz = next(x for x in json.loads(m.group(1))["@graph"] if x.get("@id", "").endswith("/#business"))
     photos = u["photos"] or u.get("examples", [])
     example = not u["photos"]
     images = [f"{SITE}/assets/{p[0]}.webp" for p in u["photos"]]

@@ -1243,3 +1243,9 @@ main > section:nth-of-type(6n+4)::after { left: auto; right: 3%; bottom: auto; t
   main > section:nth-of-type(6n+1)::after { right: 0; width: 180px; height: 180px; }
   main > section::after { max-width: 60vw; }
 }
+/* Speed: the grain is a plain translucent layer (no blend mode, so no per-frame blending), and phones skip it. */
+html::after { mix-blend-mode: normal; opacity: .07; }
+@media (max-width: 800px), (prefers-reduced-motion: reduce) { html::after { display: none; } }
+.pod-gallery { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.pod-gallery figcaption { margin-top: 10px; font-size: .9375rem; font-weight: 600; }
+@media (max-width: 800px) { .pod-gallery { grid-template-columns: 1fr; } }

@@ -24,3 +24,16 @@ Deploys: connect this repo in Cloudflare (Workers & Pages → Create → Import 
   and rebuilds `sitemap.xml` and `llms.txt` from the pages.
 - `python3 source/compare.py` – Blackpool storage price comparison. Only built when `SHOW_COMPARISON = True` in pods.py,
   after every competitor price has been confirmed on the provider's own site (keep dated screenshots; recheck every 3 months).
+
+## Storage pod photos
+
+Save the three pod pictures as WebP in `public/assets/` (optionally with an `-800.webp` phone-size copy):
+`storage-pods-blackpool-row.webp`, `storage-pod-fitting-blackpool.webp`, `storage-pod-interior-blackpool.webp`.
+Then run `python3 source/pods.py && python3 source/layout.py`. The gallery, alt text, captions and image sitemap
+entries appear automatically (descriptions live in `POD_PHOTOS` in `source/pods.py`).
+
+## Photo SEO
+
+Each photo gets alt text written for the page it appears on (`IMAGE_ALT` in `source/layout.py`), the page's main
+photo is declared as `primaryImageOfPage`, and every content photo is listed in `sitemap.xml` as an image entry.
+If a page's photos change, the build prints a warning until `IMAGE_ALT` is updated for that page.
