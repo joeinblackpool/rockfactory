@@ -17,7 +17,7 @@ MIN_TO_INDEX = 2
 BUSINESSES = [
     ("IceWork", "Web design, SEO and hosting for small businesses in Blackpool and the Fylde coast. Three-page websites with a domain name and a year of hosting included.",
      "Web design · SEO", "https://icework.co.uk/", "Rock Factory tenants: a complete website package for £200 (usually £350).", "icework-web-design-blackpool"),
-    ("Blackpool Building Services", "Building services in Blackpool. More details coming soon.", "Building services", "", "", ""),
+    ("Blackpool Building and Maintenance", "Building and maintenance work in Blackpool.", "Building &amp; maintenance", "https://www.facebook.com/simonjoiner112/", "", ""),
 ]
 
 WA_JOIN = "https://wa.me/447366991012?text=" + urllib.parse.quote(

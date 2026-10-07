@@ -24,7 +24,7 @@ file in the repo. Do not run git. Do not call any mcp__hearthbot__ tools.
 - To move in: one month's rent in advance, security deposit equal to one month's rent, valid government-issued photo ID, signed Direct Debit mandate.
 - All business use needs prior approval. Car storage NOT permitted (buildings insurance). Not allowed: melting/heating combustibles (waxes, plastics, resins, oils: candle/soap making, resin casting, 3D print farms), flammable liquids or gases in bulk (fuel, solvent-based paints/chemicals, gas cylinders) unless agreed in writing, cooking/hot food. Low-risk materials (wood, paper, card, fabric, dry goods) are fine.
 - Business rates: may apply to commercial units; ask us about the unit; Small Business Rate Relief exists (GOV.UK).
-- Tenants in the building: IceWork (web design/SEO; tenant website £200, usually £350; /icework-web-design-blackpool.html) and Blackpool Building Services.
+- Tenants in the building: IceWork (web design/SEO; tenant website £200, usually £350; /icework-web-design-blackpool.html) and Blackpool Building and Maintenance.
 - The rock-making has gone; the building carries the name. Do NOT claim the history of this particular premises.
 
 Never invent: other prices, distances, drive times, parking arrangements, opening hours beyond "24-hour access", insurance included,
