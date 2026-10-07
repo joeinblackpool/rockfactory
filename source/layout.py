@@ -5,7 +5,7 @@
 - sitemap.xml (every indexable page, with lastmod) and llms.txt rebuilt from the pages themselves.
 Idempotent: running it twice gives the same files.
 """
-import html, json, re
+import html, json, re, urllib.parse
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -13,7 +13,7 @@ PUB = ROOT / "public"
 CONTENT = ROOT / "source" / "content"
 SITE = "https://rockfactory.uk"
 LASTMOD = "2026-10-07"
-CSS_VERSION = "43"
+CSS_VERSION = "45"
 
 NAV = [("/", "Home"), ("/storage-units-blackpool.html", "Storage"), ("/offices-to-let-blackpool.html", "Offices"),
        ("/workshops-studios-blackpool.html", "Workshops &amp; studios"), ("/compare-units.html", "Prices"),
@@ -185,6 +185,35 @@ def business_type(s):
     return s[:m.start(1)] + json.dumps(data, ensure_ascii=False) + s[m.end(1):]
 
 
+CARD_LINK = re.compile(r'<a class="((?:who-card|idea-card|biz-card)[^"]*)" href="([^"]+)">(.*?)</a>', re.S)
+
+
+def card_links(s):
+    """Whole-card links become a link on the card title (short, unique anchor text); the card stays clickable via CSS."""
+    def one(m):
+        cls, href, inner = m.groups()
+        if "<h3>" not in inner or "<a " in inner:
+            return m.group(0)
+        inner = re.sub(r"<h3>(.*?)</h3>", lambda h: f'<h3><a href="{href}">{h.group(1)}</a></h3>', inner, count=1)
+        return f'<div class="{cls} card-link">{inner}</div>'
+    return CARD_LINK.sub(one, s)
+
+
+def share_links(s):
+    """Plain share links (no scripts) at the foot of every page."""
+    s = re.sub(r'<p class="footer-share">.*?</p>', "", s, flags=re.S)
+    m = re.search(r'<link rel="canonical" href="([^"]+)"', s)
+    t = re.search(r"<title>(.*?)</title>", s)
+    if not m or "</footer>" not in s:
+        return s
+    u = urllib.parse.quote(m.group(1), safe=""); title = urllib.parse.quote(html.unescape(t.group(1)) if t else "The Rock Factory", safe="")
+    links = (f'<a href="https://wa.me/?text={title}%20{u}" target="_blank" rel="noopener noreferrer">WhatsApp</a> · '
+             f'<a href="https://www.facebook.com/sharer/sharer.php?u={u}" target="_blank" rel="noopener noreferrer">Facebook</a> · '
+             f'<a href="https://x.com/intent/post?url={u}&amp;text={title}" target="_blank" rel="noopener noreferrer">X</a> · '
+             f'<a href="mailto:?subject={title}&amp;body={u}">Email</a>')
+    return s.replace("</footer>", f'<p class="footer-share">Share this page: {links}</p></footer>', 1)
+
+
 def add_faq_schema(s):
     """Add FAQPage structured data from the visible questions on any page that has them and lacks it."""
     if 'class="faq-list"' not in s or '"FAQPage"' in s:
@@ -216,6 +245,8 @@ def tidy(path):
         tag = f'<link rel="preload" href="/fonts/{f}" as="font" type="font/woff2" crossorigin>'
         if tag not in s and pre in s:
             s = s.replace(pre, pre + "\n  " + tag, 1)
+    s = card_links(s)
+    s = share_links(s)
     s = add_faq_schema(s)
     s = apply_image_seo(s, slug)
     s = business_type(s)
