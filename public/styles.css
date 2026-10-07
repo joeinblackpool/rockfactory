@@ -1249,3 +1249,5 @@ html::after { mix-blend-mode: normal; opacity: .07; }
 .pod-gallery { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
 .pod-gallery figcaption { margin-top: 10px; font-size: .9375rem; font-weight: 600; }
 @media (max-width: 800px) { .pod-gallery { grid-template-columns: 1fr; } }
+/* waves sit top-right so they never cover small print at the foot of a section */
+main > section:nth-of-type(6n+2)::after { left: auto; right: 2%; bottom: auto; top: 24px; }
