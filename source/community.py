@@ -103,8 +103,7 @@ def icework_page():
     s = re.sub(r'(<meta property="og:url" content=")[^"]*', lambda m: m.group(1) + url, s, count=1)
     m = re.search(r'<script type="application/ld\+json">(.*?)</script>', s, re.S)
     biz = next(x for x in json.loads(m.group(1))["@graph"] if x.get("@id", "").endswith("/#business"))
-    ice = {"@type": "ProfessionalService", "@id": url + "#icework", "name": "IceWork", "url": "https://icework.co.uk/",
-           "email": "iceworks@f1rst.co.uk", "description": "Web design, SEO and hosting for small businesses in Blackpool and the Fylde coast.",
+    ice = {"@type": "ProfessionalService", "@id": url + "#icework", "name": "IceWork", "url": "https://icework.co.uk/", "description": "Web design, SEO and hosting for small businesses in Blackpool and the Fylde coast.",
            "address": biz["address"], "areaServed": [{"@type": "City", "name": n} for n in ["Blackpool", "Lytham St Annes", "Poulton-le-Fylde", "Thornton-Cleveleys", "Fleetwood", "Preston"]],
            "makesOffer": [{"@type": "Offer", "name": "3-page website package", "price": "350", "priceCurrency": "GBP",
                            "description": "3-page website, SEO for 10 search terms, domain name and first year of hosting"},
@@ -119,7 +118,7 @@ def icework_page():
                  {"@type": "ListItem", "position": 3, "name": "IceWork", "item": url}]}]
     s = s[:m.start(1)] + json.dumps({"@context": "https://schema.org", "@graph": graph}, ensure_ascii=False) + s[m.end(1):]
     s = re.sub(r'<nav class="nav".*?</nav>', lambda n: n.group(0).replace(' aria-current="page"', '').replace('<a href="/our-businesses.html">', '<a href="/our-businesses.html" aria-current="page">'), s, count=1, flags=re.S)
-    mail = "mailto:iceworks@f1rst.co.uk?subject=" + urllib.parse.quote("Rock Factory tenant website (£200)")
+    mail = "https://icework.co.uk/contact#enquiry" + urllib.parse.quote("Rock Factory tenant website (£200)")
     L = lambda path, text: f'<a class="text-link" href="https://icework.co.uk{path}" target="_blank" rel="noopener">{text}</a>'
     main = f'''<main id="main">
 <nav class="crumbs wrap" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">/</span> <a href="/{SLUG}.html">Our businesses</a> <span aria-hidden="true">/</span> <span aria-current="page">IceWork</span></nav>
@@ -136,12 +135,12 @@ def icework_page():
 <div class="feature"><h3>Free SEO checker</h3><p>Check how your current website scores for search, free and with no sign-up. {L("/seo-checker", "SEO checker")}</p></div></div>
 <h2>Free “Get on Google” package in 2026</h2><p>Through 2026, IceWork’s Get on Google SEO package is free with a website: your site submitted to Google and Bing, your key pages sent for indexing, and your Google Business Profile set up so you can appear on Google Maps. Rock Factory tenants can use The Old Rock Factory, Keswick Road, Blackpool FY1 5PB as their address on Google.</p>
 <h2>Why a Rock Factory business needs a website</h2><p>Most customers in Blackpool look for local services on their phone before they pick up the phone or visit. A simple website with your services, prices and location, plus a Google Business Profile, means people searching for what you do in Blackpool, Lytham St Annes, Poulton-le-Fylde, Thornton-Cleveleys or Fleetwood can find you, see you are a real local business and get in touch.</p><p>Having IceWork in the same building makes it easy: pop in, show them what you do, and they can photograph your unit and your work for the site.</p>
-<h2>How to get your £200 website</h2><ol class="steps"><li><span><strong>Email IceWork</strong> at <a class="text-link" href="{mail}">iceworks@f1rst.co.uk</a> and say you are a Rock Factory tenant. IceWork prefers email and aims to reply within 24 hours.</span></li><li><span><strong>Tell them about your business:</strong> what you do, the areas you cover and the jobs you want more of.</span></li><li><span><strong>Go live</strong> with your 3-page website, domain name and a year of hosting, then add your Google Business Profile with the Rock Factory address.</span></li></ol>
+<h2>How to get your £200 website</h2><ol class="steps"><li><span><strong>Message IceWork</strong> through <a class="text-link" href="{mail}">its contact form</a> and say you are a Rock Factory tenant. IceWork prefers email and aims to reply within 24 hours.</span></li><li><span><strong>Tell them about your business:</strong> what you do, the areas you cover and the jobs you want more of.</span></li><li><span><strong>Go live</strong> with your 3-page website, domain name and a year of hosting, then add your Google Business Profile with the Rock Factory address.</span></li></ol>
 <h2>Questions</h2><div class="faq-list">
 <details><summary>How much is a website for a Rock Factory tenant?</summary><p>£200 for IceWork’s complete 3-page website package, which is usually £350. It includes the build, SEO for your top 10 search terms, your domain name and a full year of hosting.</p></details>
 <details><summary>Do I have to be a tenant to use IceWork?</summary><p>No. IceWork builds websites for businesses across Blackpool and the Fylde coast for £350. The £200 price is for Rock Factory tenants.</p></details>
 <details><summary>Can IceWork set up my Google Business Profile?</summary><p>Yes. It is part of the Get on Google package, which is free in 2026. Tenants can use the Rock Factory address on their profile.</p></details>
-<details><summary>How do I contact IceWork?</summary><p>By email at iceworks@f1rst.co.uk. IceWork prefers email so it can focus on building websites, and aims to reply within 24 hours.</p></details></div>
+<details><summary>How do I contact IceWork?</summary><p>Through the contact form on icework.co.uk. IceWork prefers written messages so it can focus on building websites, and aims to reply within 24 hours.</p></details></div>
 <p class="fine-print">IceWork is an independent business based at The Rock Factory. Prices and the free Get on Google package are IceWork’s; the £200 tenant price applies to Rock Factory tenants. See {L("/pricing", "icework.co.uk/pricing")} for full details.</p>
 <h2>More from The Rock Factory</h2><p><a class="text-link" href="/{SLUG}.html">All our businesses</a> · <a class="text-link" href="/#prices">Units and prices</a> · <a class="text-link" href="/small-business-unit-ideas-blackpool.html">66 business ideas for a small unit</a></p>
 </div></section>
