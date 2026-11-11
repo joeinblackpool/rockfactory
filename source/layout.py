@@ -165,7 +165,7 @@ def apply_image_seo(s, slug):
         data = json.loads(j.group(1))
         for node in data.get("@graph", []):
             if node.get("@type") in ("WebPage", "Article", "CollectionPage", "AboutPage", "ContactPage") and "url" in node:
-                node["primaryImageOfPage"] = {"@type": "ImageObject", "url": SITE + src, "caption": alt,
+                node["primaryImageOfPage"] = {"@type": "ImageObject", "url": src if src.startswith("http") else SITE + src, "caption": alt,
                                               **({"width": int(w.group(1)), "height": int(h.group(1))} if w and h else {})}
                 break
         s = s[:j.start(1)] + json.dumps(data, ensure_ascii=False) + s[j.end(1):]

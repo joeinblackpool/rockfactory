@@ -14,7 +14,7 @@ SLUG = "how-rock-is-made-video"
 VIDEO_ID = "ye-xudhKfYg"
 VIDEO_NAME = "'London Rock' Making Candy Factory (1957) | British Pathé"
 VIDEO_DESC = "British Pathé film from 1957 showing how London Rock was made by hand at a sweet factory in Wood Green, London: boiling, colouring, building the letters, stretching and cutting."
-UPLOAD_DATE = None  # e.g. "2026-10-01"; Google needs this for video rich results
+UPLOAD_DATE = "2014-04-13"  # British Pathé put its archive on YouTube in April 2014; Google requires uploadDate
 THUMB = f"https://i.ytimg.com/vi/{VIDEO_ID}/hqdefault.jpg"
 WA = "https://wa.me/447366991012?text=Hi%2C%20I%27ve%20watched%20your%20video%20and%20I%27d%20like%20to%20ask%20about%20a%20space%20at%20The%20Rock%20Factory."
 
@@ -34,9 +34,9 @@ def build():
     biz = next(x for x in json.loads(m.group(1))["@graph"] if x.get("@id", "").endswith("/#business"))
     video = {"@type": "VideoObject", "@id": url + "#video", "name": VIDEO_NAME, "description": VIDEO_DESC,
              "thumbnailUrl": THUMB, "embedUrl": f"https://www.youtube-nocookie.com/embed/{VIDEO_ID}",
-             "contentUrl": f"https://www.youtube.com/watch?v={VIDEO_ID}", "publisher": {"@id": f"{SITE}/#business"}}
-    if UPLOAD_DATE:
-        video["uploadDate"] = UPLOAD_DATE
+             # no contentUrl: Google wants it to be the video file itself, and a YouTube watch page is not one
+             "publisher": {"@id": f"{SITE}/#business"}}
+    video["uploadDate"] = UPLOAD_DATE
     graph = [biz,
              {"@type": "WebPage", "@id": url + "#page", "url": url, "name": title.split(" | ")[0], "description": desc,
               "inLanguage": "en-GB", "isPartOf": {"@id": f"{SITE}/#website"}, "about": {"@id": f"{SITE}/#business"},
