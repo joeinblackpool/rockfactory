@@ -10,6 +10,18 @@ from ideas import crumbs_html, faq_html
 
 ROOT = Path(__file__).resolve().parent.parent
 PUB = ROOT / "public"
+
+
+def webp_size(path):
+    """Width and height of a WebP file (VP8, VP8L or VP8X), so every photo gets width/height and the layout never shifts."""
+    b = Path(path).read_bytes()[:30]
+    kind = b[12:16]
+    if kind == b"VP8X":
+        return 1 + int.from_bytes(b[24:27], "little"), 1 + int.from_bytes(b[27:30], "little")
+    if kind == b"VP8L":
+        v = int.from_bytes(b[21:25], "little")
+        return (v & 0x3FFF) + 1, ((v >> 14) & 0x3FFF) + 1
+    return int.from_bytes(b[26:28], "little") & 0x3FFF, int.from_bytes(b[28:30], "little") & 0x3FFF
 CONTENT = ROOT / "source" / "content"
 SITE = "https://rockfactory.uk"
 UPDATED = ("2026-10-07", "October 2026")
@@ -90,12 +102,14 @@ def render(template, p, names, hub=None, children=()):
     photos = [ph for ph in p.get("photos", []) if (PUB / "assets" / f"{ph['file']}.webp").exists()]
     if photos:
         figs = ""
-        for ph in photos:
+        for n, ph in enumerate(photos):
             f = ph["file"]; alt = esc(ph["alt"])
+            w, h = webp_size(PUB / "assets" / f"{f}.webp")
+            load = 'fetchpriority="high"' if n == 0 else 'loading="lazy"'
             small = (PUB / "assets" / f"{f}-800.webp").exists()
             srcset = f' srcset="/assets/{f}-800.webp 800w, /assets/{f}.webp 1400w" sizes="(max-width: 800px) 100vw, 50vw"' if small else ""
             figs += (f'<figure class="page-photo"><a href="/assets/{f}.webp" target="_blank" rel="noopener noreferrer" aria-label="View full photograph: {alt}">'
-                     f'<img src="/assets/{f}.webp"{srcset} alt="{alt}" loading="lazy" decoding="async"></a></figure>')
+                     f'<img src="/assets/{f}.webp"{srcset} width="{w}" height="{h}" alt="{alt}" {load} decoding="async"></a></figure>')
         body += f'<div class="photo-gallery natural guide-photos">{figs}</div>'
     if children:
         body += f'<h2 id="all-guides">All {esc(p["crumb"].lower())}</h2><div class="idea-cards">' + "".join(card(c["slug"], names) for c in children) + "</div>"

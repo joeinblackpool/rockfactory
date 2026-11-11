@@ -298,7 +298,7 @@ def page(template, slug, title, desc, crumb, main, extra_graph):
         crumbs.append({"@type": "ListItem", "position": i, "name": n, "item": u})
     graph = [biz,
              {"@type": "Article", "@id": url + "#article", "headline": title.split(" | ")[0], "description": desc, "url": url,
-              "inLanguage": "en-GB", "dateModified": "2026-10-06", "author": {"@id": f"{SITE}/#business"},
+              "inLanguage": "en-GB", "datePublished": "2026-10-06", "dateModified": "2026-10-06", "author": {"@id": f"{SITE}/#business"},
               "publisher": {"@id": f"{SITE}/#business"}, "isPartOf": {"@id": f"{SITE}/#website"},
               "image": f"{SITE}/assets/share.jpg"},
              {"@type": "BreadcrumbList", "itemListElement": crumbs}] + extra_graph
