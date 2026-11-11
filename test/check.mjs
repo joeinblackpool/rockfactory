@@ -33,7 +33,17 @@ for (const loc of locs) {
   if (/\u2014/.test(html.slice(html.indexOf("<main")))) fail(`${loc} em dash in copy`);
   const canon = html.match(/rel="canonical" href="(.*?)"/)?.[1];
   if (canon !== loc) fail(`${loc} canonical ${canon}`);
-  for (const m of html.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/gs)) { try { JSON.parse(m[1]); } catch { fail(`${loc} JSON-LD`); } }
+  for (const m of html.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/gs)) {
+    let data; try { data = JSON.parse(m[1]); } catch { fail(`${loc} JSON-LD`); continue; }
+    if (/https?:\/\/[^"]*https?:\/\//.test(m[1])) fail(`${loc} JSON-LD has a doubled URL`);
+    // Google video rich results: name, thumbnailUrl and uploadDate required; contentUrl must be a media file, not a watch page
+    for (const v of (data["@graph"] || [data]).filter((n) => n["@type"] === "VideoObject")) {
+      for (const k of ["name", "description", "thumbnailUrl", "uploadDate"]) if (!v[k]) fail(`${loc} VideoObject missing ${k}`);
+      if (!v.contentUrl && !v.embedUrl) fail(`${loc} VideoObject needs contentUrl or embedUrl`);
+      if (/youtube\.com\/watch/.test(v.contentUrl || "")) fail(`${loc} VideoObject contentUrl is a watch page`);
+      if (v.uploadDate && !/^\d{4}-\d{2}-\d{2}/.test(v.uploadDate)) fail(`${loc} VideoObject uploadDate not ISO 8601`);
+    }
+  }
   for (const m of html.matchAll(/(?:href|src)="([^"#:]+?)(?:\?[^"]*)?"/g)) refs.add(new URL(m[1], loc).href);
   console.log(`${r.status} ${new URL(loc).pathname.padEnd(36)} ${title}`);
 }
